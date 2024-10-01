@@ -1,0 +1,26 @@
+image: python:latest
+
+stages:
+  - Code analysis
+  - Code Tests
+
+before_script:
+    - pip install -r requirements.txt
+
+Pylint:
+  stage: Code analysis
+  script:
+    - pylint --load-plugins pylint_django --django-settings-module=django_sql_test.settings accounts django_sql_test first streams telegramapi decorators.py manage.py || exit 0
+  only:
+    - master
+    - develop
+    - cookdev_develop
+
+Test:
+  stage: Code Tests
+  script:
+    - python manage.py test --settings django_sql_test.settings_test
+  only:
+    - master
+    - develop
+    - cookdev_develop

@@ -1,0 +1,1008 @@
+.main_lesson_wrapper {
+    width: auto;
+    padding: 3% 5%;
+}
+
+.lesson_change_btns_form {
+    margin-top: 5%;
+    display: block;
+}
+
+.lesson_change_div {
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+}
+
+.lesson_change_a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.lesson_change_a:hover {
+    color: #FFFFFF;
+}
+
+.lesson_change_div:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 1px #F86624;
+}
+
+.lesson_change_btn {
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 70px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.lesson_change_btn:hover {
+    color: #FFFFFF;
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 1px #F86624;
+}
+
+.back_link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.next_lesson_link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.iconka_arrow_left {
+    width: 40px;
+    height: 40px;
+}
+
+.iconka_arrow_right {
+    width: 40px;
+    height: 40px;
+}
+
+.lesson_theme_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #F86624;
+    margin-top: 5%;
+}
+
+.lesson_zoom_title {
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 7%;
+}
+
+.lesson_zoom_link {
+    font-size: 20px;
+}
+
+.lesson_yt_title {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000;
+}
+
+.lesson_yt_title:hover {
+    color: #000;
+}
+
+.lesson_yt_wrapper {
+    cursor: pointer;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.lesson_yt_iframe_wrapper {
+    width: 100%;
+    height: 700px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.lesson_yt_iframe {
+    width: 90%;
+    height: 100%;
+}
+
+.iconka_razvernut {
+    width: 40px;
+    height: 40px;
+    margin-right: 1%;
+}
+
+.lesson_content_wrapper {
+    margin-top: 7%;
+}
+
+.lesson_content_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+}
+
+.lesson_hw_wrapper {
+    margin-top: 10%;
+}
+
+.lesson_hw_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+}
+
+.lesson_hw_text_wrapper {
+    padding: 5% 3%;
+}
+
+.lesson_hw_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 5%;
+    padding: 3% 0;
+}
+
+.lesson_pupils_sends_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+    margin-top: 5%;
+}
+
+.lesson_pupils_sends_grid {
+    margin-top: 0px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3%;
+}
+
+.lesson_pupils_sends_wrapper {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 2px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 10%;
+}
+
+.lesson_pupils_sends_names {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #F86624;
+}
+
+.lesson_pupils_sends_status {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 25px;
+}
+
+.lesson_pupils_sends_comment {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.lesson_pupils_sends_names:hover {
+    color: #F86624;
+}
+
+.for_photo_class {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.c-img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.lesson_homework_send_title_wrapper {
+    cursor: pointer;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.lesson_homework_send_title_a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #F86624;
+}
+
+.lesson_homework_send_title_span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+}
+
+.lesson_homework_send_title_a:hover {
+    color: #F86624;
+}
+
+.files_input_background_text {
+    display: block;
+    color: #A3A3A3;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.files_input_send_btn {
+    margin-top: 20px;
+    display: none;
+    width: 250px;
+    height: 60px;
+    background: #F86624;
+    border-radius: 100px;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.lesson_my_sends_title_wrapper {
+    cursor: pointer;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+}
+
+.lesson_my_sends_title_a {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+}
+
+.lesson_my_sends_title_a:hover {
+    color: #000000;
+}
+
+.iconka_edit {
+    width: 25px;
+    height: 25px;
+}
+
+.lesson_my_sends_title_grid {
+    max-width: 90%;
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 5%;
+}
+
+.lesson_my_sends_title_edit_save_btn {
+    display: none;
+    margin-top: 30px;
+    width: 250px;
+    height: 60px;
+    background: #F86624;
+    border-radius: 100px;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.iconka_comment {
+    width: 30px;
+    height: 30px;
+}
+
+.teacher_comment_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #000000;
+    margin: 0px;
+}
+
+.teacher_comment_status {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.teacher_comment_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+@media screen and (min-width: 2500px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 340px);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 310px);
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .back_link {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .next_lesson_link {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_arrow_left {
+        width: calc(34px + 4 * (100vw - 1500px) / 500);
+        height: calc(34px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_arrow_right {
+        width: calc(34px + 4 * (100vw - 1500px) / 500);
+        height: calc(34px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_theme_title {
+        font-size: calc(54px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_zoom_title {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_zoom_link {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_yt_title {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_razvernut {
+        width: calc(34px + 4 * (100vw - 1500px) / 500);
+        height: calc(34px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_content_title {
+        font-size: calc(54px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_hw_title {
+        font-size: calc(54px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_hw_text {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(28px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_pupils_sends_title {
+        font-size: calc(54px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_pupils_sends_names {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(28px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_pupils_sends_status {
+        font-size: calc(18px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_pupils_sends_comment {
+        font-size: calc(18px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_change_btn {
+        width: calc(200px + 30 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+        font-size: calc(22px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_change_div {
+        width: calc(200px + 30 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_change_a {
+        font-size: calc(22px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_homework_send_title_a {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_homework_send_title_span {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .files_input_background_text {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .files_input_send_btn {
+        width: calc(220px + 30 * (100vw - 1500px) / 500);
+        height: calc(50px + 10 * (100vw - 1500px) / 500);
+        font-size: calc(22px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_my_sends_title_a {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_edit {
+        width: calc(22px + 3 * (100vw - 1500px) / 500);
+        height: calc(22px + 3 * (100vw - 1500px) / 500);
+    }
+
+    .teacher_comment_title {
+        font-size: calc(32px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .teacher_comment_status {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .teacher_comment_text {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_comment {
+        width: calc(25px + 5 * (100vw - 1500px) / 500);
+        height: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .back_link {
+        font-size: calc(21px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .next_lesson_link {
+        font-size: calc(21px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_arrow_left {
+        width: calc(30px + 4 * (100vw - 1100px) / 400);
+        height: calc(30px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_arrow_right {
+        width: calc(30px + 4 * (100vw - 1100px) / 400);
+        height: calc(30px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_theme_title {
+        font-size: calc(44px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_zoom_title {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_zoom_link {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_yt_title {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_razvernut {
+        width: calc(30px + 4 * (100vw - 1100px) / 400);
+        height: calc(30px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_content_title {
+        font-size: calc(44px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_hw_title {
+        font-size: calc(44px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_hw_text {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(24px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_pupils_sends_title {
+        font-size: calc(44px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_pupils_sends_names {
+        font-size: calc(26px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_pupils_sends_status {
+        font-size: calc(18px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_pupils_sends_comment {
+        font-size: calc(18px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_change_btn {
+        width: calc(140px + 50 * (100vw - 1100px) / 400);
+        height: calc(45px + 15 * (100vw - 1100px) / 400);
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(45px + 15 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_change_div {
+        width: calc(140px + 50 * (100vw - 1100px) / 400);
+        height: calc(45px + 15 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_change_a {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(45px + 15 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_pupils_sends_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lesson_homework_send_title_a {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_homework_send_title_span {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .files_input_background_text {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .files_input_send_btn {
+        width: calc(190px + 30 * (100vw - 1100px) / 400);
+        height: calc(40px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(18px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_my_sends_title_a {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_edit {
+        width: calc(19px + 3 * (100vw - 1100px) / 400);
+        height: calc(19px + 3 * (100vw - 1100px) / 400);
+    }
+
+    .teacher_comment_title {
+        font-size: calc(28px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .teacher_comment_status {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .teacher_comment_text {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_my_sends_title_grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .c-img {
+        width: calc(180px + 20 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_comment {
+        width: calc(20px + 5 * (100vw - 1100px) / 400);
+        height: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .for_photo_class {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .back_link {
+        font-size: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .next_lesson_link {
+        font-size: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .iconka_arrow_left {
+        width: calc(26px + 4 * (100vw - 700px) / 400);
+        height: calc(26px + 4 * (100vw - 700px) / 400);
+    }
+
+    .iconka_arrow_right {
+        width: calc(26px + 4 * (100vw - 700px) / 400);
+        height: calc(26px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_theme_title {
+        font-size: calc(34px + 10 * (100vw - 700px) / 400);
+    }
+
+    .lesson_zoom_title {
+        font-size: calc(22px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_zoom_link {
+        font-size: calc(14px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_yt_title {
+        font-size: calc(22px + 4 * (100vw - 700px) / 400);
+    }
+
+    .iconka_razvernut {
+        width: calc(22px + 4 * (100vw - 700px) / 400);
+        height: calc(22px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_content_title {
+        font-size: calc(34px + 10 * (100vw - 700px) / 400);
+    }
+
+    .lesson_hw_title {
+        font-size: calc(34px + 10 * (100vw - 700px) / 400);
+    }
+
+    .lesson_hw_text {
+        font-size: calc(18px + 4 * (100vw - 700px) / 400);
+        line-height: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_pupils_sends_title {
+        font-size: calc(34px + 10 * (100vw - 700px) / 400);
+    }
+
+    .lesson_pupils_sends_names {
+        font-size: calc(20px + 6 * (100vw - 700px) / 400);
+        line-height: calc(22px + 6 * (100vw - 700px) / 400);
+    }
+
+    .lesson_pupils_sends_status {
+        font-size: calc(14px + 4 * (100vw - 700px) / 400);
+        line-height: calc(16px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_pupils_sends_comment {
+        font-size: calc(14px + 4 * (100vw - 700px) / 400);
+        line-height: calc(16px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_change_btn {
+        width: calc(140px + 50 * (100vw - 700px) / 400);
+        height: calc(45px + 15 * (100vw - 700px) / 400);
+        font-size: calc(14px + 4 * (100vw - 700px) / 400);
+        line-height: calc(45px + 15 * (100vw - 700px) / 400);
+    }
+
+    .lesson_change_div {
+        width: calc(140px + 50 * (100vw - 700px) / 400);
+        height: calc(45px + 15 * (100vw - 700px) / 400);
+    }
+
+    .lesson_change_a {
+        font-size: calc(14px + 4 * (100vw - 700px) / 400);
+        line-height: calc(45px + 15 * (100vw - 700px) / 400);
+    }
+
+    .lesson_pupils_sends_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .lesson_homework_send_title_a {
+        font-size: calc(26px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_homework_send_title_span {
+        font-size: calc(26px + 4 * (100vw - 700px) / 400);
+    }
+
+    .files_input_background_text {
+        font-size: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .files_input_send_btn {
+        width: calc(180px + 30 * (100vw - 700px) / 400);
+        height: calc(40px + 10 * (100vw - 700px) / 400);
+        font-size: calc(18px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_my_sends_title_a {
+        font-size: calc(28px + 4 * (100vw - 700px) / 400);
+    }
+
+    .iconka_edit {
+        width: calc(19px + 3 * (100vw - 700px) / 400);
+        height: calc(19px + 3 * (100vw - 700px) / 400);
+    }
+
+    .teacher_comment_title {
+        font-size: calc(26px + 4 * (100vw - 700px) / 400);
+    }
+
+    .teacher_comment_status {
+        font-size: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .teacher_comment_text {
+        font-size: calc(20px + 4 * (100vw - 700px) / 400);
+    }
+
+    .lesson_my_sends_title_grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .c-img {
+        width: calc(180px + 20 * (100vw - 700px) / 400);
+    }
+
+    .iconka_comment {
+        width: calc(20px + 3 * (100vw - 700px) / 400);
+        height: calc(20px + 3 * (100vw - 700px) / 400);
+    }
+
+    .for_photo_class {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main_lesson_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .back_link {
+        font-size: calc(12px + 8 * (100vw - 300px) / 400);
+    }
+
+    .next_lesson_link {
+        font-size: calc(12px + 8 * (100vw - 300px) / 400);
+    }
+
+    .iconka_arrow_left {
+        width: calc(16px + 10 * (100vw - 300px) / 400);
+        height: calc(16px + 10 * (100vw - 300px) / 400);
+    }
+
+    .iconka_arrow_right {
+        width: calc(16px + 10 * (100vw - 300px) / 400);
+        height: calc(16px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_theme_title {
+        font-size: calc(24px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_zoom_title {
+        font-size: calc(16px + 6 * (100vw - 300px) / 400);
+    }
+
+    .lesson_zoom_link {
+        font-size: calc(12px + 2 * (100vw - 300px) / 400);
+    }
+
+    .lesson_yt_title {
+        font-size: calc(16px + 6 * (100vw - 300px) / 400);
+    }
+
+    .iconka_razvernut {
+        width: calc(16px + 6 * (100vw - 300px) / 400);
+        height: calc(16px + 6 * (100vw - 300px) / 400);
+    }
+
+    .lesson_content_title {
+        font-size: calc(24px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_hw_title {
+        font-size: calc(24px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_hw_text {
+        font-size: calc(14px + 4 * (100vw - 300px) / 400);
+        line-height: calc(12px + 8 * (100vw - 300px) / 400);
+    }
+
+    .lesson_pupils_sends_title {
+        font-size: calc(24px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_pupils_sends_names {
+        font-size: calc(16px + 4 * (100vw - 300px) / 400);
+        line-height: calc(18px + 4 * (100vw - 300px) / 400);
+    }
+
+    .lesson_pupils_sends_status {
+        font-size: calc(12px + 2 * (100vw - 300px) / 400);
+        line-height: calc(14px + 2 * (100vw - 300px) / 400);
+    }
+
+    .lesson_pupils_sends_comment {
+        font-size: calc(12px + 2 * (100vw - 300px) / 400);
+        line-height: calc(14px + 2 * (100vw - 300px) / 400);
+    }
+
+    .lesson_change_btn {
+        width: calc(100px + 40 * (100vw - 300px) / 400);
+        height: calc(35px + 10 * (100vw - 300px) / 400);
+        font-size: calc(10px + 4 * (100vw - 300px) / 400);
+        line-height: calc(35px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_change_div {
+        width: calc(100px + 40 * (100vw - 300px) / 400);
+        height: calc(35px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_change_a {
+        font-size: calc(10px + 4 * (100vw - 300px) / 400);
+        line-height: calc(35px + 10 * (100vw - 300px) / 400);
+    }
+
+    .lesson_pupils_sends_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lesson_homework_send_title_a {
+        font-size: calc(18px + 8 * (100vw - 300px) / 400);
+    }
+
+    .lesson_homework_send_title_span {
+        font-size: calc(18px + 8 * (100vw - 300px) / 400);
+    }
+
+    .files_input_background_text {
+        font-size: calc(14px + 6 * (100vw - 300px) / 400);
+    }
+
+    .files_input_send_btn {
+        width: calc(150px + 30 * (100vw - 300px) / 400);
+        height: calc(30px + 10 * (100vw - 300px) / 400);
+        font-size: calc(14px + 4 * (100vw - 300px) / 400);
+    }
+
+    .lesson_my_sends_title_a {
+        font-size: calc(18px + 10 * (100vw - 300px) / 400);
+    }
+
+    .iconka_edit {
+        width: calc(16px + 3 * (100vw - 300px) / 400);
+        height: calc(16px + 3 * (100vw - 300px) / 400);
+    }
+
+    .teacher_comment_title {
+        font-size: calc(18px + 8 * (100vw - 300px) / 400);
+    }
+
+    .teacher_comment_status {
+        font-size: calc(12px + 8 * (100vw - 300px) / 400);
+    }
+
+    .teacher_comment_text {
+        font-size: calc(12px + 8 * (100vw - 300px) / 400);
+    }
+
+    .lesson_my_sends_title_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .c-img {
+        width: calc(140px + 40 * (100vw - 300px) / 400);
+    }
+
+    .iconka_comment {
+        width: calc(15px + 5 * (100vw - 300px) / 400);
+        height: calc(15px + 5 * (100vw - 300px) / 400);
+    }
+
+    .for_photo_class {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 700px) {
+    .lesson_my_sends_title_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -1,0 +1,338 @@
+.dimmer {
+    z-index: 3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    opacity: 0;
+}
+
+.dimmer_sticky {
+    position: sticky;
+    width: 100vw;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #000;
+}
+
+.wrapper_main {
+    width: 300px;
+    padding: 0px;
+}
+
+.wrapper_sticky {
+    position: sticky;
+    z-index: 4;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper_bg_custom {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.div_uinfo {
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 15% 8%;
+}
+
+.div_ava {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.f_l_name {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.who_is_user {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    color: #000000;
+}
+
+.div_links {
+    width: 80%;
+    height: auto;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 15% 8%;
+    margin-top: 10%;
+}
+
+.link_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 7%;
+    padding-right: 0px;
+}
+
+.link_icon {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+
+.side_menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 0.5%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    background-color: #F9C80E;
+    z-index: 10;
+}
+
+.small_menu_uinfo {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.small_menu_uinfo_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+    color: #333;
+    cursor: pointer;
+}
+
+.transition {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 2500px) {
+    .wrapper_main {
+        width: 340px;
+    }
+
+    .div_ava {
+        width: 110px;
+        height: 110px;
+    }
+
+    .f_l_name {
+        font-size: calc(32px + 5 * (100vw - 2500px) / 600);
+        line-height: calc(37px + 5 * (100vw - 2500px) / 600);
+    }
+
+    .who_is_user {
+        font-size: calc(22px + 5 * (100vw - 2500px) / 600);
+        line-height: calc(25px + 5 * (100vw - 2500px) / 600);
+    }
+
+    .link_text {
+        font-size: calc(32px + 5 * (100vw - 2500px) / 600);
+        line-height: calc(37px + 5 * (100vw - 2500px) / 600);
+    }
+
+    .link_icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .wrapper_main {
+        width: 310px;
+    }
+
+    .div_ava {
+        width: 95px;
+        height: 95px;
+    }
+
+    .f_l_name {
+        font-size: calc(27px + 5 * (100vw - 2000px) / 500);
+        line-height: calc(32px + 5 * (100vw - 2000px) / 500);
+    }
+
+    .who_is_user {
+        font-size: calc(18px + 5 * (100vw - 2000px) / 500);
+        line-height: calc(18px + 5 * (100vw - 2000px) / 500);
+    }
+
+    .link_text {
+        font-size: calc(29px + 2 * (100vw - 2000px) / 500);
+        line-height: calc(34px + 2 * (100vw - 2000px) / 500);
+    }
+
+    .link_icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .wrapper_main {
+        width: 280px;
+    }
+
+    .div_ava {
+        width: 80px;
+        height: 80px;
+    }
+
+    .f_l_name {
+        font-size: calc(24px + 3 * (100vw - 1500px) / 500);
+        line-height: calc(29px + 3 * (100vw - 1500px) / 500);
+    }
+
+    .who_is_user {
+        font-size: calc(17px + 1 * (100vw - 1500px) / 500);
+        line-height: calc(17px + 1 * (100vw - 1500px) / 500);
+    }
+
+    .link_text {
+        font-size: calc(26px + 2 * (100vw - 1500px) / 500);
+        line-height: calc(31px + 2 * (100vw - 1500px) / 500);
+    }
+
+    .link_icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .wrapper_main {
+        width: 250px;
+    }
+
+    .div_ava {
+        width: 75px;
+        height: 75px;
+    }
+
+    .f_l_name {
+        font-size: calc(22px + 3 * (100vw - 1100px) / 400);
+        line-height: calc(27px + 3 * (100vw - 1100px) / 400);
+    }
+
+    .who_is_user {
+        font-size: calc(17px - 1 * (100vw - 1100px) / 400);
+        line-height: calc(17px - 1 * (100vw - 1100px) / 400);
+    }
+
+    .link_text {
+        font-size: calc(25px + 1 * (100vw - 1100px) / 400);
+        line-height: calc(30px + 1 * (100vw - 1100px) / 400);
+    }
+
+    .link_icon {
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+    .side_menu {
+        display: block;
+    }
+
+    .wrapper_main {
+        width: 230px;
+    }
+
+    .div_ava {
+        width: 75px;
+        height: 75px;
+    }
+
+    .f_l_name {
+        font-size: calc(22px + 3 * (100vw - 500px) / 600);
+        line-height: calc(27px + 3 * (100vw - 500px) / 600);
+    }
+
+    .who_is_user {
+        font-size: calc(17px - 1 * (100vw - 500px) / 600);
+        line-height: calc(17px - 1 * (100vw - 500px) / 600);
+    }
+
+    .link_text {
+        font-size: calc(22px + 2 * (100vw - 500px) / 600);
+        line-height: calc(27px + 2 * (100vw - 500px) / 600);
+    }
+
+    .link_icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .side_menu {
+        display: block;
+    }
+
+    .wrapper_main {
+        width: 200px;
+    }
+
+    .div_ava {
+        width: 70px;
+        height: 70px;
+    }
+
+    .f_l_name {
+        font-size: calc(20px + 5 * (100vw - 300px) / 300);
+        line-height: calc(25px + 5 * (100vw - 300px) / 300);
+    }
+
+    .who_is_user {
+        font-size: calc(15px + 1 * (100vw - 300px) / 300);
+        line-height: calc(15px + 1 * (100vw - 300px) / 300);
+    }
+
+    .link_text {
+        font-size: calc(20px + 1 * (100vw - 300px) / 300);
+        line-height: calc(25px + 1 * (100vw - 300px) / 300);
+    }
+
+    .link_icon {
+        width: 21px;
+        height: 21px;
+    }
+
+    .side_menu {
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        .row {
+            width: 100%;
+        }
+
+        .page_title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            color: #000000;
+            margin-top: 90px;
+            margin-left: 120px;
+        }
+
+        .tab_title {
+            cursor: pointer;
+            margin-right: 25px;
+            margin-left: 25px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 38px;
+            color: #000000;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            margin-top: 60px;
+            margin-left: 120px;
+        }
+
+        .iconka_line {
+            width: 20px;
+            height: 40px;
+        }
+
+        .iconka_back {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_list {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_search {
+            width: 25px;
+            height: 25px;
+        }
+
+        .iconka_minus {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_check {
+            margin-left: 5px;
+        }
+
+        .iconka_edit {
+            margin-top: 20px;
+        }
+
+        #table_p_add::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_add::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_add::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_p_del::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_del::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_del::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_a_add::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_a_add::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_a_add::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_p_add_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_add_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_add_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_p_f_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_f_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_f_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_s_add_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_s_add_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_s_add_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_s_f_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_s_f_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_s_f_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_p_add_in_g_end::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_add_in_g_end::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_add_in_g_end::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_s_add_in_g_end::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_s_add_in_g_end::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_s_add_in_g_end::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_p_edit_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_p_edit_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_p_edit_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_s_edit_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_s_edit_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_s_edit_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_newp_edit_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_newp_edit_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_newp_edit_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_newp_f_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_newp_f_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_newp_f_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_news_edit_in_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_news_edit_in_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_news_edit_in_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        #table_news_f_g::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f9f9fd;
+        }
+
+        #table_news_f_g::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #9c9c9c;
+        }
+
+        #table_news_f_g::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <meta charset="UTF-8">
+    <title>Люди</title>
+</head>
+
+<body>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui-1.13.0/jquery-ui.js' %}"></script>
+    <main>
+        <div class="row">
+            {% include "menu.html" with page="admin_people" %}
+            <div class="col-10 smooth_redirect" style="display: none">
+                <h1 class="page_title">Люди</h1>
+                <div class="menu">
+                    <span id="btn_students" class="tab_title" style="color: #F86624;">Студенты</span>
+                    <img src="{% static 'images/ic20-line.svg' %}" class="iconka_line" alt="alt">
+                    <span id="btn_prepods" class="tab_title">Преподаватели</span>
+                    <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                    <span id="btn_admins" class="tab_title">Администраторы</span>
+                    <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                    <span id="btn_groups" class="tab_title">Группы</span>
+                    <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                    <span id="btn_courses" class="tab_title">Курсы</span>
+                </div>
+                <div id="block_students" style="display: block;">
+                    {% include 'admin_people_students.html' %}
+                </div>
+                <div id="block_prepods" style="display: none;">
+                    {% include 'admin_people_prepods.html' %}
+                </div>
+                <div id="block_admins" style="display: none;">
+                    {% include 'admin_people_admins.html' %}
+                </div>
+                <div id="block_groups" style="display: none;">
+                    {% include 'admin_people_groups.html' %}
+                </div>
+                <div id="block_courses" style="display: none;">
+                    {% include 'admin_people_courses.html' %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function tableSearch_s() {
+            var phrase = document.getElementById('search-text_s');
+            var table = document.getElementById('info-table_s');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_p() {
+            var phrase = document.getElementById('search-text_p');
+            var table = document.getElementById('info-table_p');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_p_add() {
+            var phrase = document.getElementById('search-text_p_add');
+            var table = document.getElementById('info-table_p_add');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_p_del() {
+            var phrase = document.getElementById('search-text_p_del');
+            var table = document.getElementById('info-table_p_del');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_a() {
+            var phrase = document.getElementById('search-text_a');
+            var table = document.getElementById('info-table_a');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_a_add() {
+            var phrase = document.getElementById('search-text_a_add');
+            var table = document.getElementById('info-table_a_add');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_g() {
+            var phrase = document.getElementById('search-text_g');
+            var table = document.getElementById('info-table_g');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_p_f_g() {
+            var phrase = document.getElementById('search-text_p_f_g');
+            var table = document.getElementById('info-table_p_f_g');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_s_f_g() {
+            var phrase = document.getElementById('search-text_s_f_g');
+            var table = document.getElementById('info-table_s_f_g');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_newp_f_g() {
+            var phrase = document.getElementById('search-text_newp_f_g');
+            var table = document.getElementById('info-table_newp_f_g');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        function tableSearch_news_f_g() {
+            var phrase = document.getElementById('search-text_news_f_g');
+            var table = document.getElementById('info-table_news_f_g');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        $(document).ready(function() {
+            $('#btn_students').click(function() {
+                document.getElementById(`block_prepods`).style.display = 'none';
+                document.getElementById(`block_admins`).style.display = 'none';
+                document.getElementById(`block_groups`).style.display = 'none';
+                document.getElementById(`block_courses`).style.display = 'none';
+                document.getElementById(`block_students`).style.display = 'block';
+                document.getElementById(`btn_prepods`).style.color = '#000000';
+                document.getElementById(`btn_admins`).style.color = '#000000';
+                document.getElementById(`btn_groups`).style.color = '#000000';
+                document.getElementById(`btn_courses`).style.color = '#000000';
+                document.getElementById(`btn_students`).style.color = '#F86624';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_prepods').click(function() {
+                document.getElementById(`block_students`).style.display = 'none';
+                document.getElementById(`block_admins`).style.display = 'none';
+                document.getElementById(`block_groups`).style.display = 'none';
+                document.getElementById(`block_courses`).style.display = 'none';
+                document.getElementById(`block_prepods`).style.display = 'block';
+                document.getElementById(`btn_students`).style.color = '#000000';
+                document.getElementById(`btn_admins`).style.color = '#000000';
+                document.getElementById(`btn_groups`).style.color = '#000000';
+                document.getElementById(`btn_courses`).style.color = '#000000';
+                document.getElementById(`btn_prepods`).style.color = '#F86624';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_admins').click(function() {
+                document.getElementById(`block_students`).style.display = 'none';
+                document.getElementById(`block_prepods`).style.display = 'none';
+                document.getElementById(`block_groups`).style.display = 'none';
+                document.getElementById(`block_courses`).style.display = 'none';
+                document.getElementById(`block_admins`).style.display = 'block';
+                document.getElementById(`btn_students`).style.color = '#000000';
+                document.getElementById(`btn_prepods`).style.color = '#000000';
+                document.getElementById(`btn_groups`).style.color = '#000000';
+                document.getElementById(`btn_courses`).style.color = '#000000';
+                document.getElementById(`btn_admins`).style.color = '#F86624';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_groups').click(function() {
+                document.getElementById(`block_students`).style.display = 'none';
+                document.getElementById(`block_prepods`).style.display = 'none';
+                document.getElementById(`block_admins`).style.display = 'none';
+                document.getElementById(`block_courses`).style.display = 'none';
+                document.getElementById(`block_groups`).style.display = 'block';
+                document.getElementById(`btn_students`).style.color = '#000000';
+                document.getElementById(`btn_prepods`).style.color = '#000000';
+                document.getElementById(`btn_admins`).style.color = '#000000';
+                document.getElementById(`btn_courses`).style.color = '#000000';
+                document.getElementById(`btn_groups`).style.color = '#F86624';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_courses').click(function() {
+                document.getElementById(`block_students`).style.display = 'none';
+                document.getElementById(`block_prepods`).style.display = 'none';
+                document.getElementById(`block_admins`).style.display = 'none';
+                document.getElementById(`block_groups`).style.display = 'none';
+                document.getElementById(`block_courses`).style.display = 'block';
+                document.getElementById(`btn_students`).style.color = '#000000';
+                document.getElementById(`btn_prepods`).style.color = '#000000';
+                document.getElementById(`btn_admins`).style.color = '#000000';
+                document.getElementById(`btn_groups`).style.color = '#000000';
+                document.getElementById(`btn_courses`).style.color = '#F86624';
+                return false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

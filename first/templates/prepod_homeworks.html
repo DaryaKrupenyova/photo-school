@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_menu {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_fin {
+            width: 32px;
+            height: 32px;
+        }
+
+        .iconka_fin_table {
+            width: 25px;
+            height: 20px;
+        }
+
+        .iconka_minus {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_settings {
+            width: 40px;
+            height: 40px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .pupil_images {
+            cursor: zoom-in;
+            height: 100%;
+        }
+
+        .popup {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            text-align: center;
+        }
+
+        .popup_bg {
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+        }
+
+
+        .popup_img {
+            position: fixed;
+            z-index: 5;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-height: 90%;
+            max-width: 90%;
+        }
+
+        .popup_img {
+            pointer-events: none;
+        }
+
+        /* Стилизация выпадающей кнопки */
+        .dropbtn_course {
+            width: 240px;
+            height: 72px;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            color: #000000;
+        }
+
+        /* Контейнер <div> - необходимо разместить выпадающий контент */
+        .dropdown_course {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Выпадающий контент (скрыт по умолчанию) */
+        .dropdown-content_course {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Ссылки внутри выпадающего */
+        .dropdown-content_course span {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Показать выпадающее меню при наведении */
+        .dropdown_course:hover .dropdown-content_course {
+            display: block;
+        }
+
+        /* Изменить цвет фона кнопки выпадающего списка, когда отображается содержимое выпадающего списка. */
+        .dropdown_course:hover .dropbtn_course {
+            background-color: #F9C80E;
+        }
+
+        /* Стилизация выпадающей кнопки */
+        .dropbtn_group {
+            width: 240px;
+            height: 72px;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            color: #000000;
+        }
+
+        /* Контейнер <div> - необходимо разместить выпадающий контент */
+        .dropdown_group {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Выпадающий контент (скрыт по умолчанию) */
+        .dropdown-content_group {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Ссылки внутри выпадающего */
+        .dropdown-content_group span {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Показать выпадающее меню при наведении */
+        .dropdown_group:hover .dropdown-content_group {
+            display: block;
+        }
+
+        /* Изменить цвет фона кнопки выпадающего списка, когда отображается содержимое выпадающего списка. */
+        .dropdown_group:hover .dropbtn_group {
+            background-color: #F9C80E;
+        }
+
+        /* Стилизация выпадающей кнопки */
+        .dropbtn_task {
+            width: 240px;
+            height: 72px;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            color: #000000;
+        }
+
+        /* Контейнер <div> - необходимо разместить выпадающий контент */
+        .dropdown_task {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Выпадающий контент (скрыт по умолчанию) */
+        .dropdown-content_task {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Ссылки внутри выпадающего */
+        .dropdown-content_task span {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Показать выпадающее меню при наведении */
+        .dropdown_task:hover .dropdown-content_task {
+            display: block;
+        }
+
+        /* Изменить цвет фона кнопки выпадающего списка, когда отображается содержимое выпадающего списка. */
+        .dropdown_task:hover .dropbtn_task {
+            background-color: #F9C80E;
+        }
+
+        /* Стилизация выпадающей кнопки */
+        .dropbtn_student {
+            width: 240px;
+            height: 72px;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            color: #000000;
+        }
+
+        /* Контейнер <div> - необходимо разместить выпадающий контент */
+        .dropdown_student {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Выпадающий контент (скрыт по умолчанию) */
+        .dropdown-content_student {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Ссылки внутри выпадающего */
+        .dropdown-content_student span {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Показать выпадающее меню при наведении */
+        .dropdown_student:hover .dropdown-content_student {
+            display: block;
+        }
+
+        /* Изменить цвет фона кнопки выпадающего списка, когда отображается содержимое выпадающего списка. */
+        .dropdown_student:hover .dropbtn_student {
+            background-color: #F9C80E;
+        }
+
+        .list_span {
+            cursor: pointer;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teacher_gallery.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+</head>
+
+<body>
+    <main>
+        <div class="row" style="position: relative;">
+            {% include "menu.html" with page="prepod_homeworks" %}
+            <div class="smooth_redirect main_gallery_wrapper" style="animation: opacity 0.2s ease-out;">
+                <div class="">
+                    <div>
+                        <h1 class="main_title">Все отправленные домашние задания</h1>
+                    </div>
+                    <form method="post">
+                        {% csrf_token %}
+                        {% if fav_images %}
+                        <input type="hidden" name="fav_imgs" value="no_fav">
+                        <button class="fav_imgs_btn" style="background: #ddd;" type="submit"><img src="{% static 'images/icon_for_topphoto.svg' %}" class="fav_img_icon" alt="ic_fav_img"></button>
+                        {% else %}
+                        <input type="hidden" name="fav_imgs" value="fav">
+                        <button class="fav_imgs_btn" style="background: #fff;" type="submit"><img src="{% static 'images/icon_for_topphoto.svg' %}" class="fav_img_icon" alt="ic_fav_img"></button>
+                        {% endif %}
+                    </form>
+                    <div style="width: 1380px; display: none; justify-content: space-between; align-items: center; margin-top: 60px;">
+                        <div class="dropdown_course">
+                            <button class="dropbtn_course">Курс</button>
+                            <div class="dropdown-content_course">
+                                <span class="list_span" onclick="sort_course()">Курс 1</span>
+                                <span class="list_span" onclick="sort_course()">Курс 2</span>
+                            </div>
+                        </div>
+                        <div class="dropdown_group">
+                            <button class="dropbtn_group">Группа</button>
+                            <div class="dropdown-content_group">
+                                <span class="list_span" onclick="sort_group()">Группа 1</span>
+                                <span class="list_span" onclick="sort_group()">Группа 2</span>
+                                <span class="list_span" onclick="sort_group()">Группа 3</span>
+                            </div>
+                        </div>
+                        <div class="dropdown_task">
+                            <button class="dropbtn_task">Задание</button>
+                            <div class="dropdown-content_task">
+                                <span class="list_span" onclick="sort_task()">Задание 1</span>
+                                <span class="list_span" onclick="sort_task()">Задание 2</span>
+                                <span class="list_span" onclick="sort_task()">Задание 3</span>
+                                <span class="list_span" onclick="sort_task()">Задание 4</span>
+                                <span class="list_span" onclick="sort_task()">Задание 5</span>
+                            </div>
+                        </div>
+                        <div class="dropdown_student">
+                            <button class="dropbtn_student">Студент</button>
+                            <div class="dropdown-content_student">
+                                <span class="list_span" onclick="sort_student()">Студент 1</span>
+                                <span class="list_span" onclick="sort_student()">Студент 2</span>
+                                <span class="list_span" onclick="sort_student()">Студент 3</span>
+                                <span class="list_span" onclick="sort_student()">Студент 4</span>
+                                <span class="list_span" onclick="sort_student()">Студент 5</span>
+                                <span class="list_span" onclick="sort_student()">Студент 6</span>
+                                <span class="list_span" onclick="sort_student()">Студент 7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="gallery" class="main_gallery_conteiner">
+                        {% if fav_images %}
+                        {% for fav_image in fav_images %}
+                        <div>
+                            <div class="gallery_cell">
+                                <img src="{{ fav_image.image.image_compressed.url }}" alt="alt" class="pupil_images">
+                                <input type="hidden" value="{{ fav_image.image.image.url }}">
+                            </div>
+                            <form class="only_fav_photos" method="post">
+                                {% csrf_token %}
+                                <input id="only_fav_photos_id" name="favorite_img" type="hidden" value="{{ fav_image.image.id }}">
+                                <button class="make_img_fav_btn" type="submit">
+                                    <img src="{% static 'images/icon_star_yellow.svg' %}" style="width: 100%; height: 100%;" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        {% for homework, fav_img in homeworks %}
+                        <div>
+                            <div class="gallery_cell">
+                                <img src="{{ homework.homework.image_compressed.url }}" alt="alt" class="pupil_images">
+                                <input type="hidden" value="{{ homework.homework.image.url }}">
+                            </div>
+                            <form class="all_photos" method="post">
+                                {% csrf_token %}
+                                <input id="all_photos_id" name="favorite_img" type="hidden" value="{{ homework.homework.id }}">
+                                <button class="make_img_fav_btn" type="submit">
+                                    <img src="{% if fav_img %}{% static 'images/icon_star_yellow.svg' %}{% else %}{% static 'images/icon_star_black.svg' %}{% endif %}" style="width: 100%; height: 100%;" alt="">
+                                </button>
+                            </form>
+                        </div>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% if fav_images %}
+                    <form id="load_more_form_fav" style="margin-top: 50px; display: flex; justify-content: center;" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="loaded_content_limit_fav" value="{{ loaded_content_limit_fav }}">
+                        <input style="width: 170px; height: 50px; background-color: transparent; border: 1px solid #333; color: #333; border-radius: 20px; position: relative; left: -50px;" type="submit" name="load_more_btn_fav" value="Загрузить больше">
+                    </form>
+                    {% else %}
+                    <form id="load_more_form" style="margin-top: 30px; display: flex; justify-content: center;" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="loaded_content_limit" value="{{ loaded_content_limit }}">
+                        <input style="width: 170px; height: 50px; background-color: transparent; border: 1px solid #333; color: #333; border-radius: 20px; position: relative; left: -50px;" type="submit" name="load_more_btn" value="Загрузить больше">
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <script type="text/javascript">
+        $(".pupil_images").click(function() {
+            var img = $(this);
+            var src = $(this).parent().find('input').val();
+            $("body").append("<div class='popup'>" +
+                "<div class='popup_bg'></div>" +
+                "<img src='" + src + "' class='popup_img' />" +
+                "</div>");
+            $(".popup").fadeIn(200);
+            $(".popup_bg").click(function() {
+                $(".popup").fadeOut(200);
+                setTimeout(function() {
+                    $(".popup").remove();
+                }, 200);
+            });
+        });
+
+        $('.only_fav_photos').submit(function() {
+            var fd = new FormData;
+            var favorite_img = $(this).find('#only_fav_photos_id');
+            if (favorite_img.val()) {
+                fd.append('favorite_img', favorite_img.val());
+            }
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'prepod_homeworks' %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    var img_obj_src = favorite_img.parent().find('img');
+                    if (img_obj_src.attr('src').includes('yellow')) {
+                        img_obj_src.attr('src', "{% static 'images/icon_star_black.svg' %}");
+                    } else {
+                        img_obj_src.attr('src', "{% static 'images/icon_star_yellow.svg' %}");
+                    }
+                },
+                error: function(response) {}
+            });
+            return false;
+        });
+
+        $('#load_more_form').submit(function() {
+            var fd = new FormData;
+            var load_more_btn = $(this).find('input[name="load_more_btn"]');
+            var loaded_content_limit = $(this).find('input[name="loaded_content_limit"]');
+            fd.append('load_more_btn', load_more_btn.val());
+            fd.append('loaded_content_limit', loaded_content_limit.val());
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'prepod_homeworks' %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('body').html(response.data);
+                },
+                error: function(response) {
+                    console.log(response);
+                }
+            });
+            return false;
+        });
+
+        $('#load_more_form_fav').submit(function() {
+            var fd = new FormData;
+            var load_more_btn_fav = $(this).find('input[name="load_more_btn_fav"]');
+            var loaded_content_limit_fav = $(this).find('input[name="loaded_content_limit_fav"]');
+            fd.append('load_more_btn_fav', load_more_btn_fav.val());
+            fd.append('loaded_content_limit_fav', loaded_content_limit_fav.val());
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'prepod_homeworks' %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('body').html(response.data);
+                },
+                error: function(response) {}
+            });
+            return false;
+        });
+
+        $('.all_photos').submit(function() {
+            var fd = new FormData;
+            var favorite_img = $(this).find('#all_photos_id');
+            if (favorite_img.val()) {
+                fd.append('favorite_img', favorite_img.val());
+            }
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'prepod_homeworks' %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    var img_obj_src = favorite_img.parent().find('img');
+                    if (img_obj_src.attr('src').includes('yellow')) {
+                        img_obj_src.attr('src', "{% static 'images/icon_star_black.svg' %}");
+                    } else {
+                        img_obj_src.attr('src', "{% static 'images/icon_star_yellow.svg' %}");
+                    }
+                },
+                error: function(response) {}
+            });
+            return false;
+        });
+
+        function sort_course() {
+            var phrase = document.getElementsByName('sort_course');
+            var table = document.getElementById('gallery');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+            }
+        }
+
+        function sort_group() {
+            var phrase = document.getElementById('search-text');
+            var table = document.getElementById('info-table');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

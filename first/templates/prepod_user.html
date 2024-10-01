@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_dz {
+            width: 35px;
+            height: 35px;
+        }
+
+        .iconka_minus {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_del {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_settings {
+            width: 40px;
+            height: 40px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .input__wrapper {
+            position: relative;
+            text-align: center;
+        }
+
+        .input__file {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .input__file-button-text {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 33px;
+            color: #000000;
+            margin-left: 30px;
+        }
+
+        .input__file-button {
+            width: 273px;
+            height: 72px;
+            background: #FFFFFF;
+            border: 1px solid #D1D1D1;
+            box-sizing: border-box;
+            border-radius: 100px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            cursor: pointer;
+        }
+
+        .delete_btn:active,
+        .delete_btn:focus {
+            outline: none;
+        }
+
+        .delete_btn::-moz-focus-inner {
+            border: 0;
+        }
+
+        .delete_btn {}
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <meta charset="UTF-8">
+    <title>Новый пользователь</title>
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            {% include "menu.html" %}
+            <div class="col-10">
+                <div style="padding-top: 170px; padding-left: 120px;">
+                    <div class="row">
+                        <div class="col">
+                            <div>
+                                <h1 style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 64px; line-height: 75px; color: #000000;">Ivanova Maria</h1>
+                                <h2 style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 36px; line-height: 42px; color: #43BCCD;">@ivanovamaria</h2>
+                            </div>
+                            <div class="mt-5" style="display: flex;">
+                                <div class="me-3">
+                                    <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_minus" alt="alt">
+                                </div>
+                                <span style="width: 400px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">Преподаватель по курсу “Основы Фотографии”</span>
+                            </div>
+                            <div class="mt-4" style="display: flex;">
+                                <div class="me-3">
+                                    <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_minus" alt="alt">
+                                </div>
+                                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">В 1.4 Photoschool c 2021 года</span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <div style="display: flex;">
+                                    <a class="mt-1" style="text-decoration: none; position: absolute; left: 1640px; top: 55px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 23px; color: #000000;" href="#">
+                                        <div style="display: flex;">
+                                            <div class="me-2 mt-2">Настройки</div><img src="{% static 'images/ic20-settings.svg' %}" class="iconka_settings" alt="alt">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div style="z-index: 1; position: absolute; left: 1130px; top: 119px;">
+                                    <svg width="367" height="307" viewBox="0 0 367 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M201.631 5.88072C245.926 1.3083 299.433 -8.75607 331.65 16.4695C364.156 41.9217 345.034 86.4558 351.069 122.888C355.723 150.98 375.384 178.821 362.928 205.284C350.671 231.324 314.521 241.865 287.184 258.611C259.282 275.703 235.842 298.509 201.631 304.089C162.866 310.412 121.812 306.565 87.0105 291.263C48.9703 274.536 7.87611 250.558 0.782037 215.772C-6.22723 181.402 35.7331 154.995 52.7 123.022C67.4212 95.2812 66.827 62.0322 93.4991 41.0533C122.138 18.5275 162.171 9.95415 201.631 5.88072Z" fill="#F9C80E" />
+                                    </svg>
+                                </div>
+                                <div style="z-index: 2; position: absolute; left: 1397px; top: 194px;">
+                                    <svg width="326" height="330" viewBox="0 0 326 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M307.113 186.145C308.205 217.738 292.718 248.769 271.518 271.084C250.949 292.733 221.94 299.756 193.803 305.412C166.318 310.937 136.277 317.93 112.285 303.091C88.9495 288.657 86.978 254.341 72.1694 230.179C55.6406 203.211 25.0782 185.73 20.6671 153.61C15.7381 117.718 24.4737 77.7149 47.519 50.6799C70.5677 23.6407 106.812 13.476 140.638 12.8678C170.76 12.3261 197.98 28.621 222.133 47.5401C242.451 63.455 252.145 88.4796 265.986 111.054C281.222 135.905 306.077 156.188 307.113 186.145Z" fill="#43BCCD" />
+                                    </svg>
+                                </div>
+                                <div style="z-index: 3; position: absolute; left: 1255px; top: 215px; width: 250px; height: 250px; background: url({% static 'images/avaratka.png' %}); border-radius: 50%; background-repeat: no-repeat; background-size: cover;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 1400px; margin-top: 120px;">
+                        <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">Etiam bibendum ante tristique sed lectus quam ut accumsan, vel. Molestie lacus tortor pellentesque nullam. Scelerisque massa felis, convallis eget aliquam suspendisse sed amet sapien. Id lectus neque, lectus dis morbi. Vulputate ipsum sit dui cursus elementum, enim habitant eget integer. Et in laoreet nisl eget odio elit, sollicitudin pretium justo. Metus et tincidunt integer cras hendrerit gravida condimentum venenatis. Gravida ullamcorper risus, iaculis convallis pretium. Nibh justo, odio cras in pretium. Posuere et et vel mattis. Morbi feugiat ut ultricies risus in euismod interdum. Ut interdum sed lacus nunc, lacus.</span>
+                    </div>
+                    <div style="width: 1400px; margin-top: 50px;">
+                        <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">Quis habitant sit nisl placerat leo cursus gravida. Nunc, gravida aliquam enim metus malesuada tincidunt eu mollis turpis. Vehicula ipsum odio viverra aliquet. Eget scelerisque volutpat volutpat pharetra. Mi aliquam, pellentesque maecenas amet dapibus ut. Tellus mollis fringilla tempus, porttitor donec ut nunc rutrum scelerisque. Pretium dapibus tincidunt amet, cras et ut. Molestie quam orci a malesuada auctor egestas sed. Eget sagittis, quis nulla sed in eu. Felis aliquam lacus, volutpat ac egestas enim vitae venenatis.</span>
+                    </div>
+                    <div style="margin-top: 120px; margin-left: 600px;">
+                        <form id="forma" method="post">
+                            {% csrf_token %}
+                            <div class="col" style="margin-left: 80px; display: flex;">
+                                <div id="inp" class="input__wrapper" style="visibility: hidden;">
+                                    <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                                    <label for="input__file" class="input__file-button">
+                                        <span class="input__file-button-text">Загрузить файл</span>
+                                    </label>
+                                </div>
+                                <button id="edit_btn" onclick="qt(edit_btn, inp, del4, del3, del2, del1)" style="margin-left: 50px; width: 376px; height: 72px; background: #43BCCD; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: rgba(255, 255, 255, 0.95); border: 0px;" type="submit">Добавить фотографии</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="row pb-5" style="margin-top: 60px;">
+                        <div class="col">
+                            <button class="delete_btn" type="submit" id="del1" style="border: 0px; background-color: transparent; display: flex; visibility: hidden;">
+                                <div class="me-2">
+                                    <img src="{% static 'images/ic20-del_orange.svg' %}" class="iconka_del" alt="alt">
+                                </div>
+                                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #F86624;">Удалить</span>
+                            </button>
+                            <div style="display: flex; justify-content: center; align-items: center; width: 300px; height: 400px; background: url({% static 'images/laura-chouette-AlX5260JnmI-unsplash%201.png' %})">
+                                <p style=" font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #A3A3A3;">Скоро тут будут Ваши фотографии</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="delete_btn" type="submit" id="del2" style="border: 0px; background-color: transparent; display: flex; visibility: hidden;">
+                                <div class="me-2">
+                                    <img src="{% static 'images/ic20-del_orange.svg' %}" class="iconka_del" alt="alt">
+                                </div>
+                                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #F86624;">Удалить</span>
+                            </button>
+                            <div style="display: flex; justify-content: center; align-items: center; width: 300px; height: 400px; background: url({% static 'images/hisu-lee-2qvxIr_DXGo-unsplash%201.png' %})">
+                                <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #A3A3A3;">Место для ваших достижений</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="delete_btn" type="submit" id="del3" style="border: 0px; background-color: transparent; display: flex; visibility: hidden;">
+                                <div class="me-2">
+                                    <img src="{% static 'images/ic20-del_orange.svg' %}" class="iconka_del" alt="alt">
+                                </div>
+                                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #F86624;">Удалить</span>
+                            </button>
+                            <div style="display: flex; justify-content: center; align-items: center; width: 300px; height: 400px; background: url({% static 'images/tabitha-turner-FOQCp5UDUq8-unsplash%201.png' %})">
+                                <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #A3A3A3;">Скоро тут будут Ваши фотографии</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button class="delete_btn" type="submit" id="del4" style="border: 0px; background-color: transparent; display: flex; visibility: hidden;">
+                                <div class="me-2">
+                                    <img src="{% static 'images/ic20-del_orange.svg' %}" class="iconka_del" alt="alt">
+                                </div>
+                                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #F86624;">Удалить</span>
+                            </button>
+                            <div style="display: flex; justify-content: center; align-items: center; width: 300px; height: 400px; background: url({% static 'images/syd-sujuaan-Lj6e2zNlXJM-unsplash%201.png' %})">
+                                <p style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; text-align: center; color: #A3A3A3;">Место для ваших достижений</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <script type="text/javascript">
+        var tmp = 0;
+
+        function qt(id_edit_btn, id_inp, id_del4, id_del3, id_del2, id_del1) {
+            tmp++;
+            $("#forma").submit(function(e) {
+                if (tmp % 2 != 0) {
+                    e.preventDefault();
+                    return false;
+                }
+            })
+            id_edit_btn.style.background = '#F9C80E';
+            id_edit_btn.innerHTML = "Сохранить изменения";
+            id_inp.style.visibility = "visible";
+            id_del4.style.visibility = "visible";
+            id_del3.style.visibility = "visible";
+            id_del2.style.visibility = "visible";
+            id_del1.style.visibility = "visible";
+        }
+
+    </script>
+</body>
+
+</html>

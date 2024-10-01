@@ -1,0 +1,25 @@
+<!doctype html>
+{% load static %}
+<html>
+    <body>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/Logo.png' %}" style="display: block; width: 150px"/>
+        <br>
+        <p>Добро пожаловать в команду, {{ user.first_name|safe }}</p>
+
+        <p>Мы <b>зарегистрировали твой аккаунт</b> в нашей фотошколе и скорее ждем на занятиях ;)<br>
+        Для входа в личный кабинет используй логин и пароль ниже.</p>
+
+        <p><b>Логин:</b> {{ user.username|safe }}<br>
+        <b>Пароль:</b> {{ password }}</p>
+
+        <br>
+        <p>Администраторы фотошколы Mango PhotoClub</p>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/toa-heftiba-_hqV-h2sQHM-unsplash.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/siyan-ren-jN_VbffJHlI-unsplash.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/lauren-mancke-sil2Hx4iupI-unsplash.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/lubomirkin-j_BHh6vNOv8-unsplash.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/parco-chan-Ztp54-7b5Qc-unsplash.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/toa-heftiba-_hqV-h2sQHM-unsplash3.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+        <img src="{{ protocol }}://{{ domain }}{% static 'images/toa-heftiba-_hqV-h2sQHM-unsplash2.jpg' %}" style="display: inline-block; width: 130px; height: 150px"/>
+    </body>
+</html>

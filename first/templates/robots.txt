@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin
+Disallow: *?s=
+Disallow: *?p=
+Disallow: /question
+Disallow: /group
+Disallow: /signup_complete
+Sitemap: https://mangophoto.club/sitemap.xml

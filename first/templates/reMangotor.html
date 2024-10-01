@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <title>reMangotor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body{
+            margin: 20px;
+            font-family: Roboto;
+        }
+
+        #canvas {
+            display: block;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+            cursor: crosshair;
+            margin: 0 0 20px;
+        }
+
+        #undo, #clear {
+            color: #fff;
+            font-size: 30px;
+            text-decoration: none;
+            font-family: Roboto;
+            font-weight: 500;
+        }
+
+        .a_background{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 170px;
+            height: 50px;
+            background-color: #F9C80E;
+            border-radius: 25px;
+            margin-right: 15px;
+        }
+
+        .brush_color{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #333;
+        }
+
+        #red_btn{
+            background: #ff0000;
+            border: 5px solid #333;
+        }
+
+        #yellow_btn{
+            background: #ffff00;
+        }
+
+        #blue_btn{
+            background: #0000ff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <h1 style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 64px; line-height: 75px; color: #000000;"><span style="color: #F86624;">Mango</span> редактор<span style="font-size: 15px; color: #333;">alpha 1.1</span></h1>
+
+    <div style="margin-bottom: 20px; display: flex; align-items: center;">
+<!--        <div class="a_background">-->
+<!--            <a href="#" id="undo">Отменить</a>-->
+<!--        </div>-->
+        <div class="a_background">
+            <a href="#" id="clear">Очистить</a>
+        </div>
+        <div>
+            <p style="margin: 0px; font-size: 19px;">Цвет кисти</p>
+            <button id="red_btn" class="brush_color"></button>
+            <button id="yellow_btn" class="brush_color"></button>
+            <button id="blue_btn" class="brush_color"></button>
+        </div>
+    </div>
+
+    <form id="form" action="" method="post">
+        {% csrf_token %}
+        <div class="paint-canvas">
+            <canvas id="canvas" width="500px" height="500px"></canvas>
+<!--            <input id="canvas_img" type="hidden" name="canvas_img" value="">-->
+        </div>
+<!-- Скоро появится возможность отображения отредактированного фото у ученика в уроке -->
+<!--        <div class="paint-submit">-->
+<!--            <input type="submit" name="send" value="Отправить форму">-->
+<!--        </div>-->
+    </form>
+    <script type="text/javascript">
+        window.addEventListener("load", function onWindowLoad() {
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var points = [];
+
+            // Загрузка изображения в canvas
+            var img = new Image();
+            img.src = "{{ photo.image_compressed.url }}";
+            img.addEventListener('load', function() {
+                canvas.width = img.width
+                canvas.height = img.height
+                ctx.drawImage(img, 0, 0);
+
+                var mouseX = 0;
+                var mouseY = 0;
+
+                $('#red_btn').click(function(){
+                    ctx.strokeStyle = '#FF0000';
+                    $('#red_btn').css('border', '5px solid #333');
+                    $('#yellow_btn').css('border', '1px solid #333');
+                    $('#blue_btn').css('border', '1px solid #333');
+                });
+
+                $('#yellow_btn').click(function(){
+                    ctx.strokeStyle = '#FFFF00';
+                    $('#yellow_btn').css('border', '5px solid #333');
+                    $('#red_btn').css('border', '1px solid #333');
+                    $('#blue_btn').css('border', '1px solid #333');
+                });
+
+                $('#blue_btn').click(function(){
+                    ctx.strokeStyle = '#0000FF';
+                    $('#blue_btn').css('border', '5px solid #333');
+                    $('#red_btn').css('border', '1px solid #333');
+                    $('#yellow_btn').css('border', '1px solid #333');
+                });
+
+                // Стиль линии
+                ctx.strokeStyle = '#FF0000';
+                ctx.lineWidth = 2;
+                var isDrawing = false;
+
+                // Обработчики рисования мышкой
+                canvas.addEventListener('mousedown', function(event) {
+                    setMouseCoordinates(event);
+                    isDrawing = true;
+                    ctx.beginPath();
+                    ctx.moveTo(mouseX, mouseY);
+
+                    points.push({
+                        x: mouseX,
+                        y: mouseY,
+                        mode: "begin"
+                    });
+                });
+
+                canvas.addEventListener('mousemove', function(event) {
+                    setMouseCoordinates(event);
+                    if (isDrawing) {
+                        ctx.lineTo(mouseX, mouseY);
+                        ctx.stroke();
+                        points.push({
+                            x: mouseX,
+                            y: mouseY,
+                            mode: "draw"
+                        });
+                    }
+                });
+
+                canvas.addEventListener('mouseup', function(event) {
+                    setMouseCoordinates(event);
+                    isDrawing = false;
+
+                    points.push({
+                        x: mouseX,
+                        y: mouseY,
+                        mode: "end"
+                    });
+                });
+
+                function setMouseCoordinates(event) {
+                    mouseX = event.offsetX;
+                    mouseY = event.offsetY;
+                }
+
+                // Кнопка «Очистить»
+                $('#clear').click(function() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 0);
+                    return false;
+                });
+
+                // Функции для кнопки «Отменить»
+                function redrawAll() {
+                    if (points.length == 0) {
+                        return;
+                    }
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 0);
+                    for (var i = 0; i < points.length; i++) {
+                        var pt = points[i];
+                        if (pt.mode == "begin") {
+                            ctx.beginPath();
+                            ctx.moveTo(pt.x, pt.y);
+                        }
+                        ctx.lineTo(pt.x, pt.y);
+                        if (pt.mode == "end" || (i == points.length - 1)) {
+                            ctx.stroke();
+                        }
+                    }
+                    ctx.stroke();
+                }
+
+                function undoLast() {
+                    points.pop();
+                    redrawAll();
+                }
+
+                // Кнопка «Отменить»
+                var interval;
+                $("#undo").mousedown(function() {
+                    interval = setInterval(undoLast, 50);
+                }).mouseup(function() {
+                    clearInterval(interval);
+                }).click(function() {
+                    return false;
+                });
+
+                /*$('#form').submit(function() {
+                    $('#canvas_img').val(canvas.toDataURL("image/jpg"));
+                    return true;
+                });*/
+            });
+        });
+
+    </script>
+</body>
+
+</html>

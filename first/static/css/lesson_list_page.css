@@ -1,0 +1,366 @@
+.lessons_page_main_wrapper {
+    width: auto;
+    padding-top: 7%;
+    padding-left: 5%;
+    padding-right: 0px;
+}
+
+.course_part_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.course_part_img {
+    margin-right: 10px;
+}
+
+.iconka_check {
+    width: 22px;
+    height: 22px;
+}
+
+.make_lesson_btn {
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 230px;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    border: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 70px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.make_lesson_btn:hover {
+    color: #FFFFFF;
+    transition: 0.3s;
+    box-shadow: 0px 0px 2px 1px #F86624;
+}
+
+.main_title_h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+}
+
+.main_title_h2_wrapper {
+    margin: 2% 0;
+}
+
+.main_title_h2 {
+    padding: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    color: #000000;
+}
+
+.course_part_h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    margin: 0px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.lessons_grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 340px);
+}
+
+.lesson_content_wrapper {
+    width: 320px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 13%;
+}
+
+.lesson_content_header {
+    color: #00000099;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.lesson_content_num {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.lesson_content_lecture_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.lesson_content_homework_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 2500px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 340px);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 310px);
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .lessons_grid_wrapper {
+        grid-template-columns: repeat(auto-fit, calc(340px + 30 * (100vw - 1500px) / 500));
+    }
+
+    .lesson_content_wrapper {
+        width: calc(300px + 50 * (100vw - 1500px) / 500);
+    }
+
+    .main_title_h1 {
+        font-size: calc(54px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .main_title_h2 {
+        font-size: calc(31px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .course_part_h3 {
+        font-size: calc(21px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_check {
+        width: calc(18px + 4 * (100vw - 1500px) / 500);
+        height: calc(18px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_content_header {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_content_num {
+        font-size: calc(18px + 2 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_content_lecture_text {
+        font-size: calc(16px + 2 * (100vw - 1500px) / 500);
+    }
+
+    .lesson_content_homework_text {
+        font-size: calc(16px + 2 * (100vw - 1500px) / 500);
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .main_title_h2_wrapper {
+        margin: 3% 0;
+    }
+
+    .lessons_grid_wrapper {
+        grid-template-columns: repeat(auto-fit, calc(310px + 30 * (100vw - 1100px) / 400));
+    }
+
+    .lesson_content_wrapper {
+        width: calc(270px + 30 * (100vw - 1100px) / 400);
+    }
+
+    .main_title_h1 {
+        font-size: calc(44px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .main_title_h2 {
+        font-size: calc(26px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .course_part_wrapper {
+        margin: 3% 0;
+    }
+
+    .course_part_h3 {
+        font-size: calc(18px + 3 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_check {
+        width: calc(16px + 2 * (100vw - 1100px) / 400);
+        height: calc(16px + 2 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_content_header {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_content_num {
+        font-size: calc(16px + 2 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_content_lecture_text {
+        font-size: calc(14px + 2 * (100vw - 1100px) / 400);
+    }
+
+    .lesson_content_homework_text {
+        font-size: calc(14px + 2 * (100vw - 1100px) / 400);
+    }
+
+    .make_lesson_btn {
+        width: 190px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1099px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .main_title_h2_wrapper {
+        margin: 3% 0;
+    }
+
+    .course_part_wrapper {
+        margin: 3% 0;
+    }
+
+    .lessons_grid_wrapper {
+        grid-template-columns: repeat(auto-fit, calc(260px + 50 * (100vw - 650px) / 450));
+    }
+
+    .lesson_content_wrapper {
+        width: calc(220px + 50 * (100vw - 650px) / 450);
+    }
+
+    .main_title_h1 {
+        font-size: calc(36px + 18 * (100vw - 650px) / 450);
+    }
+
+    .main_title_h2 {
+        font-size: calc(21px + 10 * (100vw - 650px) / 450);
+    }
+
+    .course_part_h3 {
+        font-size: calc(15px + 8 * (100vw - 650px) / 450);
+    }
+
+    .iconka_check {
+        width: calc(14px + 4 * (100vw - 650px) / 450);
+        height: calc(14px + 4 * (100vw - 650px) / 450);
+    }
+
+    .lesson_content_header {
+        font-size: calc(18px + 4 * (100vw - 650px) / 450);
+    }
+
+    .lesson_content_num {
+        font-size: calc(14px + 2 * (100vw - 650px) / 450);
+    }
+
+    .lesson_content_lecture_text {
+        font-size: calc(12px + 2 * (100vw - 650px) / 450);
+    }
+
+    .lesson_content_homework_text {
+        font-size: calc(12px + 2 * (100vw - 650px) / 450);
+    }
+
+    .make_lesson_btn {
+        width: 170px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .lessons_page_main_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .main_title_h2_wrapper {
+        margin: 4% 0;
+    }
+
+    .course_part_wrapper {
+        margin: 4% 0;
+    }
+
+    .lessons_grid_wrapper {
+        grid-template-columns: repeat(auto-fit, calc(240px + 300 * (100vw - 300px) / 350));
+    }
+
+    .lesson_content_wrapper {
+        width: calc(220px + 250 * (100vw - 300px) / 350);
+        padding: calc(30px + 10 * (100vw - 300px) / 350);
+    }
+
+    .main_title_h1 {
+        font-size: calc(20px + 20 * (100vw - 300px) / 350);
+    }
+
+    .main_title_h2 {
+        font-size: calc(13px + 8 * (100vw - 300px) / 350);
+    }
+
+    .course_part_h3 {
+        font-size: calc(12px + 8 * (100vw - 300px) / 350);
+    }
+
+    .iconka_check {
+        width: calc(10px + 6 * (100vw - 300px) / 350);
+        height: calc(10px + 6 * (100vw - 300px) / 350);
+    }
+
+    .lesson_content_header {
+        font-size: calc(18px + 6 * (100vw - 300px) / 350);
+    }
+
+    .lesson_content_num {
+        font-size: calc(14px + 4 * (100vw - 300px) / 350);
+    }
+
+    .lesson_content_lecture_text {
+        font-size: calc(12px + 4 * (100vw - 300px) / 350);
+    }
+
+    .lesson_content_homework_text {
+        font-size: calc(12px + 4 * (100vw - 300px) / 350);
+    }
+
+    .make_lesson_btn {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+    }
+}

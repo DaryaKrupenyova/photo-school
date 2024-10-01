@@ -1,0 +1,3700 @@
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .bdiv {
+        position: sticky;
+        top: 0px;
+        padding-top: 50px;
+        padding-left: 1px;
+        background-color: #F9C80E;
+        position: sticky;
+        height: 330px;
+        width: 75px;
+    }
+
+    .av {
+        width: 70px;
+        height: 80px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding-left: 6px;
+        padding-top: 2px;
+    }
+
+    .pic {
+        margin-bottom: 0px;
+        width: 25px;
+        height: 25px;
+        background: url(images/avaratka.png);
+        border-radius: 50%
+    }
+
+    .nam {
+        margin-top: 0px;
+    }
+
+    .namt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 10px;
+        color: #F86624;
+        white-space: nowrap;
+    }
+
+    .st {
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+
+    .stt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 6px;
+        color: #000000;
+    }
+
+    .obj2 {
+        margin-top: 13px;
+        padding-top: 4px;
+        padding-left: 6px;
+        width: 70px;
+        height: 140px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+    }
+
+    .divk {
+        margin-top: 7px;
+    }
+
+    .divico {
+        margin-right: 2px;
+        position: relative;
+        top: -8px;
+    }
+
+    .sk {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 7.5px;
+        line-height: 10px;
+        color: #000000;
+        position: relative;
+        top: 0px;
+        margin-right: 1px;
+    }
+
+    .divv {
+        margin-top: 8px;
+    }
+
+    .dstr {
+        padding-top: 47px;
+        padding-left: 33px;
+    }
+
+    .hnam {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .hlog {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        color: #43BCCD;
+    }
+
+    .divst {
+        margin-top: 13px;
+        display: flex;
+    }
+
+    .divicom {
+        margin-right: 4px;
+    }
+
+    .sd {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .flexd {
+        display: flex;
+    }
+
+    .an {
+        text-decoration: none;
+        position: absolute;
+        left: 200px;
+        top: 15px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 6px;
+        color: #000000;
+    }
+
+    .divobjs {
+        padding-bottom: 13px;
+        margin-top: 47px;
+    }
+
+    .obj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 84px;
+        height: 112px;
+    }
+
+    .pobj {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    .divsvg1 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .divsvg2 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 150px;
+    }
+
+    .divsvg3 {
+        z-index: -13;
+        position: absolute;
+        left: 40px;
+        top: 273px;
+    }
+
+    .divsvg4 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 150px;
+    }
+
+    .svg1 {
+        width: 75px;
+        height: 42px;
+    }
+
+    .svg2 {
+        width: 42px;
+        height: 142px;
+    }
+
+    .svg3 {
+        width: 23px;
+        height: 57px;
+    }
+
+    .svg4 {
+        width: 20px;
+        height: 120px;
+    }
+
+    .divset {
+        position: absolute;
+        left: 255px;
+        top: 5px;
+    }
+
+    .divsvg5 {
+        z-index: 1;
+        position: absolute;
+        left: 250px;
+        top: 45px;
+    }
+
+    .divsvg6 {
+        z-index: 2;
+        position: absolute;
+        left: 282px;
+        top: 54px;
+    }
+
+    .divsvg7 {
+        z-index: 3;
+        position: absolute;
+        left: 271.51px;
+        top: 57px;
+    }
+
+    .svg5 {
+        width: 53px;
+        height: 36px;
+    }
+
+    .svg6 {
+        width: 41px;
+        height: 42px;
+    }
+
+    .svg7 {
+        width: 37px;
+        height: 30px;
+    }
+
+    .mt20 {
+        margin-top: 5px;
+    }
+
+    .p100 {
+        padding-top: 28px;
+        padding-left: 28px;
+    }
+
+    .hf {
+        width: 200px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .m5 {
+        margin-top: 13px;
+        margin-bottom: 13px;
+    }
+
+    .hv {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 11px;
+        color: #000000;
+    }
+
+    .divz385 {
+        margin-top: 4px;
+        padding: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 89px;
+        height: 108px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 14px;
+    }
+
+    .divz467 {
+        margin-top: 4px;
+        padding: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 89px;
+        height: 131px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 14px;
+    }
+
+    .divz443 {
+        margin-top: 4px;
+        padding: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 89px;
+        height: 124px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 14px;
+    }
+
+    .pz {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    /* Начало лендинга */
+
+    .divmain {
+        background-color: #FFFFFF;
+        height: 275px;
+        width: 224px;
+    }
+
+    .divhed {
+        padding-left: 13px;
+        padding-top: 1px;
+        width: 100%;
+        height: 28px;
+        background-color: #FFFFFF;
+        border: 2px solid #E9E9E9;
+    }
+
+    .divhed2 {
+        width: 22px;
+        height: 22px;
+        background: #F9C80E;
+        border-radius: 14px;
+    }
+
+    .divfirstblock {
+        padding-left: 11px;
+        padding-top: 90px;
+        width: 100%;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+        background-size: cover;
+        height: 247px;
+    }
+
+    .hkr {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .mt4 {
+        margin-top: 7px;
+    }
+
+    .svn {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .divbtn1 {
+        margin-top: 20px;
+        margin-left: 56px;
+    }
+
+    .btn1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 6px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 88px;
+        height: 20px;
+        background: #F9C80E;
+        border-radius: 14px;
+        border: 0px;
+    }
+
+    .divsecondblock {
+        background-color: #FFFFFF;
+        padding-top: 22px;
+        padding-left: 14px;
+        padding-right: 14px;
+        width: 100%;
+        height: auto;
+    }
+
+    .divfirstpic {
+        margin-top: 8px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .firstpic {
+        width: 82px;
+        height: 130px;
+        background-image: url(images/fotki1.png);
+        background-size: cover;
+    }
+
+    .gotovit {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 9px;
+        text-align: right;
+        color: #000000;
+    }
+
+    .divsecondpic {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .nravitsa {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 11px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .secondpic {
+        width: 81px;
+        height: 120px;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+    }
+
+    .divthirdblock {
+        background-color: #FFFFFF;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        width: 100%;
+        height: auto;
+    }
+
+    .kdely {
+        margin-left: 22px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .divkurs {
+        margin-top: 13px;
+        padding-left: 7px;
+        width: 194px;
+        height: 22px;
+        background: #F9C80E;
+    }
+
+    .pkurs {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .start {
+        margin-left: 7px;
+        margin-right: 7px;
+        margin-top: 12px;
+        width: 90px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 9px;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .emdiv {
+        margin-top: 13px;
+        width: 33px;
+        height: 22px;
+        background: #F9C80E;
+    }
+
+    .divlist {
+        padding-top: 22px;
+        padding-left: 22px;
+    }
+
+    .wiy {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .tl {
+        margin-top: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .divbtn2 {
+        margin-top: 22px;
+    }
+
+    .divpt {
+        padding: 4px;
+        background: #43BCCD;
+        height: 42px;
+    }
+
+    .ppod {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 12px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .p2000r {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 0px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .divspis {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 17px;
+        padding-right: 17px;
+        width: 100%;
+        height: auto;
+        background: #C4C4C4;
+    }
+
+    .hsp {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divfourthblock {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 247px;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png);
+        background-size: cover;
+    }
+
+    .p2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 9px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divform {
+        margin-top: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divform2 {
+        padding: 13px;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 140px;
+        height: auto;
+        border-radius: 22px;
+    }
+
+    .hzap {
+        margin-left: 1.4px;
+        width: 112px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 15px;
+        color: #000000;
+    }
+
+    .inputfi {
+        margin-top: 8px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 8px;
+        color: #000000;
+        opacity: 1;
+        width: 115px;
+        height: 20px;
+        background: #E9E9E9;
+        border-radius: 22px;
+        border: 0px;
+        padding-left: 17px;
+    }
+
+    .inputpochta {
+        margin-top: 6px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 8px;
+        color: #000000;
+        width: 115px;
+        height: 20px;
+        background: #E9E9E9;
+        border-radius: 22px;
+        border: 0px;
+        padding-left: 17px;
+    }
+
+    .inputtel {
+        margin-top: 6px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 8px;
+        color: #000000;
+        opacity: 1;
+        width: 115px;
+        height: 20px;
+        background: #E9E9E9;
+        border-radius: 22px;
+        border: 0px;
+        padding-left: 17px;
+    }
+
+    .divbtn3 {
+        margin-top: 6px;
+        margin-left: 19px;
+    }
+
+    .btn2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 0px;
+        color: #FFFFFF;
+        width: 70px;
+        height: 20px;
+        background: #43BCCD;
+        border-radius: 22px;
+        border: 0px;
+        text-align: center;
+    }
+
+
+    /* Конец лендинга */
+
+    .iconka_kurs {
+        width: 10px;
+        height: 10px;
+    }
+
+    .iconka_kurs path {
+        fill: #F86624;
+    }
+
+    .iconka_que {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .iconka_gr {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .iconka_fin {
+        width: 10px;
+        height: 10px;
+    }
+
+    .iconka_arrow {
+        width: auto;
+        height: auto;
+    }
+
+    .fixed-box {
+        height: auto;
+    }
+
+    .fixed-div {
+        height: auto;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+    }
+
+    /* начало signup*/
+
+
+    .error_text {
+        width: 140px;
+        height: 28px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+    }
+
+    .pass_alert {
+        position: absolute;
+        width: 129px;
+        height: 68px;
+        left: 336px;
+        top: 13px;
+        background: rgba(233, 233, 233, 0.9);
+        display: none;
+        border-radius: 14px;
+        padding-top: 11px;
+        padding-left: 10px;
+    }
+
+    .pass_alert1 {
+        position: absolute;
+        width: 140px;
+        height: 34px;
+        left: 6px;
+        margin-bottom: 6px;
+        background: rgba(233, 233, 233, 0.9);
+        border-radius: 11px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .iconka_back {
+        width: 12px;
+        height: 12px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .pass_alert-text-1 {
+        width: 109px;
+        height: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 197;
+        font-size: 25px;
+        line-height: 10px;
+        color: #000000;
+    }
+
+    .pass_alert-text-2 {
+        width: 109px;
+        height: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+    }
+
+    .pass_alert-text-3 {
+        width: 112px;
+        height: 48px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+    }
+
+    .top_little_thing {
+        background-color: #FFFFFF;
+        width: 28px;
+        height: 14px;
+        border-radius: 28px;
+        margin-top: 7px;
+        margin-left: 10px;
+
+    }
+
+    .form_container {
+        margin-top: 34px;
+        display: flex;
+        justify-content: center;
+        animation: main_div 0.4s ease-out;
+    }
+
+    .form_background {
+        width: 169px;
+        height: 169px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 28px;
+    }
+
+    .form-h1_container {
+        margin-top: 17px;
+        display: flex;
+        margin-left: 25px;
+    }
+
+    .form-h1 {
+        width: 84px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .form-render_field {
+        width: 126px;
+        height: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+        background: #E9E9E9;
+        border-radius: 28px;
+        border: 0px;
+        padding-left: 14px;
+    }
+
+    .form-submit_button {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+        width: 126px;
+        height: 20px;
+        background: #43BCCD;
+        border-radius: 28px;
+        border: 0px;
+    }
+
+    .footer-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 7px;
+        line-height: 8px;
+        color: #FFFFFF;
+
+    }
+
+    .bottom_text_name {
+        margin-top: 28px;
+        display: flex;
+    }
+
+    /* конец signup*/
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+    /* начало change_password*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    .pass_alert {
+        position: absolute;
+        width: 466px;
+        height: 243px;
+        left: 1176px;
+        top: 38px;
+        background: rgba(233, 233, 233, 0.9);
+        display: none;
+        border-radius: 50px;
+    }
+
+    .iconka_treb_svg {
+        width: 14px;
+        height: 14px;
+        margin-left: 1px;
+        margin-top: 5px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .password-form-h1_container {
+        margin-top: 17px;
+        display: flex;
+        margin-left: 15px;
+    }
+
+    .password-form-h1 {
+        width: 121px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .form-under_h1_text_container {
+        margin-left: 27px;
+        margin-right: 27px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-under_h1_text {
+        width: 107px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+    }
+
+    .card_marg_top_plus {
+        margin-top: 9px;
+    }
+
+    /* конец change_password*/
+
+    /* начало signup_complete*/
+
+
+    .comp-form-h1_container {
+        margin-top: 17px;
+        display: flex;
+        margin-left: 18px;
+    }
+
+    .comp-form-h1 {
+        width: 112px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .comp-form-under_h1_text_container {
+        margin-left: 18px;
+        margin-right: 27px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comp-form-under_h1_text {
+        width: 112px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 84;
+        font-size: 7px;
+        line-height: 8px;
+        color: #000000;
+    }
+
+
+
+    /* конец signup_complete*/
+
+    /* начало login*/
+    .row {
+        width: 100%;
+    }
+
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+
+    .login_button {
+        width: 96px;
+        height: 20px;
+        background: #43BCCD;
+        border-radius: 28px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+        color: #FFFFFF;
+    }
+
+    .login_link_button {
+        margin-right: 1px;
+        text-align: center;
+        text-decoration: none;
+        width: 65px;
+        height: 20px;
+        background: #43BCCD;
+        border-radius: 28px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 7px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+
+
+    /* конец login*/
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+
+    .bdiv {
+        position: sticky;
+        top: 0px;
+        padding-top: 107px;
+        padding-left: 5px;
+        background-color: #F9C80E;
+        position: sticky;
+        height: 600px;
+        width: 110px;
+    }
+
+    .av {
+        width: 100px;
+        height: 175px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding-left: 5px;
+    }
+
+    .pic {
+        margin-bottom: 11px;
+        width: 72px;
+        height: 72px;
+        background: url(images/avaratka.png);
+        border-radius: 50%
+    }
+
+    .nam {
+        margin-top: 11px;
+    }
+
+    .namt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 25px;
+        color: #F86624;
+        white-space: nowrap;
+    }
+
+    .st {
+        margin-top: 3px;
+    }
+
+    .stt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .obj2 {
+        margin-top: 50px;
+        padding-top: 11px;
+        padding-left: 17px;
+        width: 100px;
+        height: 125px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+
+    .divk {
+        margin-top: 0px;
+    }
+
+    .divico {
+        margin-right: 0px;
+    }
+
+    .sk {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .divv {
+        margin-top: 0px;
+    }
+
+    .dstr {
+        padding-top: 150px;
+        padding-left: 90px;
+        width: 768;
+    }
+
+    .hnam {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 53px;
+        color: #000000;
+    }
+
+    .hlog {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+        color: #43BCCD;
+    }
+
+    .divst {
+        margin-top: 34px;
+        display: flex;
+    }
+
+    .divicom {
+        margin-right: 11px;
+    }
+
+    .sd {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 25px;
+        color: #000000;
+        white-space: nowrap;
+    }
+
+    .flexd {
+        display: flex;
+    }
+
+    .an {
+        text-decoration: none;
+        position: absolute;
+        left: 600px;
+        top: 40px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+
+    .divobjs {
+        padding-bottom: 34px;
+        margin-top: 128px;
+    }
+
+    .obj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+    }
+
+    .pobj {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    .mt20 {
+        margin-top: 10px;
+    }
+
+    .divsvg1 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .divsvg2 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+    }
+
+    .divsvg3 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 508px;
+    }
+
+    .divsvg4 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 250px;
+    }
+
+    .svg1 {
+        width: 110px;
+        height: 107px;
+    }
+
+    .svg2 {
+        width: 100px;
+        height: 512px;
+    }
+
+    .svg3 {
+        width: 96px;
+        height: 92px;
+    }
+
+    .svg4 {
+        width: 50px;
+        height: 200px;
+    }
+
+    .divset {
+        position: absolute;
+        left: 680px;
+        top: 34px;
+    }
+
+    .divsvg5 {
+        z-index: 1;
+        position: absolute;
+        left: 550px;
+        top: 220px;
+    }
+
+    .divsvg6 {
+        z-index: 2;
+        position: absolute;
+        left: 650px;
+        top: 245px;
+    }
+
+    .divsvg7 {
+        z-index: 3;
+        position: absolute;
+        left: 600px;
+        top: 260px;
+    }
+
+    .svg5 {
+        width: 143px;
+        height: 100px;
+    }
+
+    .svg6 {
+        width: 114px;
+        height: 117px;
+    }
+
+    .svg7 {
+        width: 104px;
+        height: 85px;
+    }
+
+    .p100 {
+        padding-top: 50px;
+        padding-left: 15px;
+        width: 768px;
+    }
+
+    .hf {
+        width: 500px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 54px;
+        color: #000000;
+    }
+
+    .m5 {
+        margin-top: 34px;
+        margin-bottom: 34px;
+    }
+
+    .hv {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        width: 441px;
+    }
+
+    .divz385 {
+        margin-top: 11px;
+        padding: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 276px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 35px;
+    }
+
+    .divz467 {
+        margin-top: 11px;
+        padding: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 335px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 35px;
+    }
+
+    .divz443 {
+        margin-top: 11px;
+        padding: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 230px;
+        height: 318px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 35px;
+    }
+
+    .pz {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+
+    /* Начало лендинга */
+
+
+    .divmain {
+        background-color: #FFFFFF;
+        height: 704px;
+        width: 475px;
+    }
+
+    .divhed {
+        padding-left: 34px;
+        padding-top: 3px;
+        width: 100%;
+        height: 72px;
+        background-color: #FFFFFF;
+        border: 2px solid #E9E9E9;
+    }
+
+    .divhed2 {
+        width: 57px;
+        height: 57px;
+        background: #F9C80E;
+        border-radius: 36px;
+    }
+
+    .divfirstblock {
+        padding-left: 28px;
+        padding-top: 230px;
+        width: 100%;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+        background-size: cover;
+        height: 575px;
+    }
+
+    .hkr {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 43px;
+        line-height: 42px;
+        color: #000000;
+    }
+
+    .mt4 {
+        margin-top: 17px;
+    }
+
+    .svn {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .divbtn1 {
+        margin-top: 34px;
+        margin-left: 130px;
+    }
+
+    .btn1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 43px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 225px;
+        height: 50px;
+        background: #F9C80E;
+        border-radius: 36px;
+        border: 0px;
+    }
+
+    .divsecondblock {
+        background-color: #FFFFFF;
+        padding-top: 72px;
+        padding-left: 36px;
+        padding-right: 36px;
+        width: 100%;
+        height: auto;
+    }
+
+    .divfirstpic {
+        margin-top: 21px;
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .firstpic {
+        width: 170px;
+        height: 270px;
+        background-image: url(images/fotki1.png);
+        background-size: cover;
+    }
+
+    .gotovit {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: right;
+        color: #000000;
+    }
+
+    .divsecondpic {
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+    .nravitsa {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .secondpic {
+        width: 140px;
+        height: 290px;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+    }
+
+    .divthirdblock {
+        background-color: #FFFFFF;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        width: 100%;
+        height: auto;
+    }
+
+    .kdely {
+        margin-left: 72px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 43px;
+        line-height: 42px;
+        color: #000000;
+    }
+
+    .divkurs {
+        margin-top: 34px;
+        padding-left: 18px;
+        width: 497px;
+        height: 72px;
+        background: #F9C80E;
+    }
+
+    .pkurs {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 48px;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .start {
+        margin-left: 17px;
+        margin-right: 17px;
+        margin-top: 23px;
+        width: 230px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 23px;
+        line-height: 38px;
+        color: #000000;
+    }
+
+    .emdiv {
+        margin-top: 34px;
+        width: 86px;
+        height: 72px;
+        background: #F9C80E;
+    }
+
+    .divlist {
+        padding-top: 72px;
+        padding-left: 57px;
+    }
+
+    .wiy {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .tl {
+        margin-top: 50px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+        line-height: 21px;
+        color: #000000;
+    }
+
+    .divbtn2 {
+        margin-top: 72px;
+    }
+
+    .divpt {
+        padding: 11px;
+        background: #43BCCD;
+        height: 107px;
+    }
+
+    .ppod {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 43px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .p2000r {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 32px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .divspis {
+        padding-top: 72px;
+        padding-bottom: 72px;
+        padding-left: 43px;
+        padding-right: 43px;
+        width: 100%;
+        height: auto;
+        background: #C4C4C4;
+    }
+
+    .hsp {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divfourthblock {
+        padding-top: 57px;
+        padding-bottom: 57px;
+        width: 100%;
+        height: 632px;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png);
+        background-size: cover;
+    }
+
+    .p2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 28px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divform {
+        margin-top: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divform2 {
+        padding: 34px;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 359px;
+        height: auto;
+        border-radius: 72px;
+    }
+
+    .hzap {
+        margin-left: 3px;
+        width: 287px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .inputfi {
+        margin-top: 21px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        opacity: 1;
+        width: 294px;
+        height: 51px;
+        background: #E9E9E9;
+        border-radius: 72px;
+        border: 0px;
+        padding-left: 43px;
+    }
+
+    .inputpochta {
+        margin-top: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        width: 294px;
+        height: 51px;
+        background: #E9E9E9;
+        border-radius: 72px;
+        border: 0px;
+        padding-left: 43px;
+    }
+
+    .inputtel {
+        margin-top: 14px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        opacity: 1;
+        width: 294px;
+        height: 51px;
+        background: #E9E9E9;
+        border-radius: 72px;
+        border: 0px;
+        padding-left: 43px;
+    }
+
+    .divbtn3 {
+        margin-top: 14px;
+        margin-left: 50px;
+    }
+
+    .btn2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        width: 179px;
+        height: 51px;
+        background: #43BCCD;
+        border-radius: 72px;
+        border: 0px;
+    }
+
+
+    /* Конец лендинга */
+
+
+    .iconka_kurs {
+        width: 10px;
+        height: 10px;
+    }
+
+    .iconka_kurs path {
+        fill: #F86624;
+    }
+
+    .iconka_que {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .iconka_gr {
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .iconka_fin {
+        width: 10px;
+        height: 10px;
+    }
+
+    .iconka_arrow {
+        width: auto;
+        height: auto;
+    }
+
+    .fixed-box {
+        height: auto;
+    }
+
+    .fixed-div {
+        height: auto;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+    }
+
+    /* начало signup*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes main_div {
+        from {
+            opacity: 0;
+            left: 467px;
+        }
+
+        to {
+            opacity: 1;
+            left: 474px;
+        }
+    }
+
+    .error_text {
+        width: 360px;
+        height: 72px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .pass_alert {
+        position: absolute;
+        width: 334px;
+        height: 175px;
+        left: 853px;
+        top: 35px;
+        background: rgba(233, 233, 233, 0.9);
+        display: none;
+        border-radius: 36px;
+        padding-top: 29px;
+        padding-left: 25px;
+    }
+
+    .pass_alert1 {
+        position: absolute;
+        width: 360px;
+        height: 86px;
+        left: 15px;
+        margin-bottom: 15px;
+        background: rgba(233, 233, 233, 0.9);
+        border-radius: 29px;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    .iconka_back {
+        width: 31px;
+        height: 31px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+
+
+    .pass_alert-text-1 {
+        width: 280px;
+        height: 122px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 503;
+        font-size: 22px;
+        line-height: 25, 28px;
+        color: #000000;
+    }
+
+    .pass_alert-text-2 {
+        width: 280px;
+        height: 122px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .pass_alert-text-3 {
+        width: 288px;
+        height: 122px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .top_little_thing {
+        background-color: #FFFFFF;
+        width: 72px;
+        height: 36px;
+        border-radius: 72px;
+        margin-top: 18px;
+        margin-left: 25px;
+
+    }
+
+    .form_container {
+        margin-top: 86px;
+        display: flex;
+        justify-content: center;
+        animation: main_div 0.4s ease-out;
+    }
+
+    .form_background {
+        width: 403px;
+        height: 403px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 72px;
+    }
+
+    .form-h1_container {
+        margin-top: 43px;
+        display: flex;
+        margin-left: 65px;
+    }
+
+    .form-h1 {
+        width: 216px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .form-render_field {
+        width: 324px;
+        height: 52px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+        background: #E9E9E9;
+        border-radius: 72px;
+        border: 0px;
+        padding-left: 36px;
+    }
+
+    .form-submit_button {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 30px;
+        color: #FFFFFF;
+        width: 324px;
+        height: 52px;
+        background: #43BCCD;
+        border-radius: 72px;
+        border: 0px;
+    }
+
+    .footer-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+    }
+
+    .bottom_text_name {
+        margin-top: 72px;
+        display: flex;
+    }
+
+
+    /* конец signup*/
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+    /* начало change_password*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    .pass_alert {
+        position: absolute;
+        width: 466px;
+        height: 243px;
+        left: 1176px;
+        top: 38px;
+        background: rgba(233, 233, 233, 0.9);
+        display: none;
+        border-radius: 50px;
+    }
+
+    .iconka_treb_svg {
+        width: 36px;
+        height: 36px;
+        margin-left: 7px;
+        margin-top: 3.5px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .password-form-h1_container {
+        margin-top: 43px;
+        display: flex;
+        margin-left: 40px;
+    }
+
+    .password-form-h1 {
+        width: 309px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .form-under_h1_text_container {
+        margin-left: 68px;
+        margin-right: 68px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-under_h1_text {
+        width: 273px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .card_marg_top_plus {
+        margin-top: 22px;
+    }
+
+    /* конец change_password*/
+
+    /* начало signup_complete*/
+
+
+
+    .comp-form-h1_container {
+        margin-top: 43px;
+        display: flex;
+        margin-left: 47px;
+    }
+
+    .comp-form-h1 {
+        width: 309px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 33px;
+        line-height: 40px;
+        color: #000000;
+    }
+
+    .comp-form-under_h1_text_container {
+        margin-left: 47px;
+        margin-right: 68px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comp-form-under_h1_text {
+        width: 309px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 216;
+        font-size: 17px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+
+
+    /* конец signup_complete*/
+
+    /* начало login*/
+    .row {
+        width: 100%;
+    }
+
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+
+    .login_button {
+        width: 244px;
+        height: 52px;
+        background: #43BCCD;
+        border-radius: 72px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 30px;
+        color: #FFFFFF;
+    }
+
+
+
+    .login_link_button {
+        margin-right: 7px;
+        text-align: center;
+        text-decoration: none;
+        width: 165px;
+        height: 52px;
+        background: #43BCCD;
+        border-radius: 72px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 52px;
+        color: #FFFFFF;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* конец login*/
+
+}
+
+@media screen and (min-width: 1068px) {
+    .bdiv {
+        position: sticky;
+        top: 0px;
+        padding-top: 150px;
+        padding-left: 25px;
+        background-color: #F9C80E;
+        position: sticky;
+        height: 980px;
+        width: 293px;
+    }
+
+    .av {
+        width: 239px;
+        height: 271px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+        padding-left: 24px;
+        padding-top: 48px;
+    }
+
+    .pic {
+        margin-bottom: 16px;
+        width: 100px;
+        height: 100px;
+        background: url(images/avaratka.png);
+        border-radius: 50%
+    }
+
+    .nam {
+        margin-top: 16px;
+    }
+
+    .namt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #F86624;
+    }
+
+    .st {
+        margin-top: 8px;
+    }
+
+    .stt {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .obj2 {
+        margin-top: 48px;
+        padding-top: 16px;
+        padding-left: 24px;
+        width: 239px;
+        height: 329px;
+        background-color: #FFFFFF;
+        border-radius: 50px;
+    }
+
+    .divk {
+        margin-top: 25px;
+    }
+
+    .divico {
+        margin-right: 8px;
+    }
+
+    .mt20 {
+        margin-top: 10px;
+    }
+
+
+    .sk {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .divv {
+        margin-top: 30px;
+    }
+
+    .dstr {
+        padding-top: 170px;
+        padding-left: 120px;
+    }
+
+    .hnam {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        color: #000000;
+    }
+
+    .hlog {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        color: #43BCCD;
+    }
+
+    .divst {
+        margin-top: 48px;
+        display: flex;
+    }
+
+    .divicom {
+        margin-right: 16px;
+    }
+
+    .sd {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .flexd {
+        display: flex;
+    }
+
+    .an {
+        text-decoration: none;
+        position: absolute;
+        left: 1690px;
+        top: 55px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .divobjs {
+        padding-bottom: 48px;
+        margin-top: 170px;
+    }
+
+    .obj {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 400px;
+    }
+
+    .pobj {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    .divsvg1 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    .divsvg2 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 184px;
+    }
+
+    .divsvg3 {
+        z-index: -13;
+        position: absolute;
+        left: 103px;
+        top: 706px;
+    }
+
+    .divsvg4 {
+        z-index: -13;
+        position: absolute;
+        left: 0px;
+        top: 267px;
+    }
+
+    .svg1 {
+        width: 293px;
+        height: 150px;
+    }
+
+    .svg2 {
+        width: 293px;
+        height: 686px;
+    }
+
+    .svg3 {
+        width: 190px;
+        height: 274px;
+    }
+
+    .svg4 {
+        width: 141px;
+        height: 608px;
+    }
+
+    .divset {
+        position: absolute;
+        left: 1795px;
+        top: 52px;
+    }
+
+    .divsvg5 {
+        z-index: 1;
+        position: absolute;
+        left: 1130px;
+        top: 119px;
+    }
+
+    .divsvg6 {
+        z-index: 2;
+        position: absolute;
+        left: 1397px;
+        top: 194px;
+    }
+
+    .divsvg7 {
+        z-index: 3;
+        position: absolute;
+        left: 1258.51px;
+        top: 205.16px;
+    }
+
+    .svg5 {
+        width: 367px;
+        height: 307px;
+    }
+
+    .svg6 {
+        width: 326px;
+        height: 330px;
+    }
+
+    .svg7 {
+        width: 312px;
+        height: 286px;
+    }
+
+    .p100 {
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+
+    .hf {
+        width: 1154px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 75px;
+        color: #000000;
+    }
+
+    .m5 {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .hv {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+    }
+
+    .divz385 {
+        margin-top: 16px;
+        padding: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 382px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+
+    .divz467 {
+        margin-top: 16px;
+        padding: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 467px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+
+    .divz443 {
+        margin-top: 16px;
+        padding: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 443px;
+        background: #FFFFFF;
+        border: 2px solid #E9E9E9;
+        box-sizing: border-box;
+        border-radius: 50px;
+    }
+
+    .pz {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #A3A3A3;
+    }
+
+    .pl120 {
+        padding-left: 120px;
+    }
+
+    .vp {
+        margin-left: 16px;
+        margin-top: 48px;
+        display: flex;
+    }
+
+    .me2 {
+        margin-right: 8px;
+    }
+
+    .mt1 {
+        margin-top: 4px;
+    }
+
+    .mt1_2 {
+        margin-top: 4px;
+        margin-left: 1050px;
+    }
+
+    .tnazad {
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .tvik {
+        background: transparent;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        color: #000000;
+    }
+
+    .divosn {
+        display: flex;
+        margin-top: 130px;
+    }
+
+    .ms2 {
+        margin-left: 8px;
+    }
+
+    .divn {
+        margin-top: 115px;
+    }
+
+    .mt1me2 {
+        margin-top: 4px;
+        margin-right: 8px;
+    }
+
+    .tosn {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        color: #43BCCD;
+    }
+
+    .mt5 {
+        margin-top: 48px;
+    }
+
+    .mt3 {
+        margin-top: 16px;
+        margin-right: 205px;
+    }
+
+    .slog {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .me4 {
+        margin-right: 24px;
+    }
+
+    .ps5 {
+        padding-left: 48px;
+        width: 450px;
+        height: 72px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 150%;
+        line-height: 60%;
+        color: #000000;
+        background: #E9E9E9;
+        border-radius: 50px;
+        border: 0px;
+    }
+
+    /* Начало лендинга */
+
+    .divmain {
+        background-color: #FFFFFF;
+        height: 980px;
+        width: 800px;
+    }
+
+    .divhed {
+        padding-left: 48px;
+        padding-top: 4px;
+        width: 100%;
+        height: 100px;
+        background-color: #FFFFFF;
+        border: 2px solid #E9E9E9;
+    }
+
+    .divhed2 {
+        width: 80px;
+        height: 80px;
+        background: #F9C80E;
+        border-radius: 50px;
+    }
+
+    .divfirstblock {
+        padding-left: 40px;
+        padding-top: 320px;
+        width: 100%;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+        background-size: cover;
+        height: 880px;
+    }
+
+    .hkr {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 59px;
+        color: #000000;
+    }
+
+    .mt4 {
+        margin-top: 24px;
+    }
+
+    .svn {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .divbtn1 {
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+
+    .btn1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 314px;
+        height: 70px;
+        background: #F9C80E;
+        border-radius: 50px;
+        border: 0px;
+    }
+
+    .divsecondblock {
+        background-color: #FFFFFF;
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
+        height: auto;
+    }
+
+    .divfirstpic {
+        margin-top: 30px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .firstpic {
+        width: 266px;
+        height: 404px;
+        background-image: url(images/fotki1.png);
+        background-size: cover;
+    }
+
+    .gotovit {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: right;
+        color: #000000;
+    }
+
+    .divsecondpic {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .nravitsa {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 45px;
+        text-align: left;
+        color: #000000;
+    }
+
+    .secondpic {
+        width: 290px;
+        height: 404px;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+        width: 290px;
+        height: 404px;
+        background-image: url(images/fotki2.png);
+        background-size: cover;
+    }
+
+    .divthirdblock {
+        background-color: #FFFFFF;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        height: auto;
+    }
+
+    .kdely {
+        margin-left: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 59px;
+        color: #000000;
+    }
+
+    .divkurs {
+        margin-top: 48px;
+        padding-left: 25px;
+        width: 692px;
+        height: 100px;
+        background: #F9C80E;
+    }
+
+    .pkurs {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 95px;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .start {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 45px;
+        width: 320px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 33px;
+        line-height: 53px;
+        color: #000000;
+    }
+
+    .emdiv {
+        margin-top: 48px;
+        width: 120px;
+        height: 100px;
+        background: #F9C80E;
+    }
+
+    .divlist {
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .wiy {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .tl {
+        margin-top: 50px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    .divbtn2 {
+        margin-top: 100px;
+    }
+
+    .divpt {
+        padding: 16px;
+        background: #43BCCD;
+        height: 150px;
+    }
+
+    .ppod {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .p2000r {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 40px;
+        line-height: 45px;
+        color: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    .divspis {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 100%;
+        height: auto;
+        background: #C4C4C4;
+    }
+
+    .hsp {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 59px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divfourthblock {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        width: 100%;
+        height: 880px;
+        background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png);
+        background-size: cover;
+    }
+
+    .p2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 35px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .divform {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divform2 {
+        padding: 48px;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 500px;
+        height: auto;
+        border-radius: 100px;
+    }
+
+    .hzap {
+        margin-left: 5px;
+        width: 400px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 56px;
+        color: #000000;
+    }
+
+    .inputfi {
+        margin-top: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        opacity: 1;
+        width: 410px;
+        height: 72px;
+        background: #E9E9E9;
+        border-radius: 100px;
+        border: 0px;
+        padding-left: 60px;
+    }
+
+    .inputpochta {
+        margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        width: 410px;
+        height: 72px;
+        background: #E9E9E9;
+        border-radius: 100px;
+        border: 0px;
+        padding-left: 60px;
+    }
+
+    .inputtel {
+        margin-top: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        opacity: 1;
+        width: 410px;
+        height: 72px;
+        background: #E9E9E9;
+        border-radius: 100px;
+        border: 0px;
+        padding-left: 60px;
+    }
+
+    .divbtn3 {
+        margin-top: 20px;
+        margin-left: 70px;
+    }
+
+    .btn2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 42px;
+        color: #FFFFFF;
+        width: 250px;
+        height: 72px;
+        background: #43BCCD;
+        border-radius: 100px;
+        border: 0px;
+    }
+
+    /* Конец лендинга */
+
+    .iconka_kurs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_kurs path {
+        fill: #F86624;
+    }
+
+    .iconka_que {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .iconka_gr {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .iconka_fin {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_arrow {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fixed-box {
+        height: 60px;
+    }
+
+    .fixed-div {
+        height: 60px;
+    }
+
+    .fixed {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .iconka_menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .iconka_menu path {
+        fill: #43BCCD;
+    }
+
+    .iconka_exit {
+        width: 30px;
+        height: 30px;
+    }
+
+    .iconka_exit path {
+        fill: #F86624;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .edit_button {
+        width: 208px;
+        height: 72px;
+        background: #D1D1D1;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        border: 0px;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+    .cancel_button {
+        width: 173px;
+        height: 72px;
+        background: #D1D1D1;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        border: 0px;
+        visibility: hidden;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+    .input__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .input__file-button {
+        width: 267px;
+        height: 65px;
+        background: url(images/avaratka.png);
+        background-size: cover;
+
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    .iconka_kurs {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_que {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_gr {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_fin {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .iconka_menu {
+        width: 30px;
+        height: 30px;
+    }
+
+    .iconka_exit {
+        width: 40px;
+        height: 40px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .edit_button {
+        width: 208px;
+        height: 72px;
+        background: #D1D1D1;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        border: 0px;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+    .cancel_button {
+        width: 173px;
+        height: 72px;
+        background: #D1D1D1;
+        border-radius: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        color: #FFFFFF;
+        border: 0px;
+        visibility: hidden;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    }
+
+    .input__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .input__file-button {
+        width: 267px;
+        height: 65px;
+        background: url({{ ava.avatar.url }});
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    .input__file3 {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .input__file-button3 {
+        color: #555;
+        padding: 0;
+        line-height: 30px;
+        text-align: center;
+        width: 150px;
+        margin: auto;
+        border: 2px solid #555;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .a_style {
+        color: #555;
+        padding: 0;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        width: 150px;
+        margin-left: 10px;
+        transition: 0.5s;
+    }
+
+    .input__file-button2 {
+        width: 267px;
+        height: 65px;
+
+            {
+            % if ava.background.url=="/media/0"%
+        }
+
+        background: url({% static 'images/stock_back.png' %});
+
+            {
+            % else %
+        }
+
+        background: url({{ ava.background.url }});
+
+            {
+            % endif %
+        }
+
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+
+    #gallery {
+        width: 900px;
+        height: 900px;
+        background: #e2e2e2;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #gallery:target {
+        display: inherit;
+    }
+
+    #gallery_back {
+        width: 900px;
+        height: 900px;
+        background: #e2e2e2;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #gallery_back:target {
+        display: inherit;
+    }
+
+    .dev_dec {
+        width: 267px;
+        height: 65px;
+        border-radius: 100px;
+    }
+
+    /* начало signup*/
+
+    .error_text {
+        width: 500px;
+        height: 100px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28, 13px;
+        color: #000000;
+    }
+
+    .pass_alert {
+        position: absolute;
+        width: 466px;
+        height: 243px;
+        left: 1196px;
+        top: 48px;
+        background: rgba(233, 233, 233, 0.9);
+        display: none;
+        border-radius: 50px;
+        padding-top: 40px;
+        padding-left: 35px;
+    }
+
+    .pass_alert1 {
+        position: absolute;
+        width: 500px;
+        height: 120px;
+        left: 20px;
+        margin-bottom: 20px;
+        background: rgba(233, 233, 233, 0.9);
+        border-radius: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .iconka_back {
+        width: 43px;
+        height: 43px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .pass_alert-text-1 {
+        width: 388px;
+        height: 170px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35, 16px;
+        color: #000000;
+    }
+
+    .pass_alert-text-2 {
+        width: 388px;
+        height: 170px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28, 13px;
+        color: #000000;
+    }
+
+    .pass_alert-text-3 {
+        width: 400px;
+        height: 170px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28, 13px;
+        color: #000000;
+    }
+
+    .top_little_thing {
+        background-color: #FFFFFF;
+        width: 100px;
+        height: 50px;
+        border-radius: 100px;
+        margin-top: 25px;
+        margin-left: 35px;
+
+    }
+
+    .form_container {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        animation: main_div 0.4s ease-out;
+    }
+
+    .form_background {
+        width: 600px;
+        height: 600px;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 100px;
+    }
+
+    .form-h1_container {
+        margin-top: 60px;
+        display: flex;
+        margin-left: 90px;
+    }
+
+    .form-h1 {
+        width: 300px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000000;
+    }
+
+    .form-render_field {
+        width: 450px;
+        height: 72px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        background: #E9E9E9;
+        border-radius: 100px;
+        border: 0px;
+        padding-left: 50px;
+    }
+
+    .form-submit_button {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+        width: 450px;
+        height: 72px;
+        background: #43BCCD;
+        border-radius: 100px;
+        border: 0px;
+    }
+
+    .footer-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+
+    }
+
+    .bottom_text_name {
+        margin-top: 100px;
+        display: flex;
+    }
+
+    /* конец signup*/
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+    /* начало change_password*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    .iconka_treb_svg {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .password-form-h1_container {
+        margin-top: 60px;
+        display: flex;
+        margin-left: 55px;
+    }
+
+    .password-form-h1 {
+        width: 430px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 56px;
+        color: #000000;
+    }
+
+    .form-under_h1_text_container {
+        margin-left: 95px;
+        margin-right: 95px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-under_h1_text {
+        width: 380px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .card_marg_top_plus {
+        margin-top: 30px;
+    }
+
+
+
+    /* конец change_password*/
+
+
+
+
+    /* начало signup_complete*/
+
+
+
+    .comp-form-h1_container {
+        margin-top: 60px;
+        display: flex;
+        margin-left: 65px;
+    }
+
+    .comp-form-h1 {
+        width: 430px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 56px;
+        color: #000000;
+    }
+
+    .comp-form-under_h1_text_container {
+        margin-left: 65px;
+        margin-right: 95px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comp-form-under_h1_text {
+        width: 430px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+
+
+    /* конец signup_complete*/
+
+
+
+    /* начало login*/
+    .row {
+        width: 100%;
+    }
+
+    /* ---------------------------------Грагица адаптированного--------------------------------- */
+
+    .login_button {
+        width: 340px;
+        height: 72px;
+        background: #43BCCD;
+        border-radius: 100px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+    }
+
+    .login_link_button {
+        margin-right: 10px;
+        text-align: center;
+        text-decoration: none;
+        width: 230px;
+        height: 72px;
+        background: #43BCCD;
+        border-radius: 100px;
+        border: 0px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 72px;
+        color: #FFFFFF;
+    }
+
+    /* конец login*/
+    /* начало password_reset*/
+
+        .row {
+            width: 100%;
+        }
+    /* конец password_reset*/
+}

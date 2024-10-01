@@ -1,0 +1,81 @@
+{% load static %}
+<div id="block_dobavit" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1622px; height: 960px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding: 90px; width: 836px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div class="" style="width: 100%; display: flex; align-items: center;">
+                <div id="btn_close_dobavit">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <a href="{% url 'account' uname_for_link %}" style="text-decoration: none;">
+                    <h1 style="margin-left: 90px; width: 394px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; color: #000000;">{{ user_user.last_name }} {{ user_user.first_name }}</h1>
+                </a>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="{% url 'account' uname_for_link %}" style="text-decoration: none; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">@{{ user_user.username }}</a>
+            </div>
+            <form method="post" id="add_form">
+                {% csrf_token %}
+                <input name="user" value="{{ user_user }}" type="hidden">
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <input required placeholder="Cумма платежа" name="payment_amount" style="width: 609px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input required type="date" placeholder="Время зачисления" name="was" style="width: 609px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input required placeholder="Ссылка на чек из налоговой" name="link" style="width: 609px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <button id="btn_q_add_pay" type="submit" style="cursor: pointer; width: 458px; height: 71px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 42px; color: #FFFFFF;">Добавить платеж</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="q_add_pay" style="display: none; z-index: 3000; position: fixed; left: 280px; top: 0px;">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 723px; height: 256px; background: #FFFFFF; border-radius: 100px; display: flex; justify-content: center; align-items: center;">
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; text-align: center; color: #000000;">Добавить платеж на сумму <span id="p_amount">45</span>?</span>
+                </div>
+                <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center;">
+                    <button id="no_add_pay" style="margin-right: 30px; width: 153px; height: 54px; background: #BABABA; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Нет</button>
+                    <button id="yes_add_pay" style="margin-left: 30px; width: 153px; height: 54px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_close_dobavit').click(function() {
+            document.getElementById(`block_student`).style.display = 'block';
+            document.getElementById(`block_dobavit`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_q_add_pay').click(function() {
+            document.getElementById(`q_add_pay`).style.display = 'block';
+            $('#p_amount')[0].innerHTML = $('input[name="payment_amount"]').val();
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#no_add_pay').click(function() {
+            document.getElementById(`q_add_pay`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#yes_add_pay').click(function() {
+            document.getElementById(`q_add_pay`).style.display = 'none';
+            $('#add_form').submit();
+            return false;
+        });
+    });
+
+</script>

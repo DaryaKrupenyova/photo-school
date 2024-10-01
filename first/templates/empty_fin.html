@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_fin {
+            width: 32px;
+            height: 32px;
+        }
+
+        .iconka_fin path {
+            fill: #F86624;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+
+    <meta charset="UTF-8">
+    <title>Финансы</title>
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            {% include "menu.html" %}
+            <div class="col-10">
+
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <script type="text/javascript">
+        function perekras_iconki(class_iconki) {
+            $(class_iconki).each(function() {
+                var $img = $(this);
+                var imgClass = $img.attr('class');
+                var imgURL = $img.attr('src');
+                $.get(imgURL, function(data) {
+                    var $svg = $(data).find('svg');
+                    if (typeof imgClass !== 'undefined') {
+                        $svg = $svg.attr('class', imgClass + ' replaced-svg');
+                    }
+                    $svg = $svg.removeAttr('xmlns:a');
+                    if (!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                        $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                    }
+                    $img.replaceWith($svg);
+                }, 'xml');
+            });
+        }
+
+
+        perekras_iconki('img.iconka_check');
+        perekras_iconki('img.iconka_close');
+        perekras_iconki('img.iconka_fin');
+
+    </script>
+</body>
+
+</html>

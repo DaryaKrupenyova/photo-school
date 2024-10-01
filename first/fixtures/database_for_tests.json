@@ -1,0 +1,2723 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$f3INdaU0AKTV$JtIcTQVoTNI79Q7d8cp1d/FrRcJ5ouho1lm4L/OiLT4=",
+        "last_login": "2021-12-27T19:23:42.958Z",
+        "is_superuser": true,
+        "username": "pavel",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "pvisnakov26@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-02T17:03:45.064Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$yKEi85ZlGlCo$PokfbmVwXLQOMw7QRsXjqLy3WUDllTppFt58Gpc+m/A=",
+        "last_login": "2021-11-20T20:05:33.335Z",
+        "is_superuser": false,
+        "username": "pavel2",
+        "first_name": "Pavel",
+        "last_name": "Pavlov",
+        "email": "pavel.p.vishnyakov@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-03-06T00:16:17Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$kpyDNzVuvdqo$80z1zAhR6DevzqHo7QX0uUnEv99TB9WWXln8Ryvlz9w=",
+        "last_login": "2021-11-11T16:39:37.262Z",
+        "is_superuser": false,
+        "username": "vishnyakovpavel89819",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "pvisnakov26@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-09T20:15:36.995Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$dTsg8d7a6mLS$QB3+pIfEvtnKyrin5di/3S5JNboN5aSngQ7NIBElEjM=",
+        "last_login": "2021-12-26T11:55:45.230Z",
+        "is_superuser": false,
+        "username": "pavel4",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "visnyakovp@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-10T17:41:46.253Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$Zfzz51Xllxaa$bwLm5gvC/NChfay8nK7tGHXlJ65KlHrTTIueeFPcVUQ=",
+        "last_login": "2021-12-23T15:06:58.851Z",
+        "is_superuser": false,
+        "username": "visnyakovpgmailcom",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "visnakovpavel@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-03-21T19:52:30.151Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 104,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$WCVXBJnPbPiP$ZeaYz32m+8X+iFNYCITGOzi6Pv1dNZTWiXkrmEhEouM=",
+        "last_login": "2021-05-07T18:46:27.986Z",
+        "is_superuser": false,
+        "username": "krupenevadar'ja44705",
+        "first_name": "Дарья",
+        "last_name": "Крупенёва",
+        "email": "pavel.p.vishnyakov@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-05-07T18:46:25.133Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 117,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$6Qb77I7loIBE$4QSX18P7C2t+E8saLNYCNEgv1qFiQjcsOQQxQnJHW80=",
+        "last_login": "2021-11-06T16:35:51.320Z",
+        "is_superuser": false,
+        "username": "vishnyakovpavel83170",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "pvisnakov2@d.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-11-06T16:35:49.237Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 119,
+    "fields": {
+        "password": "pbkdf2_sha256$216000$Ibmhnj2imljM$JKC9NcuHySt5jB1VF7zgUmgwGgFPU1kAwcbxAysPeSQ=",
+        "last_login": "2021-11-06T17:42:47.628Z",
+        "is_superuser": false,
+        "username": "vishnyakovpavel63053",
+        "first_name": "Pavel",
+        "last_name": "Vishnyakov",
+        "email": "visnakovpavel@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-11-06T17:40:40.289Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 1,
+    "fields": {
+        "payment_amount": 335.0,
+        "was": "2021-09-16",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=en-ru",
+        "type": "adding",
+        "user": 1,
+        "after_transaction": 1.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 2,
+    "fields": {
+        "payment_amount": 335.0,
+        "was": "2021-09-23",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=ru-en",
+        "type": "payment",
+        "user": 1,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 3,
+    "fields": {
+        "payment_amount": 335.0,
+        "was": "2021-09-17",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=ru-en",
+        "type": "payment",
+        "user": 1,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 4,
+    "fields": {
+        "payment_amount": 460.0,
+        "was": "2021-09-11",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 1,
+        "after_transaction": 1.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 9,
+    "fields": {
+        "payment_amount": 4758.0,
+        "was": "2021-09-15",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big",
+        "type": "adding",
+        "user": 2,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 10,
+    "fields": {
+        "payment_amount": 6542.0,
+        "was": "2021-09-15",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=en-ru",
+        "type": "adding",
+        "user": 1,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 12,
+    "fields": {
+        "payment_amount": 9652.0,
+        "was": "2021-09-15",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=en-ru",
+        "type": "adding",
+        "user": 1,
+        "after_transaction": 1.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 14,
+    "fields": {
+        "payment_amount": 436.0,
+        "was": "2021-09-15",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big&lang=en-ru",
+        "type": "adding",
+        "user": 1,
+        "after_transaction": 956.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 18,
+    "fields": {
+        "payment_amount": 132.42,
+        "was": "2021-10-02",
+        "link": "https://yandex.ru/?clid=1923019",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 912.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 19,
+    "fields": {
+        "payment_amount": 157.44,
+        "was": "2021-10-02",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 1069.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 36,
+    "fields": {
+        "payment_amount": 3000.0,
+        "was": "2021-10-05",
+        "link": "",
+        "type": "payment",
+        "user": 3,
+        "after_transaction": 1000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 37,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-10-05",
+        "link": "",
+        "type": "payment",
+        "user": 10,
+        "after_transaction": 2000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 38,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-10-05",
+        "link": "",
+        "type": "payment",
+        "user": 104,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 39,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-11-09",
+        "link": "https://translate.yandex.ru/?utm_source=main_stripe_big",
+        "type": "adding",
+        "user": 10,
+        "after_transaction": 6000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 40,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-11-11",
+        "link": "",
+        "type": "payment",
+        "user": 10,
+        "after_transaction": 2000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 41,
+    "fields": {
+        "payment_amount": 6000.0,
+        "was": "2021-11-11",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 10,
+        "after_transaction": 8000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 42,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-11-11",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 104,
+        "after_transaction": 4000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 43,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-11-11",
+        "link": "",
+        "type": "payment",
+        "user": 10,
+        "after_transaction": 4000.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 44,
+    "fields": {
+        "payment_amount": 4000.0,
+        "was": "2021-11-11",
+        "link": "",
+        "type": "payment",
+        "user": 104,
+        "after_transaction": 0.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 45,
+    "fields": {
+        "payment_amount": 125.0,
+        "was": "2021-12-20",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 1125.0
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 48,
+    "fields": {
+        "payment_amount": 123.5,
+        "was": "2021-12-22",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 3713.5
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 51,
+    "fields": {
+        "payment_amount": 4556.45,
+        "was": "2021-12-20",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 14230.95
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 53,
+    "fields": {
+        "payment_amount": 156.78,
+        "was": "2021-12-20",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 14387.78
+    }
+},
+{
+    "model": "first.transactions",
+    "pk": 55,
+    "fields": {
+        "payment_amount": 154.15,
+        "was": "2021-12-20",
+        "link": "https://yandex.ru/",
+        "type": "adding",
+        "user": 3,
+        "after_transaction": 1586.15
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 1,
+    "fields": {
+        "user": 4,
+        "password": "4stdg65fhrf5"
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 2,
+    "fields": {
+        "user": 104,
+        "password": "s4dfg56df4g5"
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "password": "d4sfg65bv"
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 5,
+    "fields": {
+        "user": 3,
+        "password": "dsfg874"
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 6,
+    "fields": {
+        "user": 10,
+        "password": "sdf75v47d"
+    }
+},
+{
+    "model": "first.usersmailtmp",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "password": "sdfvc"
+    }
+},
+{
+    "model": "first.courses",
+    "pk": 1,
+    "fields": {
+        "course_num": 0,
+        "title": "0",
+        "price": 0,
+        "places": 0
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 6,
+    "fields": {
+        "content": "HJKhgkjgh45asdf4",
+        "type": "PERCENT",
+        "amount": 15,
+        "expires": "2021-09-26",
+        "whose": 4,
+        "times_can_use": 4
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 8,
+    "fields": {
+        "content": "8XhISHs4PchtOvMqxB",
+        "type": "PERCENT",
+        "amount": 25,
+        "expires": "2021-10-15",
+        "whose": 4,
+        "times_can_use": 653
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 9,
+    "fields": {
+        "content": "NgjjMFIIYtGExpAmtd",
+        "type": "PERCENT",
+        "amount": 11,
+        "expires": "2021-11-11",
+        "whose": 4,
+        "times_can_use": 12
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 17,
+    "fields": {
+        "content": "h0yMCO6tVBNsjx15cU",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 1,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 18,
+    "fields": {
+        "content": "LbnGE5SQwCyh5DkACD",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 2,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 19,
+    "fields": {
+        "content": "1DKmeAiAZhcXKNOFj3",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 3,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 20,
+    "fields": {
+        "content": "OxLbok0YMd9xJ3I2wr",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 4,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 21,
+    "fields": {
+        "content": "VFCEHlX2nrqMlsjE9G",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 10,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 22,
+    "fields": {
+        "content": "4W00tSnxj8MdGfpM59",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 104,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 27,
+    "fields": {
+        "content": "NZd34j8uV4",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 117,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.promo",
+    "pk": 29,
+    "fields": {
+        "content": "mAvTq9wfmP",
+        "type": "INV",
+        "amount": 200,
+        "expires": "9999-12-31",
+        "whose": 119,
+        "times_can_use": 100000
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 3,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 1
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 5,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 3
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 6,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 4
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 7,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 10
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 8,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 104
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 13,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 2
+    }
+},
+{
+    "model": "first.signedupforcourse",
+    "pk": 14,
+    "fields": {
+        "course_num": 1,
+        "group_num": 1,
+        "user": 119
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 1,
+    "fields": {
+        "avatar": "../static/images/ricardo-gomez-angel-UD5drKd4H6w-unsplash1.jpg",
+        "background": "../static/images/david-jorre-9f1gCaLkZBU-unsplash1.jpg",
+        "telegram_id": 1099397450,
+        "is_teacher": 0,
+        "user": 1,
+        "wallet": 400.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 2,
+        "group_num": "0",
+        "payment_status": 0
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 3,
+    "fields": {
+        "avatar": "images/mHqc8_L94tQ_PbH79mz.jpg",
+        "background": "images/kk_2duF1ds.jpg",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 2,
+        "wallet": 1152.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 1,
+        "group_num": "0",
+        "payment_status": 2
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 4,
+    "fields": {
+        "avatar": "images/dcoffman_lake44F5F1gxiI.jpg",
+        "background": "../static/images/syd-sujuaan-Lj6e2zNlXJM-unsplash%201.png",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 3,
+        "wallet": 1586.15,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 2
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 18,
+    "fields": {
+        "avatar": "../static/images/stock_ava.png",
+        "background": "0",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 104,
+        "wallet": 0.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 4
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 19,
+    "fields": {
+        "avatar": "images/tgrimbert_santorinieaaThDM0mr.jpg",
+        "background": "images/aruban_pitsundahPdLbKPEau.jpg",
+        "telegram_id": 0,
+        "is_teacher": 1,
+        "user": 4,
+        "wallet": 200.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 0
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 36,
+    "fields": {
+        "avatar": "images/DSCF6510U2UvEr7Zh9.jpg",
+        "background": "../static/images/susan-gold-kW0swgPt298-unsplash1.jpg",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 10,
+        "wallet": 4000.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 4
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 37,
+    "fields": {
+        "avatar": "../static/images/stock_ava.jpg",
+        "background": "0",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 117,
+        "wallet": 0.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 0
+    }
+},
+{
+    "model": "first.profileaddinfo",
+    "pk": 39,
+    "fields": {
+        "avatar": "../static/images/stock_ava.jpg",
+        "background": "0",
+        "telegram_id": 0,
+        "is_teacher": 0,
+        "user": 119,
+        "wallet": 0.0,
+        "is_invited": 0,
+        "invited_by": 1,
+        "invited_count": 0,
+        "group_num": "0",
+        "payment_status": 2
+    }
+},
+{
+    "model": "first.profile",
+    "pk": 1,
+    "fields": {
+        "user": 4,
+        "email": "1234@gmail.com"
+    }
+},
+{
+    "model": "first.profile",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "email": "pavel.p.vishnyakov@gmail.com"
+    }
+},
+{
+    "model": "first.course",
+    "pk": 1,
+    "fields": {
+        "name": "Vishnyakov Pavel",
+        "e_mail": "pvisnakov26@gmail.com",
+        "phone": "89777777777"
+    }
+},
+{
+    "model": "first.course",
+    "pk": 2,
+    "fields": {
+        "name": "Vishnyakov Pavel",
+        "e_mail": "1234@gmail.com",
+        "phone": "89777777778"
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_2RWLySr.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_NC9b0G3.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_Kmp4g1y.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_Z2N5MRa.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_81Ioa5p.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "image": "gallery/symbolics-2.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_SnmjqSR.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 9,
+    "fields": {
+        "user": 4,
+        "image": "gallery/symbolics-2_n5VZhXx.jpg",
+        "image_compressed": "gallery_compressed/symbolics-2_n5VZhXx.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 14,
+    "fields": {
+        "user": 4,
+        "image": "gallery/Flowerbed_sLJ1YqQ.jpg",
+        "image_compressed": "gallery_compressed/Flowerbed_sLJ1YqQ.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 15,
+    "fields": {
+        "user": 4,
+        "image": "gallery/Dark_Ivy_Puhhq34.jpg",
+        "image_compressed": "gallery_compressed/Dark_Ivy_Puhhq34.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 16,
+    "fields": {
+        "user": 4,
+        "image": "gallery/Wood_Nk9xHiS.jpg",
+        "image_compressed": "gallery_compressed/Wood_Nk9xHiS.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 21,
+    "fields": {
+        "user": 4,
+        "image": "gallery/SeaSunset_qbbBw6c.jpg",
+        "image_compressed": "gallery_compressed/SeaSunset_qbbBw6c.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 22,
+    "fields": {
+        "user": 4,
+        "image": "gallery/ColdWarm_oWzb65l.jpg",
+        "image_compressed": "gallery_compressed/ColdWarm_oWzb65l.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 24,
+    "fields": {
+        "user": 4,
+        "image": "gallery/aruban_pitsunda.jpg",
+        "image_compressed": "gallery_compressed/aruban_pitsunda.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 25,
+    "fields": {
+        "user": 4,
+        "image": "gallery/asoggetti_summit.jpg",
+        "image_compressed": "gallery_compressed/asoggetti_summit.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 26,
+    "fields": {
+        "user": 4,
+        "image": "gallery/bfantinatti_small_leaves.jpg",
+        "image_compressed": "gallery_compressed/bfantinatti_small_leaves.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 27,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211209_104145-02_gwD5FDe.jpeg",
+        "image_compressed": "gallery_compressed/20211209_104145-02_gwD5FDe.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 28,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_5RrZRVH.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_5RrZRVH.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 29,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_kw4YFLE.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_kw4YFLE.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 30,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_185745_XirdRQX.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_185745_XirdRQX.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 31,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_UmbjA3m.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_UmbjA3m.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 32,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_185745_8G48NxM.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_185745_8G48NxM.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 33,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211209_104145-02_BN1gohf.jpeg",
+        "image_compressed": "gallery_compressed/20211209_104145-02_BN1gohf.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 34,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_I0GXsXG.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_I0GXsXG.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 35,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211124_173923-01_edit_142254139276730_RurbKWZ.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211124_173923-01_edit_142254139276730_RurbKWZ.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 36,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_CdklRtT.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 37,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_pOr0JYt.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_pOr0JYt.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 38,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211206_204820.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211206_204820.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 39,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211204_221427.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211204_221427.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 40,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_bvoqkBG.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_bvoqkBG.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 41,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_185745_9xrqZ0W.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_185745_9xrqZ0W.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 42,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_185745_48rS2mK.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_185745_48rS2mK.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 43,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_qcLvctL.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_qcLvctL.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 44,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211206_204820_UpYCuW9.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211206_204820_UpYCuW9.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 45,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211204_221427_WAZdhvw.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211204_221427_WAZdhvw.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 46,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211206_193210-01.jpeg",
+        "image_compressed": "gallery_compressed/20211206_193210-01.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 47,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_4301.JPG",
+        "image_compressed": "gallery_compressed/IMG_4301.JPG",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 48,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211204_221427_c5fYyI3.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211204_221427_c5fYyI3.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 49,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211206_193210-01_8n3VIo8.jpeg",
+        "image_compressed": "gallery_compressed/20211206_193210-01_8n3VIo8.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 50,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_4301_JFzQaZX.JPG",
+        "image_compressed": "gallery_compressed/IMG_4301_JFzQaZX.JPG",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 51,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_185745_yJ7jmP4.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_185745_yJ7jmP4.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 52,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_0YP7xVf.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_0YP7xVf.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 53,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211204_221427_nwZMfot.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211204_221427_nwZMfot.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 54,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211206_193210-01_nKNqC5E.jpeg",
+        "image_compressed": "gallery_compressed/20211206_193210-01_nKNqC5E.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 55,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_4301_GCXuYjq.JPG",
+        "image_compressed": "gallery_compressed/IMG_4301_GCXuYjq.JPG",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 56,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_Lq8fQI0.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_Lq8fQI0.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 57,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1638803706572-01.jpeg",
+        "image_compressed": "gallery_compressed/1638803706572-01.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 58,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1638803760429-01.jpeg",
+        "image_compressed": "gallery_compressed/1638803760429-01.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 59,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка.jpg",
+        "image_compressed": "gallery_compressed/фотка_csbCiSW.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 60,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_CxCEu52.jpg",
+        "image_compressed": "gallery_compressed/фотка_CxCEu52.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 61,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_ZLDCTIK.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_ZLDCTIK.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 62,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_lCGc6Oc.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_lCGc6Oc.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 63,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_TCriLGT.jpg",
+        "image_compressed": "gallery_compressed/фотка_TCriLGT.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 64,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211209_104145-02_fxm6H81.jpeg",
+        "image_compressed": "gallery_compressed/20211209_104145-02_fxm6H81.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 65,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211209_104145-02_VXNCjfO.jpeg",
+        "image_compressed": "gallery_compressed/20211209_104145-02_VXNCjfO.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 66,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_rV9GBIS.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_rV9GBIS.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 67,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_sr1wmd7.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_sr1wmd7.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 68,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_6RhWnCi.jpg",
+        "image_compressed": "gallery_compressed/фотка_6RhWnCi.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 69,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_8QyIDAw.jpg",
+        "image_compressed": "gallery_compressed/фотка_8QyIDAw.jpg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 70,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_p7fKf8S.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_p7fKf8S.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 71,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211206_204820_ZSi7kQg.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211206_204820_ZSi7kQg.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 72,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211209_104145-02_lDvC0jS.jpeg",
+        "image_compressed": "gallery_compressed/20211209_104145-02_lDvC0jS.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 73,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_jJeiLeM.jpeg",
+        "is_deleted": 1
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 74,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_Twry8f6.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_Twry8f6.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 75,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_mjks2aw.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_mjks2aw.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 76,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_pcV6kho.jpg",
+        "image_compressed": "gallery_compressed/фотка_pcV6kho.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 77,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_MBnKEdo.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_MBnKEdo.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 78,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211206_204820_2gYpD3u.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211206_204820_2gYpD3u.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 79,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211204_221427_uXAck9I.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211204_221427_uXAck9I.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 80,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211206_193210-01_QoGf7it.jpeg",
+        "image_compressed": "gallery_compressed/20211206_193210-01_QoGf7it.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 81,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_4301_ZbI1W8K.JPG",
+        "image_compressed": "gallery_compressed/IMG_4301_ZbI1W8K.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 82,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_7269_UObeaZN.JPG",
+        "image_compressed": "gallery_compressed/IMG_7269_UObeaZN.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 83,
+    "fields": {
+        "user": 10,
+        "image": "gallery/robert-anasch-McX3XuJRsUM-unsplash.jpg",
+        "image_compressed": "gallery_compressed/robert-anasch-McX3XuJRsUM-unsplash_eZFnQu0.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 84,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211216_185908-01.jpeg",
+        "image_compressed": "gallery_compressed/20211216_185908-01_1iTJajA.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 85,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_yl1xAGO.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_yl1xAGO.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 86,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_ij28KVV.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_ij28KVV.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 87,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_cAUkmPP.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_cAUkmPP.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 88,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_7269_EU1doUK.JPG",
+        "image_compressed": "gallery_compressed/IMG_7269_EU1doUK.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 89,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_FfkDduw.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_FfkDduw.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 90,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_xNys8D2.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_xNys8D2.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 91,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_iuqQg3D.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_iuqQg3D.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 92,
+    "fields": {
+        "user": 10,
+        "image": "gallery/211465.jpg",
+        "image_compressed": "gallery_compressed/211465_Tx0P6VZ.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 93,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_Bsknu7a.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_Bsknu7a.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 94,
+    "fields": {
+        "user": 10,
+        "image": "gallery/211465_qxBL8gA.jpg",
+        "image_compressed": "gallery_compressed/211465_qxBL8gA.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 95,
+    "fields": {
+        "user": 10,
+        "image": "gallery/20211216_185908-01_O4qChLl.jpeg",
+        "image_compressed": "gallery_compressed/20211216_185908-01_O4qChLl.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 96,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_wks9geF.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_wks9geF.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 97,
+    "fields": {
+        "user": 10,
+        "image": "gallery/211465_SJ4ZNh8.jpg",
+        "image_compressed": "gallery_compressed/211465_SJ4ZNh8.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 98,
+    "fields": {
+        "user": 10,
+        "image": "gallery/211465_Fh62a4B.jpg",
+        "image_compressed": "gallery_compressed/211465_Fh62a4B.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 99,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_7269_zdCNg8r.JPG",
+        "image_compressed": "gallery_compressed/IMG_7269_zdCNg8r.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 100,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_6DPcbcQ.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_6DPcbcQ.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 101,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639669027720-01_zCn8npv.jpeg",
+        "image_compressed": "gallery_compressed/1639669027720-01_zCn8npv.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 102,
+    "fields": {
+        "user": 10,
+        "image": "gallery/robert-anasch-McX3XuJRsUM-unsplash_KaqbBjf.jpg",
+        "image_compressed": "gallery_compressed/robert-anasch-McX3XuJRsUM-unsplash_KaqbBjf.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 103,
+    "fields": {
+        "user": 4,
+        "image": "gallery/20211216_185908-01_HKsi30Z.jpeg",
+        "image_compressed": "gallery_compressed/20211216_185908-01_HKsi30Z.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 104,
+    "fields": {
+        "user": 4,
+        "image": "gallery/IMG_7269_qiT2FZX.JPG",
+        "image_compressed": "gallery_compressed/IMG_7269_qiT2FZX.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 105,
+    "fields": {
+        "user": 4,
+        "image": "gallery/211465_0zrqfDY.jpg",
+        "image_compressed": "gallery_compressed/211465_0zrqfDY.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 106,
+    "fields": {
+        "user": 10,
+        "image": "gallery/0B6A0170_r84MawR.jpg",
+        "image_compressed": "gallery_compressed/0B6A0170_r84MawR.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 107,
+    "fields": {
+        "user": 10,
+        "image": "gallery/1639069011944-01_oOEal2X.jpeg",
+        "image_compressed": "gallery_compressed/1639069011944-01_oOEal2X.jpeg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 108,
+    "fields": {
+        "user": 10,
+        "image": "gallery/фотка_FweCGGG.jpg",
+        "image_compressed": "gallery_compressed/фотка_FweCGGG.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 109,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_20211209_144606_tD4WvxY.jpg",
+        "image_compressed": "gallery_compressed/IMG_20211209_144606_tD4WvxY.jpg",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.gallery",
+    "pk": 110,
+    "fields": {
+        "user": 10,
+        "image": "gallery/IMG_7269_EiG9ZpT.JPG",
+        "image_compressed": "gallery_compressed/IMG_7269_HmPo83S.JPG",
+        "is_deleted": 0
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 1,
+    "fields": {
+        "header": "sfdcsadrvcsdsfdvc",
+        "homework_text": "sdfvfdsvdsfvdf",
+        "webinar_url": "0",
+        "youtube_url": "1",
+        "part": 1,
+        "lesson_num": 1,
+        "pdf_route": "0",
+        "lesson_status": 1,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 2,
+    "fields": {
+        "header": "fdvdsesdv",
+        "homework_text": "vdfvdf",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 2,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 3,
+    "fields": {
+        "header": "dfsvcfsdvc",
+        "homework_text": "sdfvfdbfhg",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 3,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 4,
+    "fields": {
+        "header": "ghfmhgkl,kghj",
+        "homework_text": ",jhlk,jk,hj,",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 4,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 5,
+    "fields": {
+        "header": "aedfcsdfvds",
+        "homework_text": "bnfyujtyg",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 5,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 7,
+    "fields": {
+        "header": "Header",
+        "homework_text": "homework",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 6,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 8,
+    "fields": {
+        "header": "Header",
+        "homework_text": "homework",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 7,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 9,
+    "fields": {
+        "header": "Header 2",
+        "homework_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatisLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatisLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatisLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 8,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 10,
+    "fields": {
+        "header": "frsagvdfs",
+        "homework_text": "rwesdfvsa",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 9,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 11,
+    "fields": {
+        "header": "fsvc f sdddfs vdfvfvsdvc",
+        "homework_text": "sdcscsdcsdfcsd",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 10,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 12,
+    "fields": {
+        "header": "fsvcfsdd",
+        "homework_text": "sdcscsdc",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 11,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 13,
+    "fields": {
+        "header": "fsvcfsdd",
+        "homework_text": "sdcscsdc",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 12,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 14,
+    "fields": {
+        "header": "fsvcfsdd",
+        "homework_text": "sdcscsdc",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 13,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 15,
+    "fields": {
+        "header": "dsfcvsdvc",
+        "homework_text": "dfvsfdvfdv",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 14,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 16,
+    "fields": {
+        "header": "Lesson dude",
+        "homework_text": "No hmwrk fella",
+        "webinar_url": "https://webinar.ru/",
+        "youtube_url": "https://www.youtube.com/embed/iOy30dY3mgI",
+        "part": 1,
+        "lesson_num": 15,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 17,
+    "fields": {
+        "header": "Куда смотреть, Что нажимать?",
+        "homework_text": "❤️Задание 1<br>\r\n<br>\r\n🖊 Текстовое задание \"зачем мне фотография?\"🖊<br>\r\n                            Учимся ставить цель - зачем мне вообще что-либо делать?<br>\r\n                            Напишите текст. Не больше 3 предложений.<br>\r\n                            Оформите в виде фото-карточки.<br>\r\n<br>\r\n                            ❤️ Задание 2<br>\r\n<br>\r\n                            ⚡️ Фотогордость - ваша самая лучшая фотография ⚡<br>\r\n                            Отобрать одно фото, самое лучшее на ваш взгляд. Оно может быть любым - но только ОДНО!<br>\r\n                            Низя:<br>\r\n                            • Больше одного фото<br>\r\n                            • Коллажи<br>\r\n                            • Рисунки / Картины<br>\r\n<br>\r\n                             👍Inspiration - что хотим повторить 👍<br>\r\n                            Отобрать одно фото, что мотивирует фотографировать. Любое, но одно.  Укажите автора.<br>\r\n                            Низя:<br>\r\n                            • Коллажи<br>\r\n                            • Свои фотографии<br>\r\n                            • Картины<br>\r\n<br>\r\n                            ❤️ Задание 3<br>\r\n<br>\r\n                            ⏸ Работаем лапками - просто линия⏸<br>\r\n                            Задание простое - красиво сфотографировать линию. Красиво - в вашем понятии. От вас одно фото - других ограничений нет.<br>\r\n                            Низя:<br>\r\n                            • да все можно",
+        "webinar_url": "https://yandex.ru/?clid=1923019",
+        "youtube_url": "0",
+        "part": 1,
+        "lesson_num": 16,
+        "pdf_route": "pdf/1_z5qw4mY.pdf",
+        "lesson_status": 2,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 18,
+    "fields": {
+        "header": "Работа с цветом - яркий vs нежный",
+        "homework_text": "<h1><strong>Задание</strong></h1>\r\n<p>\r\nСоздать одну фотографию, используя подручные линзы (бокалы, стаканы, лужи, капли и т.д.). Выберите один вариант. \r\n</p>\r\n<br>\r\n<p>\r\nВариант 1 - \"Собачка в бокале\".\r\nВ качестве линзы используйте весь бабушкин сервант.\r\n</p>\r\n<br>\r\n<p>\r\nВариант 2 - \"Дождик\".\r\nСоздаем фотографию через капли воды.\r\n</p>\r\n<br>\r\n<p>\r\nВариант 3 - \"Весь мой мир в очках\".\r\nФото через очки.\r\n</p>\r\n<br>\r\n<p>\r\nЗапреты в заданиях\r\n</p>\r\n<br>\r\nНе забывайте, все должно быть сюжетно оправдано.\r\n<br>\r\nЧто нельзя:\r\n<br>\r\nОбщие\r\n<ul>\r\n<li>Использовать готовые линзы\r\n<li>Селфи\r\n</ul>\r\n<br>\r\nВариант 1\r\n<ul>\r\n<li>Собаки, кошки в бокале\r\n<li>ЧБ фото с цветными элементами в бокале (сделать цветным только то,\r\nчто в бокале)\r\n<ul>",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 2,
+        "lesson_num": 17,
+        "pdf_route": "pdf/03.11_KJiEFFP.pdf",
+        "lesson_status": 1,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 19,
+    "fields": {
+        "header": "Урок закрыт",
+        "homework_text": "0",
+        "webinar_url": "0",
+        "youtube_url": "0",
+        "part": 2,
+        "lesson_num": 18,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.lesson",
+    "pk": 20,
+    "fields": {
+        "header": "Новая тема",
+        "homework_text": "Новое ДЗ",
+        "webinar_url": "01",
+        "youtube_url": "0",
+        "part": 2,
+        "lesson_num": 19,
+        "pdf_route": "0",
+        "lesson_status": 0,
+        "course_num": 1
+    }
+},
+{
+    "model": "first.courseparts",
+    "pk": 1,
+    "fields": {
+        "course_num": 1,
+        "part_num": 1,
+        "part_name": "Язык фотографии"
+    }
+},
+{
+    "model": "first.courseparts",
+    "pk": 2,
+    "fields": {
+        "course_num": 1,
+        "part_num": 2,
+        "part_name": "Сила Визуала"
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 1,
+    "fields": {
+        "image": "gallery/symbolics-1_W9nG9TA.jpg",
+        "lesson_num": 1
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 2,
+    "fields": {
+        "image": "gallery/symbolics-2_Hxph9RO.jpg",
+        "lesson_num": 1
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 3,
+    "fields": {
+        "image": "gallery/Wood_VYYmFOi.jpg",
+        "lesson_num": 1
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 4,
+    "fields": {
+        "image": "gallery/symbolics-1_Ek41vzg.jpg",
+        "lesson_num": 2
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 5,
+    "fields": {
+        "image": "gallery/symbolics-2_SH6LmQU.jpg",
+        "lesson_num": 2
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 6,
+    "fields": {
+        "image": "gallery/symbolics-2_v8gAgkO.jpg",
+        "lesson_num": 3
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 7,
+    "fields": {
+        "image": "gallery/Wood_FM4cDci.jpg",
+        "lesson_num": 3
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 8,
+    "fields": {
+        "image": "gallery/adwaita-day.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 9,
+    "fields": {
+        "image": "gallery/adwaita-morning.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 10,
+    "fields": {
+        "image": "gallery/adwaita-night.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 11,
+    "fields": {
+        "image": "gallery/AndICallItBoke.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 12,
+    "fields": {
+        "image": "gallery/ColdWarm.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 13,
+    "fields": {
+        "image": "gallery/Dark_Ivy.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 14,
+    "fields": {
+        "image": "gallery/endless-shapes.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 15,
+    "fields": {
+        "image": "gallery/Fabric.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 16,
+    "fields": {
+        "image": "gallery/Flowerbed.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 17,
+    "fields": {
+        "image": "gallery/Icescape.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 18,
+    "fields": {
+        "image": "gallery/Road.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 19,
+    "fields": {
+        "image": "gallery/Sandstone_ovEVtWs.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 20,
+    "fields": {
+        "image": "gallery/SeaSunset_WgmDqEe.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 21,
+    "fields": {
+        "image": "gallery/symbolics-1_hIc0rOa.jpg",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 22,
+    "fields": {
+        "image": "gallery/adwaita-night_FRihbLp.jpg",
+        "lesson_num": 5
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 23,
+    "fields": {
+        "image": "gallery/AndICallItBoke_0RbTH4k.jpg",
+        "lesson_num": 5
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 24,
+    "fields": {
+        "image": "gallery/ColdWarm_URBiUJL.jpg",
+        "lesson_num": 5
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 25,
+    "fields": {
+        "image": "gallery/Dark_Ivy_l2dzouh.jpg",
+        "lesson_num": 5
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 26,
+    "fields": {
+        "image": "gallery/endless-shapes_dfabKjy.jpg",
+        "lesson_num": 5
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 31,
+    "fields": {
+        "image": "gallery/SeaSunset_SaVu4j1.jpg",
+        "lesson_num": 6
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 32,
+    "fields": {
+        "image": "gallery/symbolics-1_4gmqwq4.jpg",
+        "lesson_num": 6
+    }
+},
+{
+    "model": "first.imagesfromlessons",
+    "pk": 33,
+    "fields": {
+        "image": "gallery/symbolics-2_BigxCWZ.jpg",
+        "lesson_num": 6
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "homework_status": 0,
+        "comment": "Comment",
+        "lesson_num": 1
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 12,
+    "fields": {
+        "user": 1,
+        "homework_status": 1,
+        "comment": "Great colors!",
+        "lesson_num": 6
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 13,
+    "fields": {
+        "user": 2,
+        "homework_status": 0,
+        "comment": "",
+        "lesson_num": 3
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 14,
+    "fields": {
+        "user": 4,
+        "homework_status": 0,
+        "comment": "",
+        "lesson_num": 4
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 17,
+    "fields": {
+        "user": 2,
+        "homework_status": 1,
+        "comment": "Comment brand new",
+        "lesson_num": 2
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 18,
+    "fields": {
+        "user": 10,
+        "homework_status": 0,
+        "comment": "",
+        "lesson_num": 17
+    }
+},
+{
+    "model": "first.homework",
+    "pk": 19,
+    "fields": {
+        "user": 10,
+        "homework_status": 0,
+        "comment": "",
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 22,
+    "fields": {
+        "user": 10,
+        "homework": 58,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 23,
+    "fields": {
+        "user": 10,
+        "homework": 59,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 29,
+    "fields": {
+        "user": 10,
+        "homework": 65,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 30,
+    "fields": {
+        "user": 10,
+        "homework": 66,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 34,
+    "fields": {
+        "user": 10,
+        "homework": 70,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 35,
+    "fields": {
+        "user": 10,
+        "homework": 71,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 38,
+    "fields": {
+        "user": 10,
+        "homework": 74,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 39,
+    "fields": {
+        "user": 10,
+        "homework": 75,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 40,
+    "fields": {
+        "user": 10,
+        "homework": 76,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 41,
+    "fields": {
+        "user": 10,
+        "homework": 77,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 42,
+    "fields": {
+        "user": 10,
+        "homework": 78,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 43,
+    "fields": {
+        "user": 10,
+        "homework": 79,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 44,
+    "fields": {
+        "user": 10,
+        "homework": 80,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 45,
+    "fields": {
+        "user": 10,
+        "homework": 81,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 46,
+    "fields": {
+        "user": 10,
+        "homework": 82,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 47,
+    "fields": {
+        "user": 10,
+        "homework": 83,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 48,
+    "fields": {
+        "user": 10,
+        "homework": 84,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 49,
+    "fields": {
+        "user": 10,
+        "homework": 85,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 50,
+    "fields": {
+        "user": 10,
+        "homework": 86,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 51,
+    "fields": {
+        "user": 10,
+        "homework": 88,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 52,
+    "fields": {
+        "user": 10,
+        "homework": 99,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 53,
+    "fields": {
+        "user": 10,
+        "homework": 100,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 54,
+    "fields": {
+        "user": 10,
+        "homework": 101,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 55,
+    "fields": {
+        "user": 10,
+        "homework": 102,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 56,
+    "fields": {
+        "user": 10,
+        "homework": 106,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 57,
+    "fields": {
+        "user": 10,
+        "homework": 107,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 58,
+    "fields": {
+        "user": 10,
+        "homework": 108,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 59,
+    "fields": {
+        "user": 10,
+        "homework": 109,
+        "lesson_num": 16
+    }
+},
+{
+    "model": "first.imagesfromhomeworks",
+    "pk": 60,
+    "fields": {
+        "user": 10,
+        "homework": 110,
+        "lesson_num": 16
+    }
+}
+]

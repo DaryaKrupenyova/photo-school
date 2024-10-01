@@ -1,0 +1,277 @@
+{% load static %}
+<div class="side_menu" onclick="menu_open()" style="z-index: 5">
+    <img src="{% static 'images/ic20-menu_white.svg' %}" alt="" width="100%" height="100%">
+</div>
+<div class="wrapper_main" style="z-index: 4">
+    <div class="wrapper_sticky" style="background-image: {% if ava.background.url == '/media/0' %} url({% static 'images/mitchel-lensink-hdajoMFYeu0-unsplash1.jpg' %});{% endif %} background-repeat: no-repeat; background-size: cover;">
+        <div id="background_pic_id" class="wrapper_bg_custom" style="background-image: url({{ ava.background.url }});"></div>
+        <div class="small_menu_uinfo" onclick="small_menu_open('div_uinfo', 'div_links')" style="display: none">
+            <p class="small_menu_uinfo_p">Инфо</p>
+        </div>
+        <div class="small_menu_uinfo" onclick="small_menu_open('div_links', 'div_uinfo')" style="margin-top: 10%; display: none">
+            <p class="small_menu_uinfo_p">Ссылки</p>
+        </div>
+        <div class="div_uinfo">
+            <div id="div_ava" class="div_ava" style="background: url({{ ava.avatar.url }}); background-size: cover; background-repeat: no-repeat; background-position: center;"></div>
+            <div class="mt-3">
+                {% if page == "account" and not guest %}
+                <a href="{% url 'account' username %}" class="transition f_l_name" style="color: #F86624;">{{ last_name }} {{ first_name }}</a>
+                {% else %}
+                <a href="{% url 'account' username %}" class="transition f_l_name" style="color: #000000;">{{ last_name }} {{ first_name }}</a>
+                {% endif %}
+            </div>
+            <div class="mt-2">
+                {% if request.user.is_superuser == 1 %}
+                <span class="who_is_user">Разработчик</span>
+                {% elif request.user.is_staff == 1 %}
+                <span class="who_is_user">Администратор</span>
+                {% else %}
+                {% if ava.is_teacher == 1 %}
+                <span class="who_is_user">Преподаватель</span>
+                {% else %}
+                {% if signup_for_course %}
+                <span class="who_is_user">Студент</span>
+                {% else %}
+                <span class="who_is_user">Новенький</span>
+                {% endif %}
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="div_links">
+            {% if request.user.is_staff == 1 %}
+            <a class="transition" style="text-decoration: none;" href="{% url 'admin_people' %}">
+                {% if page == "admin_people" %}
+                <img src='{% static "images/iconka_for_group_orange.svg" %}' class="link_icon" alt="alt">
+                {% else %}
+                <img src='{% static "images/iconka_for_group.svg" %}' class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "admin_people" %}
+                <span class="link_text" style="color: #F86624;">Люди</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Люди</span>
+                {% endif %}
+            </a>
+            {% else %}
+            <a class="transition" style="text-decoration: none;" href="{% url 'courses' %}">
+                {% if page == "course" %}
+                <img src="{% static 'images/icon_for_course_orange.svg' %}" class="link_icon" alt="alt">
+                {% else %}
+                <img src="{% static 'images/icon_for_course.svg' %}" class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "course" %}
+                <span class="link_text" style="color: #F86624;">Курс</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Курс</span>
+                {% endif %}
+            </a>
+            {% endif %}
+
+            {% if request.user.is_staff == 1 %}
+            <a class="transition" style="margin-top: 15%; text-decoration: none;" href="">
+                {% if page == "tabel" %}
+                <img src="{% static 'images/icon_for_course_orange.svg' %}" class="link_icon" alt="alt">
+                {% else %}
+                <img src="{% static 'images/icon_for_course.svg' %}" class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "tabel" %}
+                <span class="link_text" style="color: #F86624;">Табель</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Табель</span>
+                {% endif %}
+            </a>
+            {% else %}
+            {% endif %}
+            {% if request.user.is_staff == 1 %}
+            <a class="transition" style="margin-top: 15%; text-decoration: none;" href="{% url 'admin_fin' %}">
+                {% if page == "admin_fin" %}
+                <img src="{% static 'images/icon_for_finance_orange.svg' %}" class="link_icon" alt="alt">
+                {% else %}
+                <img src="{% static 'images/icon_for_finance.svg' %}" class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "admin_fin" %}
+                <span class="link_text" style="color: #F86624;">Финансы</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Финансы</span>
+                {% endif %}
+            </a>
+            {% else %}
+            {% if ava.is_teacher == 1 %}
+            <a class="transition" style="margin-top: 15%; text-decoration: none;" href="{% url 'prepod_homeworks' %}">
+                {% if page == "prepod_homeworks" %}
+                <img src="{% static 'images/icon_for_gallery_orange.svg' %}" class="link_icon" alt="alt">
+                {% else %}
+                <img src="{% static 'images/icon_for_gallery_black.svg' %}" class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "prepod_homeworks" %}
+                <span class="link_text" style="color: #F86624;">Галерея</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Галерея</span>
+                {% endif %}
+            </a>
+            {% else %}
+            <a class=" transition" style="margin-top: 15%; text-decoration: none;" href="{% url 'finances' %}">
+                {% if page == "finances" %}
+                <img src="{% static 'images/icon_for_finance_orange.svg' %}" class="link_icon" alt="alt">
+                {% else %}
+                <img src="{% static 'images/icon_for_finance.svg' %}" class="link_icon" alt="alt">
+                {% endif %}
+                {% if page == "finances" %}
+                <span class="link_text" style="color: #F86624;">Финансы</span>
+                {% else %}
+                <span class="link_text" style="color: #000000;">Финансы</span>
+                {% endif %}
+            </a>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("div.smooth_redirect").fadeIn(200);
+
+        $("a.transition").click(function(event) {
+            event.preventDefault();
+            linkLocation = this.href;
+            $("div.smooth_redirect").fadeOut(100, redirectPage);
+        });
+
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+    });
+
+    $(window).on('load', function() {
+        if ($(window).width() >= 1100) {
+            $('.wrapper_main').css({
+                'position': 'relative',
+                'height': 'auto',
+                'display': 'block'
+            });
+            $('.wrapper_sticky').css('display', 'flex');
+            $('.side_menu').css('display', 'none');
+        } else if ($(window).width() < 1100) {
+            $('.wrapper_main').css({
+                'position': 'absolute',
+                'height': '100%',
+                'display': 'none'
+            });
+            $('.wrapper_sticky').css('display', 'none');
+            $('.side_menu').css('display', 'block');
+        }
+
+        if ($(window).height() >= 750) {
+            $('.small_menu_uinfo').css('display', 'none');
+            $('.small_menu_uinfo_p').css('display', 'none');
+            $('.div_uinfo').css({
+                'position': 'relative',
+                'left': 0,
+                'background': '#fff',
+                'display': 'block'
+            });
+            $('.div_links').css({
+                'position': 'relative',
+                'left': 0,
+                'background': '#fff',
+                'display': 'block'
+            });
+        } else if ($(window).height() < 750) {
+            $('.div_uinfo').css('display', 'none');
+            $('.div_links').css('display', 'none');
+            $('.small_menu_uinfo').css('display', 'flex');
+            $('.small_menu_uinfo_p').css('display', 'flex');
+        }
+    });
+
+    $(window).on('load resize', function() {
+        $('.dimmer').fadeOut(200);
+        setTimeout(function() {
+            $('.dimmer').remove();
+        }, 200);
+        if ($(window).width() >= 1100) {
+            $('.wrapper_main').css({
+                'position': 'relative',
+                'height': 'auto',
+                'display': 'block'
+            });
+            $('.wrapper_sticky').slideDown(200);
+            $('.side_menu').css('display', 'none');
+        } else if ($(window).width() < 1100) {
+            $('.wrapper_main').css({
+                'position': 'absolute',
+                'height': '100%',
+                'display': 'none'
+            });
+            $('.wrapper_sticky').slideUp(200);
+            $('.side_menu').css('display', 'block');
+        }
+
+        if ($(window).height() >= 750) {
+            $('.small_menu_uinfo').slideUp(200);
+            $('.small_menu_uinfo_p').slideUp(200);
+            $('.div_uinfo').css({
+                'position': 'relative',
+                'left': 0,
+                'background': '#fff',
+                'box-shadow': 'none'
+            }).slideDown(200);
+            $('.div_links').css({
+                'position': 'relative',
+                'left': 0,
+                'background': '#fff',
+                'box-shadow': 'none'
+            }).slideDown(200);
+        } else if ($(window).height() < 750) {
+            $('.div_uinfo').slideUp(200);
+            $('.div_links').slideUp(200);
+            $('.small_menu_uinfo').slideDown(200);
+            $('.small_menu_uinfo_p').slideDown(200);
+        }
+    });
+
+    function small_menu_open(part_open, part_close) {
+        var element_open = $(`.${part_open}`);
+        var element_close = $(`.${part_close}`);
+        element_open.css({
+            'position': 'absolute',
+            'left': '102%',
+            'background': '#f1f1f1',
+            'box-shadow': '0px 0px 10px 0px #000'
+        }).slideToggle(200);
+        element_close.css({
+            'position': 'absolute',
+            'left': '102%',
+            'background': '#f1f1f1',
+            'box-shadow': '0px 0px 10px 0px #000'
+        }).slideUp(200);
+    }
+
+    function menu_open() {
+        if ($('.wrapper_sticky').css('display') == 'none') {
+            $('.wrapper_main').append("<div class='dimmer'><div class='dimmer_sticky'></div></div>");
+            $('.dimmer').fadeTo(200, 0.7);
+            $('.wrapper_main').css({
+                'position': 'absolute',
+                'height': '100%',
+                'display': 'block'
+            });
+            $('.wrapper_sticky').slideDown(200);
+        } else if ($('.wrapper_sticky').css('display') == 'flex') {
+            $('.wrapper_sticky').slideUp(200);
+            setTimeout(function() {
+                $('.wrapper_main').css({
+                    'position': 'relative',
+                    'height': 'auto',
+                    'display': 'none'
+                });
+            }, 300);
+            $('.dimmer').fadeOut(200);
+            setTimeout(function() {
+                $('.dimmer').remove();
+            }, 200);
+        }
+    }
+
+</script>

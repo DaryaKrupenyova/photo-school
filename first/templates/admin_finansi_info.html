@@ -1,0 +1,187 @@
+{% load static %}
+<div id="block_student" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1622px; height: 960px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding: 90px; width: 836px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div class="" style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                <div id="btn_close_student">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <a href="{% url 'account' uname_for_link %}" style="text-decoration: none;">
+                    <h1 style="width: 394px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; color: #000000;">{{ user_user.last_name }} {{ user_user.first_name }}</h1>
+                </a>
+                <div id="btn_dobavit">
+                    <img src="{% static 'images/ic20-yellow_pay.svg' %}" class="iconka_back" alt="alt">
+                </div>
+            </div>
+            <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <a href="{% url 'account' uname_for_link %}" id="unamefind_info" style="text-decoration: none; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">@{{ user_user.username }}</a>
+            </div>
+            <div class="mt-5" style="display: flex; align-items: center;">
+                <span class="mt-1" style="margin-right: 15px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; line-height: 28px; color: #000000;">Кошелек студента:</span>
+                <span class="mt-1" style="margin-right: 10px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">{{ user_profile_add_info.wallet }}</span>
+                <div>
+                    <img src="{% static 'images/ic20-black_rub.svg' %}" class="iconka_rub" alt="alt">
+                </div>
+            </div>
+            <div class="mt-4" style="display: flex; align-items: center;">
+                <span style="margin-right: 15px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; line-height: 28px; color: #000000;">Личный код друга:</span>
+                {% for promo in user_promo %}
+                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">{{ promo.content }}</span>
+                {% endfor %}
+            </div>
+            <div class="mt-4" style="display: flex; align-items: center;">
+                <span style="margin-right: 15px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; line-height: 28px; color: #000000;">Приглашенных друзей:</span>
+                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">{{ user_profile_add_info.invited_count }}</span>
+            </div>
+            <div class="mt-3" style="display: flex; align-items: center;">
+                <span class="mt-1" style="margin-right: 15px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; line-height: 28px; color: #000000;">Заработано:</span>
+                <span class="mt-1" style="margin-right: 10px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 24px; line-height: 28px; color: #000000;">{{ earned }}</span>
+                <div>
+                    <img src="{% static 'images/ic20-black_rub.svg' %}" class="iconka_rub" alt="alt">
+                </div>
+            </div>
+            <div class="mt-3" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                <table class="table table-bordered" style="border-color: white; width: 670px;">
+                    <tbody id="btn_edit">
+                        {% for transaction in user_transactions %}
+                        <tr>
+                            <td style="padding: 0px; padding-bottom: 10px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                                {% if transaction.type == "adding" %}<a href="{{ transaction.link }}">
+                                    <img src="{% static 'images/ic20-popolnenie.svg' %}" class="iconka_popolnenie" alt="alt"></a>Пополнение
+                                {% else %}
+                                Оплата месяца
+                                {% endif %}
+                            </td>
+                            <td style="padding: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 24px; line-height: 28px; color: #5FAD56;">
+                                {% if transaction.type == "adding" %}
+                                +
+                                {% else %}
+                                -
+                                {% endif %}
+                                {{ transaction.payment_amount }}
+                            </td>
+                            <td style="padding: 0px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #5FAD56;">{{ transaction.was|date:"d.m.Y" }}</td>
+                            <td style="padding: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 24px; line-height: 28px; color: #5FAD56;">
+                                total: {{ transaction.after_transaction }}
+                                <img src="{% static 'images/ic20-green_rub.svg' %}" class="iconka_rub" alt="alt">
+                            </td>
+                            {% if transaction.type == "adding" %}
+                            <td class="class_to_find_td_edit" style="padding: 0px;">
+                                <input id="transaction_num" type="hidden" value="{{ transaction.id }}">
+                                <img src="{% static 'images/ic20-black_edit.svg' %}" class="iconka_edit" alt="alt">
+                            </td>
+                            <td class="class_to_find_td_del" style="padding: 0px;">
+                                <input id="transaction_del" type="hidden" value="{{ transaction.id }}">
+                                <img src="{% static 'images/ic20-black_trash.svg' %}" class="iconka_trash" alt="alt">
+                            </td>
+                            {% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block_delete" style="display: none; z-index: 3000; position: fixed; left: 280px; top: 0px;">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 723px; height: 256px; background: #FFFFFF; border-radius: 100px; display: flex; justify-content: center; align-items: center;">
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; text-align: center; color: #000000;">Удалить данные о пополнении?</span>
+                    <form id="del_form" method="POST">
+                        {% csrf_token %}
+                        <input name="transaction_del" type="hidden" value="">
+                    </form>
+                </div>
+                <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center;">
+                    <button id="no_del" style="margin-right: 30px; width: 153px; height: 54px; background: #BABABA; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Нет</button>
+                    <button id="yes_del" style="margin-left: 30px; width: 153px; height: 54px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_close_student').click(function() {
+            document.getElementById(`block_student`).style.display = 'none';
+            document.getElementById(`block_dobavit`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_del').click(function() {
+            document.getElementById(`block_delete`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#no_del').click(function() {
+            document.getElementById(`block_delete`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#yes_del').click(function() {
+            document.getElementById(`block_delete`).style.display = 'none';
+            $('#del_form').submit()
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_dobavit').click(function() {
+            document.getElementById(`block_dobavit`).style.display = 'block';
+            document.getElementById(`block_student`).style.display = 'none';
+
+            $.ajax({
+                type: "get",
+                url: `{% url 'admin_fin' %}?username=${ username }&add=1`,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('#tmp4').html(response.transaction_add)
+                    document.getElementById(`block_dobavit`).style.display = 'block';
+                },
+                error: function(response) {
+                    console.log(response)
+                }
+            });
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_edit').find('.class_to_find_td_edit').click(function() {
+            document.getElementById(`block_edit`).style.display = 'block';
+            document.getElementById(`block_student`).style.display = 'none';
+            username = $('#unamefind_info')[0].innerHTML.replace("@", "");
+            transaction_id = $(this).find('#transaction_num').val();
+
+            $.ajax({
+                type: "get",
+                url: `{% url 'admin_fin' %}?username=${ username }&transaction=${ transaction_id }`,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    $('#tmp3').html(response.transaction_change)
+                    document.getElementById(`block_edit`).style.display = 'block';
+                },
+                error: function(response) {
+                    console.log(response)
+                }
+            });
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        $('#btn_edit').find('.class_to_find_td_del').click(function() {
+            document.getElementById(`block_delete`).style.display = 'block';
+            $('input[name="transaction_del"]').val($(this).find('#transaction_del').val());
+            return false;
+        });
+    });
+
+</script>

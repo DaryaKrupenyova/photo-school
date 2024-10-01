@@ -1,0 +1,50 @@
+{% load static %}
+<div id="block_cozdat" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1622px; height: 960px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 77px; padding-bottom: 77px; width: 836px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div class="" style="margin-left: 115px; display: flex; align-items: center;">
+                <div id="btn_close_cozdat">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <h1 style="margin-left: 60px; width: 411px; height: 45px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Промокод</h1>
+            </div>
+            <div class="mt-5" style="display: flex; align-items: center; justify-content: center;">
+                <span style="margin-right: 60px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: #F86624;">Создать</span>
+                <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                <span id="btn_izuch" style="cursor: pointer; margin-left: 60px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: #000000;">Изучить</span>
+            </div>
+            <form method="post">
+                {% csrf_token %}
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <input name="discount" required placeholder="Размер скидки(%) или сумму" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input name="expires" type="date" required placeholder="Срок действия (дата)" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input name="count" required placeholder="Макс. кол-во использований" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <button style="border: 0px; width: 340px; height: 71.62px; background: #F86624; border-radius: 100px;font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 42px; color: #FFFFFF;" type="submit">Создать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_close_cozdat').click(function() {
+            document.getElementById(`block_cozdat`).style.display = 'none';
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        $('#btn_izuch').click(function() {
+            document.getElementById(`block_izuch`).style.display = 'block';
+            document.getElementById(`block_cozdat`).style.display = 'none';
+            return false;
+        });
+    });
+
+</script>

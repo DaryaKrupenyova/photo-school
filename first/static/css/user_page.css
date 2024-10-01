@@ -1,0 +1,621 @@
+.user_wrapper {
+    width: 80%;
+    padding-top: 2%;
+    padding-left: 7%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    display: none;
+}
+
+.user_fl_names {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+}
+
+.username {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    color: #F9C80E;
+}
+
+.who_is_user_page {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.img_top {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 140px;
+}
+
+.img_bottom {
+    width: 630px;
+}
+
+.image-stack {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    height: 100px;
+}
+
+.image-stack__item--top {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.image-stack__item--bottom {
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -1;
+    position: relative;
+    top: -70px;
+}
+
+.who_is_user_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.since_when {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.since_when_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.teacher_description {
+    display: flex;
+    margin-top: 3%;
+}
+
+.teacher_description_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.icon_dash {
+    width: 30px;
+    height: 30px;
+}
+
+.teacher_add {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.teacher_add_button {
+    margin-left: 10%;
+    width: 376px;
+    height: 72px;
+    background: #F9C80E;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.95);
+    border: 0px;
+}
+
+.settings_link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.settings_link_text {
+    margin: 0px;
+    font-weight: 300;
+}
+
+.settings_link_text: active,
+.settings_link_text: focus {
+    outline: none !important;
+    border: 0 !important;
+}
+
+.settings_link_text::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.settings_link:hover {
+    color: #000;
+}
+
+.icon_for_settings {
+    width: 40px;
+    height: 40px;
+}
+
+.icon_for_edit {
+    width: 30px;
+    height: 30px;
+}
+
+.input__file-button {
+    width: 273px;
+    height: 72px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input__file-button-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    color: #000000;
+}
+
+.user_photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 25px;
+}
+
+.user_gallery_picture {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.delete_btn_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #F86624;
+}
+
+.iconka_del {
+    width: 30px;
+    height: 25px;
+}
+
+@media screen and (min-width: 2500px) {
+    .user_wrapper {
+        width: calc(100% - 340px);
+    }
+
+    .user_fl_names {}
+
+    .username {}
+
+    .who_is_user_text {}
+
+    .since_when_text {}
+
+    .icon_dash {}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .user_wrapper {
+        width: calc(100% - 310px);
+    }
+
+    .user_fl_names {}
+
+    .username {}
+
+    .who_is_user_text {}
+
+    .since_when_text {}
+
+    .icon_dash {}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .user_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .user_fl_names {
+        font-size: calc(50px + 15 * (100vw - 1500px) / 500);
+    }
+
+    .username {
+        font-size: calc(28px + 8 * (100vw - 1500px) / 500);
+    }
+
+    .who_is_user_text {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .since_when_text {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .icon_dash {
+        width: calc(26px + 4 * (100vw - 1500px) / 500);
+        height: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .teacher_add_button {
+        width: 380px;
+        height: 70px;
+        font-size: 25px;
+    }
+
+    .img_top {
+        width: calc(210px + 40 * (100vw - 1500px) / 500);
+        height: calc(210px + 40 * (100vw - 1500px) / 500);
+    }
+
+    .img_bottom {
+        width: calc(400px + 80 * (100vw - 1500px) / 500);
+    }
+
+    .image-stack__item--bottom {
+        top: calc(-60px - 10 * (100vw - 1500px) / 500);
+    }
+
+    .img_top {
+        left: calc(110px + 30 * (100vw - 1500px) / 500);
+    }
+
+    .settings_link {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(35px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .icon_for_settings {
+        width: calc(35px + 5 * (100vw - 1500px) / 500);
+        height: calc(35px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .input__file-button {
+        width: 270px;
+        height: 70px;
+    }
+
+    .input__file-button-text {
+        font-size: 28px;
+    }
+
+    .delete_btn_text {
+        font-size: 30px;
+    }
+
+    .iconka_del {
+        width: 30px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .user_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .user_fl_names {
+        font-size: calc(38px + 12 * (100vw - 1100px) / 400);
+    }
+
+    .username {
+        font-size: calc(23px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .who_is_user_text {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .since_when_text {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .icon_dash {
+        width: calc(22px + 4 * (100vw - 1100px) / 400);
+        height: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .teacher_add_button {
+        width: 340px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .img_top {
+        width: calc(155px + 55 * (100vw - 1100px) / 400);
+        height: calc(155px + 55 * (100vw - 1100px) / 400);
+    }
+
+    .img_bottom {
+        width: calc(300px + 100 * (100vw - 1100px) / 400);
+    }
+
+    .image-stack__item--bottom {
+        top: calc(-45px - 15 * (100vw - 1100px) / 400);
+    }
+
+    .img_top {
+        left: calc(85px + 25 * (100vw - 1100px) / 400);
+    }
+
+    .settings_link {
+        font-size: calc(18px + 2 * (100vw - 1100px) / 400);
+        line-height: calc(30px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .icon_for_settings {
+        width: calc(30px + 5 * (100vw - 1100px) / 400);
+        height: calc(30px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .input__file-button {
+        width: 240px;
+        height: 60px;
+    }
+
+    .input__file-button-text {
+        font-size: 24px;
+    }
+
+    .user_photos {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .user_gallery_picture {
+        width: 220px;
+        height: 320px;
+    }
+
+    .delete_btn_text {
+        font-size: 25px;
+    }
+
+    .iconka_del {
+        width: 25px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1099px) {
+    .user_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .user_fl_names {
+        font-size: calc(20px + 12 * (100vw - 500px) / 600);
+    }
+
+    .username {
+        font-size: calc(13px + 9 * (100vw - 500px) / 600);
+    }
+
+    .who_is_user_text {
+        font-size: calc(12px + 8 * (100vw - 500px) / 600);
+    }
+
+    .since_when_text {
+        font-size: calc(12px + 8 * (100vw - 500px) / 600);
+    }
+
+    .icon_dash {
+        width: calc(12px + 10 * (100vw - 500px) / 600);
+        height: calc(12px + 10 * (100vw - 500px) / 600);
+    }
+
+    .img_top {
+        width: calc(100px + 55 * (100vw - 500px) / 600);
+        height: calc(100px + 55 * (100vw - 500px) / 600);
+    }
+
+    .img_bottom {
+        width: calc(200px + 100 * (100vw - 500px) / 600);
+    }
+
+    .image-stack__item--bottom {
+        top: calc(-30px - 15 * (100vw - 500px) / 600);
+    }
+
+    .img_top {
+        left: calc(60px + 25 * (100vw - 500px) / 600);
+    }
+
+    .settings_link {
+        font-size: calc(14px + 4 * (100vw - 500px) / 600);
+        line-height: calc(20px + 10 * (100vw - 500px) / 600);
+    }
+
+    .icon_for_settings {
+        width: calc(20px + 10 * (100vw - 500px) / 600);
+        height: calc(20px + 10 * (100vw - 500px) / 600);
+    }
+
+    .teacher_add_button {
+        width: 300px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .input__file-button {
+        width: 210px;
+        height: 55px;
+    }
+
+    .input__file-button-text {
+        font-size: 21px;
+    }
+
+    .user_photos {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .user_gallery_picture {
+        width: 170px;
+        height: 270px;
+    }
+
+    .delete_btn_text {
+        font-size: 20px;
+    }
+
+    .iconka_del {
+        width: 20px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    .teacher_add_button {
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .input__file-button {
+        width: 180px;
+        height: 50px;
+    }
+
+    .input__file-button-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px) {
+    .teacher_add_button {
+        width: 210px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .input__file-button {
+        width: 160px;
+        height: 40px;
+    }
+
+    .input__file-button-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .user_wrapper {
+        width: calc(100% - 30px);
+    }
+
+    .user_fl_names {
+        font-size: calc(10px + 10 * (100vw - 200px) / 300);
+    }
+
+    .username {
+        font-size: calc(7px + 6 * (100vw - 200px) / 300);
+    }
+
+    .who_is_user_text {
+        font-size: calc(8px + 4 * (100vw - 200px) / 300);
+    }
+
+    .since_when_text {
+        font-size: calc(8px + 4 * (100vw - 200px) / 300);
+    }
+
+    .icon_dash {
+        width: calc(8px + 4 * (100vw - 200px) / 300);
+        height: calc(8px + 4 * (100vw - 200px) / 300);
+    }
+
+    .img_top {
+        width: calc(35px + 45 * (100vw - 200px) / 300);
+        height: calc(35px + 45 * (100vw - 200px) / 300);
+    }
+
+    .img_bottom {
+        width: calc(90px + 80 * (100vw - 200px) / 300);
+    }
+
+    .image-stack__item--bottom {
+        top: calc(-15px - 10 * (100vw - 200px) / 300);
+    }
+
+    .img_top {
+        left: calc(35px + 20 * (100vw - 200px) / 300);
+    }
+
+    .settings_link {
+        font-size: calc(10px + 4 * (100vw - 200px) / 300);
+        line-height: calc(15px + 5 * (100vw - 200px) / 300);
+    }
+
+    .icon_for_settings {
+        width: calc(15px + 5 * (100vw - 200px) / 300);
+        height: calc(15px + 5 * (100vw - 200px) / 300);
+    }
+
+    .teacher_add_button {
+        width: 200px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .input__file-button {
+        width: 150px;
+        height: 35px;
+    }
+
+    .input__file-button-text {
+        font-size: 15px;
+    }
+
+    .user_photos {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+
+    .user_gallery_picture {
+        width: 120px;
+        height: 200px;
+    }
+
+    .delete_btn_text {
+        font-size: 20px;
+    }
+
+    .iconka_del {
+        width: 20px;
+        height: 15px;
+    }
+}

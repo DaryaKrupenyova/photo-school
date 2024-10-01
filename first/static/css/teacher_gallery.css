@@ -1,0 +1,207 @@
+.main_gallery_wrapper {
+    width: auto;
+    padding-top: 8%;
+    padding-left: 6%;
+    padding-bottom: 3%;
+}
+
+.main_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 67px;
+    color: #000000;
+}
+
+.main_gallery_conteiner {
+    width: 100%;
+    grid-template-rows: 430px;
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 290px);
+    grid-gap: 5%;
+}
+
+.gallery_cell {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.fav_imgs_btn {
+    width: 150px;
+    height: 70px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav_img_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.make_img_fav_btn {
+    background-color: transparent;
+    border: 0px;
+    width: 35px;
+    height: 35px;
+    padding: 1%;
+}
+
+@media screen and (min-width: 2500px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 340px);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 310px);
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .main_title {
+        font-size: calc(47px + 20 * (100vw - 1500px) / 500);
+    }
+
+    .main_gallery_conteiner {
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-template-rows: 430px;
+        grid-row-gap: 45px;
+    }
+
+    .gallery_cell {
+        height: 400px;
+    }
+
+    .fav_imgs_btn {
+        width: calc(130px + 20 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .fav_img_icon {
+        width: calc(25px + 5 * (100vw - 1500px) / 500);
+        height: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .make_img_fav_btn {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .main_title {
+        font-size: calc(38px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .main_gallery_conteiner {
+        grid-template-columns: repeat(auto-fit, 210px);
+        grid-template-rows: 380px;
+        grid-row-gap: 35px;
+    }
+
+    .gallery_cell {
+        height: 350px;
+    }
+
+    .fav_imgs_btn {
+        width: calc(110px + 20 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .fav_img_icon {
+        width: calc(20px + 5 * (100vw - 1100px) / 400);
+        height: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .make_img_fav_btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1099px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .main_title {
+        font-size: calc(27px + 15 * (100vw - 500px) / 600);
+    }
+
+    .main_gallery_conteiner {
+        grid-template-columns: repeat(auto-fit, 180px);
+        grid-template-rows: 350px;
+        grid-row-gap: 30px;
+    }
+
+    .gallery_cell {
+        height: 320px;
+    }
+
+    .fav_imgs_btn {
+        width: calc(90px + 23 * (100vw - 500px) / 600);
+        height: calc(40px + 13 * (100vw - 500px) / 600);
+    }
+
+    .fav_img_icon {
+        width: calc(17px + 5 * (100vw - 500px) / 600);
+        height: calc(17px + 5 * (100vw - 500px) / 600);
+    }
+
+    .make_img_fav_btn {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main_gallery_wrapper {
+        width: calc(100% - 30px);
+    }
+
+    .main_title {
+        font-size: calc(15px + 12 * (100vw - 200px) / 300);
+    }
+
+    .main_gallery_conteiner {
+        grid-template-columns: repeat(auto-fit, 140px);
+        grid-template-rows: 310px;
+        grid-row-gap: 30px;
+    }
+
+    .gallery_cell {
+        height: 280px;
+    }
+
+    .fav_imgs_btn {
+        width: calc(60px + 30 * (100vw - 200px) / 300);
+        height: calc(30px + 10 * (100vw - 200px) / 300);
+    }
+
+    .fav_img_icon {
+        width: calc(14px + 3 * (100vw - 200px) / 300);
+        height: calc(14px + 3 * (100vw - 200px) / 300);
+    }
+
+    .make_img_fav_btn {
+        width: 25px;
+        height: 25px;
+    }
+}

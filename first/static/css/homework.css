@@ -1,0 +1,349 @@
+.main_homework_wrapper {
+    width: auto;
+    padding-top: 3%;
+    padding-left: 2%;
+    padding-bottom: 3%;
+}
+
+.back_link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.iconka_arrow_left {
+    width: 35px;
+    height: 35px;
+}
+
+.homework_title_h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+    margin-top: 5%;
+}
+
+homework_title_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.iconka_menu {
+    width: 30px;
+    height: 30px;
+}
+
+.photos_title_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.photos_title_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #F86624;
+    margin: 0px;
+}
+
+.photos_title_span {
+    font-size: 15px;
+}
+
+.pupil_photos_grid {
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feedback_title_wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.feedback_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #F86624;
+    margin: 0px;
+}
+
+.comment_textarea {
+    width: 85%;
+    height: 400px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background: #FFFFFF;
+    border: 3px solid #E9E9E9;
+    border-radius: 70px;
+    padding: 3%;
+    margin-top: 3%;
+}
+
+.comment_btn {
+    margin-top: 5%;
+    text-align: center;
+    width: 330px;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    border: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 2500px) {
+    .main_homework_wrapper {
+        width: calc(100% - 340px);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .main_homework_wrapper {
+        width: calc(100% - 310px);
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .main_homework_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .back_link {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_arrow_left {
+        width: calc(30px + 5 * (100vw - 1500px) / 500);
+        height: calc(30px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .homework_title_h1 {
+        font-size: calc(64px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .homework_title_h2 {
+        font-size: calc(30px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_menu {
+        width: calc(28px + 5 * (100vw - 1500px) / 500);
+        height: calc(28px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .photos_title_h2 {
+        font-size: calc(30px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .photos_title_span {
+        font-size: calc(14px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .feedback_title {
+        font-size: calc(30px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .comment_textarea {
+        font-size: calc(20px + 5 * (100vw - 1500px) / 500);
+        line-height: calc(24px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .comment_btn {
+        width: calc(280px + 50 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+        font-size: calc(20px + 5 * (100vw - 1500px) / 500);
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .main_homework_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .back_link {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_arrow_left {
+        width: calc(25px + 5 * (100vw - 1100px) / 400);
+        height: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .homework_title_h1 {
+        font-size: calc(54px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .homework_title_h2 {
+        font-size: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_menu {
+        width: calc(23px + 5 * (100vw - 1100px) / 400);
+        height: calc(23px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .photos_title_h2 {
+        font-size: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .photos_title_span {
+        font-size: calc(11px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .pupil_photos_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feedback_title {
+        font-size: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .comment_textarea {
+        font-size: calc(17px + 3 * (100vw - 1100px) / 400);
+        line-height: calc(21px + 3 * (100vw - 1100px) / 400);
+    }
+
+    .comment_btn {
+        width: calc(230px + 50 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(17px + 5 * (100vw - 1100px) / 400);
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1099px) {
+    .main_homework_wrapper {
+        width: calc(100% - 70px);
+        position: relative;
+        left: 20px;
+    }
+
+    .back_link {
+        font-size: calc(23px + 4 * (100vw - 600px) / 500);
+    }
+
+    .iconka_arrow_left {
+        width: calc(27px + 5 * (100vw - 600px) / 500);
+        height: calc(27px + 5 * (100vw - 600px) / 500);
+    }
+
+    .homework_title_h1 {
+        font-size: calc(44px + 10 * (100vw - 600px) / 500);
+    }
+
+    .homework_title_h2 {
+        font-size: calc(21px + 5 * (100vw - 600px) / 500);
+    }
+
+    .iconka_menu {
+        width: calc(20px + 5 * (100vw - 600px) / 500);
+        height: calc(20px + 5 * (100vw - 600px) / 500);
+    }
+
+    .photos_title_h2 {
+        font-size: calc(22px + 5 * (100vw - 600px) / 500);
+    }
+
+    .photos_title_span {
+        font-size: calc(11px + 4 * (100vw - 600px) / 500);
+    }
+
+    .pupil_photos_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feedback_title {
+        font-size: calc(22px + 5 * (100vw - 600px) / 500);
+    }
+
+    .comment_textarea {
+        font-size: calc(15px + 3 * (100vw - 600px) / 500);
+        line-height: calc(18px + 3 * (100vw - 600px) / 500);
+        border-radius: 40px;
+    }
+
+    .comment_btn {
+        width: calc(180px + 50 * (100vw - 600px) / 500);
+        height: calc(40px + 10 * (100vw - 600px) / 500);
+        font-size: calc(14px + 3 * (100vw - 600px) / 500);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main_homework_wrapper {
+        width: calc(100% - 70px);
+        position: relative;
+        left: 20px;
+    }
+
+    .back_link {
+        font-size: calc(16px + 7 * (100vw - 300px) / 300);
+    }
+
+    .iconka_arrow_left {
+        width: calc(18px + 9 * (100vw - 300px) / 300);
+        height: calc(18px + 9 * (100vw - 300px) / 300);
+    }
+
+    .homework_title_h1 {
+        font-size: calc(24px + 20 * (100vw - 300px) / 300);
+    }
+
+    .homework_title_h2 {
+        font-size: calc(15px + 6 * (100vw - 300px) / 300);
+    }
+
+    .iconka_menu {
+        width: calc(15px + 5 * (100vw - 300px) / 300);
+        height: calc(15px + 5 * (100vw - 300px) / 300);
+    }
+
+    .photos_title_h2 {
+        font-size: calc(15px + 7 * (100vw - 300px) / 300);
+    }
+
+    .photos_title_span {
+        display: none;
+    }
+
+    .pupil_photos_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback_title {
+        font-size: calc(17px + 5 * (100vw - 300px) / 300);
+    }
+
+    .comment_textarea {
+        font-size: calc(12px + 3 * (100vw - 300px) / 300);
+        line-height: calc(15px + 3 * (100vw - 300px) / 300);
+        padding: 5%;
+        border-radius: 30px;
+    }
+
+    .comment_btn {
+        width: calc(130px + 50 * (100vw - 300px) / 300);
+        height: calc(30px + 10 * (100vw - 300px) / 300);
+        font-size: calc(10px + 4 * (100vw - 300px) / 300);
+    }
+}

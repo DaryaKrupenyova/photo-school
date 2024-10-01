@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load widget_tweaks %}
+{% load static %}
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/styles1.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+
+<body style="background-color: #F0F0F0;">
+    <div style="display: flex; justify-content: center;">
+        <div class="divmain">
+            <header style="position: sticky; top: 0px;">
+                <div class="divhed" style="display: flex; align-items: center;">
+                    <div class="divhed2"></div>
+                    <a href="{% url 'account' %}" class="btn btn-primary btn1" style="margin-left: 10px;">Аккаунт</a>
+                </div>
+            </header>
+            <main>
+                <div class="divfirstblock" style="background-image: url({% static 'images/parco-chan-Ztp54-7b5Qc-unsplash 1.png' %});">
+                    <h1 class="hkr">Начни делать красиво.</h1>
+                    <div class="mt4" style="">
+                        <span class="svn">Вместе с нами</span>
+                    </div>
+                    <div class="divbtn1" style="">
+                        <a href="#anchor" class="btn btn-primary btn1" style="">Начать</a>
+                    </div>
+                </div>
+                <div id="anchor" class="divsecondblock">
+                    <h2 class="hkr">Та фотошкола, что ты искал</h2>
+                    <div class="row divfirstpic">
+                        <div class="col">
+                            <div class="firstpic" style="background-image: url({% static 'images/fotki1.png' %});"></div>
+                        </div>
+                        <div class="col" style="display: flex; justify-content: center; align-items: center;">
+                            <p class="gotovit">Мы не знаем какое блюдо ты будешь готовить, но мы обеспечим тебя специями из стилей и вкусов для дальнейшей готовки</p>
+                        </div>
+                    </div>
+                    <div class="row divsecondpic">
+                        <div class="col" style="display: flex; justify-content: center; align-items: center;">
+                            <p class="nravitsa">Тебе здесь понравится даже, когда мы будем говорить о выдержке, компановке и всякой мути :D</p>
+                        </div>
+                        <div class="col">
+                            <div class="secondpic" style="background-image: url({% static 'images/fotki2.png' %});"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divthirdblock">
+                    <h2 class="kdely">Перейдем к делу.</h2>
+                    <div style="display: flex;">
+                        <div class="divkurs">
+                            <p class="pkurs">Курс “Основы фотографии”</p>
+                        </div>
+                        <p class="start">Старт потока - 15 АПРЕЛЯ</p>
+                        <div class="emdiv">
+                        </div>
+                    </div>
+                    <div class="divlist">
+                        <p class="wiy">Это не просто лекции на Webinar или YouTube:</p>
+                        <p class="tl"> - Интерактивное онлайн обучение c живыми людьми</p>
+                        <p class="tl">- С еженедельными квестами</p>
+                        <p class="tl">- Обратная связь от преподавателей</p>
+                    </div>
+                    <div class="row divbtn2">
+                        <div class="col-5">
+                        </div>
+                        <div class="col">
+                            <div class="divpt">
+                                <p class="ppod">Подписка:</p>
+                                <p class="p2000r">2000₽ месяц</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                        </div>
+                    </div>
+                </div>
+                <div class="divspis">
+                    <h2 class="hsp">Скоро тут будет список занятий курса и преподаватели</h2>
+                </div>
+                <div class="divfourthblock" style="background-image: url({% static 'images/parco-chan-Ztp54-7b5Qc-unsplash 2.png' %});">
+                    <p class="p2">Скорее записывайся!</p>
+                    <p class="p2">Осталось {{ number_of_free }} {{ places }}</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="divform">
+                            <div class="divform2">
+                                <h2 class="text-center hzap">Записаться на курс</h2>
+                                {% render_field form.name placeholder="Фамилия и Имя" class="inputfi" %}
+                                {% render_field form.e_mail placeholder="Почта" class="inputtel" %}
+                                {% render_field form.phone placeholder="Телефон" class="inputpochta" %}
+                                <div class="divbtn3">
+                                    <button class="btn btn-primary btn2" type="submit">Записаться</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('a[href*=#]').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({
+                            scrollTop: targetOffset
+                        }, 500); //скорость прокрутки
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

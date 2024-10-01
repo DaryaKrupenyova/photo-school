@@ -1,0 +1,67 @@
+{% load static %}
+<div id="block_kod_druga" class="friend_promo_block">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="friend_promo_wrapper">
+            <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                <div id="btn_close_kod_druga">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <h2 class="friend_promo_h2">Код друга</h2>
+                <div class="iconka_back"></div>
+            </div>
+            <div style="margin-top: 3%; padding: 3%;">
+                <p class="friend_promo_p">Воспользуйся кодом друга для получения скидки для нового пользователя.</p>
+                <p class="friend_promo_p">Если подобного нет - перейди к оплате далее.</p>
+            </div>
+            <form id="friend_promo_form" method="post" style="padding: 3%">
+                {% csrf_token %}
+                <div class="mt-2" style="display: flex; justify-content: center;">
+                    <input id="friend_promo" name="friend_promo" placeHolder="Код друга" class="friend_promo_input">
+                </div>
+                <div style="margin-top: 7%; display: flex; justify-content: space-between;">
+                    <button type="submit" class="enter_promo_btn">Ввести</button>
+                    <button id="dalee_btn" class="next_step_btn">Далее</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="friend_promo_invalid" style="display: none; position: fixed; z-index: 1010; right: 2%; top: 3%;">
+    <div style="padding: 5% 7%; width: 100%; background: #FFFFFF; border-radius: 50px;">
+        <p class="friend_promo_invalid_p">Код введен неверно или его не существует.</p>
+        <p class="friend_promo_invalid_p">Попробуй вновь)</p>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('#friend_promo_form').submit(function() {
+        var fd = new FormData;
+        var promo = $(this).find('#friend_promo');
+        if (promo.val()) {
+            fd.append('friend_promo', promo.val());
+        }
+        fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+        $.ajax({
+            data: fd,
+            type: "post",
+            url: "{% url 'finances' %}",
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response.friend_promo_invalid == "invalid") {
+                    $('#friend_promo_invalid')[0].style.display = 'block';
+                    $('#friend_promo')[0].style.border = "2px solid #F86624";
+                } else if (response.friend_promo_invalid == "correct") {
+                    $('#friend_promo_invalid')[0].style.display = 'none';
+                    $('#friend_promo')[0].style.border = "2px solid #5FAD56";
+                }
+            },
+            error: function(response) {
+                console.log(response)
+            }
+        });
+        return false;
+    });
+
+</script>

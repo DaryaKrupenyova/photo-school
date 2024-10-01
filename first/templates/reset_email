@@ -1,0 +1,2 @@
+Это письмо было отправлено вам для подтверждения вашей почты перед её заменой.
+{{ protocol }}://{{ domain }}{% url 'change_email_confirm' uidb64=uid token=token %}

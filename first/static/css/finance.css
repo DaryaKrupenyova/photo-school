@@ -1,0 +1,1114 @@
+.main_finance_wrapper {
+    width: auto;
+    padding: 3% 5%;
+}
+
+.promo_btn {
+    cursor: pointer;
+    width: 200px;
+    height: 65px;
+    background: #F9C80E;
+    border: 2px solid #F9C80E;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.dropbtn {
+    width: 65px;
+    height: 65px;
+    background: #F9C80E;
+    border: 2px solid #F9C80E;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.95);
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #000000;
+}
+
+.my_wallet_h2 {
+    margin-right: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #F9C80E;
+    margin-bottom: 0px;
+}
+
+.balance_background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    height: 65px;
+    background: #F9C80E;
+    border-radius: 50px;
+}
+
+.balance_span {
+    margin-right: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.next_month_span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.add_balance {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F86624;
+    padding: 0;
+}
+
+.add_balance:hover {
+    color: #F86624;
+}
+
+.use_friend_promo {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+.transactions_history {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #F9C80E;
+    margin: 0px;
+}
+
+.no_transactions_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.transaction_reason {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.iconka_back {
+    width: 40px;
+    height: 40px;
+}
+
+.friend_promo_block {
+    display: none;
+    width: calc(100% - 280px);
+    z-index: 1000;
+    position: fixed;
+    left: 280px;
+    top: 0px;
+}
+
+.friend_promo_wrapper {
+    padding: 4%;
+    width: 35%;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.friend_promo_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+}
+
+.friend_promo_p {
+    margin: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.friend_promo_input {
+    width: 100%;
+    height: 70px;
+    padding: 0% 10%;
+    background: #E9E9E9;
+    border: 2px solid rgba(233, 233, 233, 0.95);
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+}
+
+.enter_promo_btn {
+    width: 47%;
+    height: 70px;
+    background: #F86624;
+    border: 0px;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.next_step_btn {
+    width: 47%;
+    height: 70px;
+    background: #FFFFFF;
+    border: 2px solid #F86624;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #F86624;
+}
+
+.friend_promo_invalid_p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color: #000000;
+    margin: 0px;
+}
+
+.hint_block_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000;
+}
+
+ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+li:before {
+    content: counter(item) ') ';
+    counter-increment: item;
+}
+
+.hint_block_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 2%;
+    color: #000000;
+}
+
+.add_balance_step2_block {
+    display: none;
+    width: calc(100% - 280px);
+    z-index: 1000;
+    position: fixed;
+    left: 280px;
+    top: 0px;
+}
+
+.add_balance_step2_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+}
+
+.add_balance_step2_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 5%;
+}
+
+.add_balance_step2_a_wrapper {
+    width: 50%;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.add_balance_step2_a {
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.add_balance_step2_a:hover {
+    color: #FFFFFF;
+}
+
+.promo_block {
+    display: none;
+    width: calc(100% - 280px);
+    z-index: 1000;
+    position: fixed;
+    left: 280px;
+    top: 0px;
+}
+
+.promo_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+}
+
+.promo_menu_text {
+    cursor: pointer;
+    margin-right: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.promo_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.promo_input {
+    border: 0px;
+    padding: 0% 10%;
+    width: 100%;
+    height: 70px;
+    background: #E9E9E9;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+}
+
+.promo_btn_use {
+    border: 0px;
+    width: 70%;
+    height: 70px;
+    background: #F86624;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.your_promo_input {
+    width: 100%;
+    height: 70px;
+    padding: 0% 10%;
+    background: #FFFFFF;
+    border: 2px solid rgba(233, 233, 233, 0.95);
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+}
+
+.iconka_case {
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+.iconka_whiterub {
+    width: 30px;
+    height: 30px;
+}
+
+.iconka_yellowkurs {
+    width: 30px;
+    height: 30px;
+    margin-right: 1%;
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .main_finance_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .promo_btn {
+        width: calc(160px + 40 * (100vw - 1500px) / 500);
+        height: calc(55px + 10 * (100vw - 1500px) / 500);
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .dropbtn {
+        width: calc(55px + 10 * (100vw - 1500px) / 500);
+        height: calc(55px + 10 * (100vw - 1500px) / 500);
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    h1 {
+        font-size: calc(56px + 8 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_case {
+        width: calc(30px + 5 * (100vw - 1500px) / 500);
+        height: calc(30px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .my_wallet_h2 {
+        font-size: calc(30px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .balance_background {
+        height: calc(55px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .balance_span {
+        font-size: calc(30px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_whiterub {
+        width: calc(25px + 5 * (100vw - 1500px) / 500);
+        height: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .next_month_span {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .add_balance {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .use_friend_promo {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_yellowkurs {
+        width: calc(25px + 5 * (100vw - 1500px) / 500);
+        height: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .transactions_history {
+        font-size: calc(30px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .no_transactions_p {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .transaction_reason {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_back {
+        width: calc(35px + 5 * (100vw - 1500px) / 500);
+        height: calc(35px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .friend_promo_block {
+        width: calc(100% - 280px);
+        left: 280px;
+    }
+
+    .friend_promo_h2 {
+        font-size: calc(40px + 8 * (100vw - 1500px) / 500);
+    }
+
+    .friend_promo_p {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(24px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .friend_promo_input {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .enter_promo_btn {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(24px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .next_step_btn {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(24px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .friend_promo_invalid_p {
+        font-size: calc(18px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .hint_block_h2 {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .hint_block_text {
+        font-size: calc(18px + 2 * (100vw - 1500px) / 500);
+        line-height: calc(20px + 3 * (100vw - 1500px) / 500);
+    }
+
+    .add_balance_step2_block {
+        width: calc(100% - 280px);
+        left: 280px;
+    }
+
+    .add_balance_step2_h2 {
+        font-size: calc(40px + 8 * (100vw - 1500px) / 500);
+    }
+
+    .add_balance_step2_text {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(24px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .add_balance_step2_a_wrapper {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+    }
+
+    .add_balance_step2_a {
+        font-size: calc(24px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .promo_block {
+        width: calc(100% - 280px);
+        left: 280px;
+    }
+
+    .promo_h2 {
+        font-size: calc(40px + 8 * (100vw - 1500px) / 500);
+    }
+
+    .promo_menu_text {
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .promo_text {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+        line-height: calc(24px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .promo_input {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .promo_btn_use {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(25px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .your_promo_input {
+        height: calc(55px + 15 * (100vw - 1500px) / 500);
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .main_finance_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .promo_btn {
+        width: calc(125px + 35 * (100vw - 1100px) / 400);
+        height: calc(50px + 5 * (100vw - 1100px) / 400);
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .dropbtn {
+        width: calc(50px + 5 * (100vw - 1100px) / 400);
+        height: calc(50px + 5 * (100vw - 1100px) / 400);
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    h1 {
+        font-size: calc(48px + 8 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_case {
+        width: calc(25px + 5 * (100vw - 1100px) / 400);
+        height: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .my_wallet_h2 {
+        font-size: calc(24px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .balance_background {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .balance_span {
+        font-size: calc(24px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_whiterub {
+        width: calc(20px + 5 * (100vw - 1100px) / 400);
+        height: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .next_month_span {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .add_balance {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .use_friend_promo {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_yellowkurs {
+        width: calc(20px + 5 * (100vw - 1100px) / 400);
+        height: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .transactions_history {
+        font-size: calc(24px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .no_transactions_p {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .transaction_reason {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_back {
+        width: calc(30px + 5 * (100vw - 1100px) / 400);
+        height: calc(30px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .friend_promo_block {
+        width: calc(100% - 250px);
+        left: 250px;
+    }
+
+    .friend_promo_wrapper {
+        width: 40%;
+        border-radius: 75px;
+    }
+
+    .friend_promo_h2 {
+        font-size: calc(32px + 8 * (100vw - 1100px) / 400);
+    }
+
+    .friend_promo_p {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(18px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .friend_promo_input {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .enter_promo_btn {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .next_step_btn {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .friend_promo_invalid_p {
+        font-size: calc(16px + 2 * (100vw - 1100px) / 400);
+    }
+
+    .hint_block_h2 {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .hint_block_text {
+        font-size: calc(16px + 2 * (100vw - 1100px) / 400);
+        line-height: calc(17px + 3 * (100vw - 1100px) / 400);
+    }
+
+    .add_balance_step2_block {
+        width: calc(100% - 250px);
+        left: 250px;
+    }
+
+    .add_balance_step2_h2 {
+        font-size: calc(32px + 8 * (100vw - 1100px) / 400);
+    }
+
+    .add_balance_step2_text {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(18px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .add_balance_step2_a_wrapper {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .add_balance_step2_a {
+        font-size: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .promo_block {
+        width: calc(100% - 250px);
+        left: 250px;
+    }
+
+    .promo_h2 {
+        font-size: calc(32px + 8 * (100vw - 1100px) / 400);
+    }
+
+    .promo_menu_text {
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .promo_text {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        line-height: calc(20px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .promo_input {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .promo_btn_use {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .your_promo_input {
+        height: calc(45px + 10 * (100vw - 1100px) / 400);
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1099px) {
+    .main_finance_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .promo_btn {
+        width: calc(90px + 35 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .dropbtn {
+        width: calc(40px + 10 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    h1 {
+        font-size: calc(40px + 8 * (100vw - 500px) / 600);
+    }
+
+    .iconka_case {
+        width: calc(20px + 5 * (100vw - 500px) / 600);
+        height: calc(20px + 5 * (100vw - 500px) / 600);
+    }
+
+    .my_wallet_h2 {
+        font-size: calc(18px + 6 * (100vw - 500px) / 600);
+    }
+
+    .balance_background {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+    }
+
+    .balance_span {
+        font-size: calc(18px + 6 * (100vw - 500px) / 600);
+    }
+
+    .iconka_whiterub {
+        width: calc(15px + 5 * (100vw - 500px) / 600);
+        height: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .next_month_span {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .add_balance {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .use_friend_promo {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .iconka_yellowkurs {
+        width: calc(15px + 5 * (100vw - 500px) / 600);
+        height: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .transactions_history {
+        font-size: calc(18px + 6 * (100vw - 500px) / 600);
+    }
+
+    .no_transactions_p {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .transaction_reason {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .iconka_back {
+        width: calc(22px + 5 * (100vw - 500px) / 600);
+        height: calc(22px + 5 * (100vw - 500px) / 600);
+    }
+
+    .friend_promo_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .friend_promo_wrapper {
+        width: 50%;
+        border-radius: 50px;
+    }
+
+    .friend_promo_h2 {
+        font-size: calc(24px + 8 * (100vw - 500px) / 600);
+    }
+
+    .friend_promo_p {
+        font-size: calc(13px + 4 * (100vw - 500px) / 600);
+        line-height: calc(14px + 6 * (100vw - 500px) / 600);
+    }
+
+    .friend_promo_input {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(13px + 4 * (100vw - 500px) / 600);
+    }
+
+    .enter_promo_btn {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(15px + 4 * (100vw - 500px) / 600);
+    }
+
+    .next_step_btn {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(15px + 4 * (100vw - 500px) / 600);
+    }
+
+    .friend_promo_invalid_p {
+        font-size: calc(14px + 2 * (100vw - 500px) / 600);
+    }
+
+    .hint_block_h2 {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .hint_block_text {
+        font-size: calc(12px + 2 * (100vw - 500px) / 600);
+        line-height: calc(14px + 3 * (100vw - 500px) / 600);
+    }
+
+    .add_balance_step2_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .add_balance_step2_h2 {
+        font-size: calc(24px + 8 * (100vw - 500px) / 600);
+    }
+
+    .add_balance_step2_text {
+        font-size: calc(13px + 4 * (100vw - 500px) / 600);
+        line-height: calc(14px + 6 * (100vw - 500px) / 600);
+    }
+
+    .add_balance_step2_a_wrapper {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+    }
+
+    .add_balance_step2_a {
+        font-size: calc(16px + 4 * (100vw - 500px) / 600);
+    }
+
+    .promo_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .promo_h2 {
+        font-size: calc(24px + 8 * (100vw - 500px) / 600);
+    }
+
+    .promo_menu_text {
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .promo_text {
+        font-size: calc(13px + 4 * (100vw - 500px) / 600);
+        line-height: calc(14px + 4 * (100vw - 500px) / 600);
+    }
+
+    .promo_input {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(12px + 4 * (100vw - 500px) / 600);
+    }
+
+    .promo_btn_use {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .your_promo_input {
+        height: calc(35px + 10 * (100vw - 500px) / 600);
+        font-size: calc(12px + 4 * (100vw - 500px) / 600);
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .main_finance_wrapper {
+        width: calc(100% - 30px);
+    }
+
+    .promo_btn {
+        width: calc(75px + 15 * (100vw - 300px) / 200);
+        height: calc(30px + 10 * (100vw - 300px) / 200);
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .dropbtn {
+        width: calc(30px + 10 * (100vw - 300px) / 200);
+        height: calc(30px + 10 * (100vw - 300px) / 200);
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    h1 {
+        font-size: calc(32px + 8 * (100vw - 300px) / 200);
+    }
+
+    .iconka_case {
+        width: calc(15px + 5 * (100vw - 300px) / 200);
+        height: calc(15px + 5 * (100vw - 300px) / 200);
+    }
+
+    .my_wallet_h2 {
+        font-size: calc(14px + 4 * (100vw - 300px) / 200);
+    }
+
+    .balance_background {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+    }
+
+    .balance_span {
+        font-size: calc(12px + 6 * (100vw - 300px) / 200);
+    }
+
+    .iconka_whiterub {
+        width: calc(10px + 5 * (100vw - 300px) / 200);
+        height: calc(10px + 5 * (100vw - 300px) / 200);
+    }
+
+    .next_month_span {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .add_balance {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .use_friend_promo {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .iconka_yellowkurs {
+        width: calc(10px + 5 * (100vw - 300px) / 200);
+        height: calc(10px + 5 * (100vw - 300px) / 200);
+    }
+
+    .transactions_history {
+        font-size: calc(12px + 6 * (100vw - 300px) / 200);
+    }
+
+    .no_transactions_p {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .transaction_reason {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .iconka_back {
+        width: calc(15px + 5 * (100vw - 300px) / 200);
+        height: calc(15px + 5 * (100vw - 300px) / 200);
+    }
+
+    .friend_promo_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .friend_promo_wrapper {
+        width: 60%;
+        border-radius: 40px;
+    }
+
+    .friend_promo_h2 {
+        font-size: calc(16px + 8 * (100vw - 300px) / 200);
+    }
+
+    .friend_promo_p {
+        font-size: calc(11px + 2 * (100vw - 300px) / 200);
+        line-height: calc(12px + 2 * (100vw - 300px) / 200);
+    }
+
+    .friend_promo_input {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(11px + 2 * (100vw - 300px) / 200);
+    }
+
+    .enter_promo_btn {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(11px + 4 * (100vw - 300px) / 200);
+    }
+
+    .next_step_btn {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(11px + 4 * (100vw - 300px) / 200);
+    }
+
+    .friend_promo_invalid_p {
+        font-size: calc(12px + 2 * (100vw - 300px) / 200);
+    }
+
+    .hint_block_h2 {
+        font-size: calc(15px + 5 * (100vw - 300px) / 200);
+    }
+
+    .hint_block_text {
+        font-size: calc(12px + 2 * (100vw - 300px) / 200);
+        line-height: calc(14px + 3 * (100vw - 300px) / 200);
+    }
+
+    .add_balance_step2_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .add_balance_step2_h2 {
+        font-size: calc(16px + 8 * (100vw - 300px) / 200);
+    }
+
+    .add_balance_step2_text {
+        font-size: calc(10px + 2 * (100vw - 300px) / 200);
+        line-height: calc(12px + 2 * (100vw - 300px) / 200);
+    }
+
+    .add_balance_step2_a_wrapper {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+    }
+
+    .add_balance_step2_a {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .promo_block {
+        width: 100%;
+        left: 0;
+    }
+
+    .promo_h2 {
+        font-size: calc(16px + 8 * (100vw - 300px) / 200);
+    }
+
+    .promo_menu_text {
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .promo_text {
+        font-size: calc(11px + 2 * (100vw - 300px) / 200);
+        line-height: calc(12px + 2 * (100vw - 300px) / 200);
+    }
+
+    .promo_input {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(11px + 1 * (100vw - 300px) / 200);
+    }
+
+    .promo_btn_use {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+
+    .your_promo_input {
+        height: calc(25px + 10 * (100vw - 300px) / 200);
+        font-size: calc(11px + 1 * (100vw - 300px) / 200);
+    }
+
+    .dropdown-content {
+        width: 500%;
+    }
+}

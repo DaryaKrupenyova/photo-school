@@ -1,0 +1,93 @@
+{% load static %}
+<div id="block_vstavit" class="promo_block">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="friend_promo_wrapper">
+            <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                <div id="btn_close_vstavit">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <h2 class="promo_h2">Промокод</h2>
+                <div class="iconka_back"></div>
+            </div>
+            <div style="margin-top: 5%; display: flex; align-items: center; justify-content: space-between; padding: 0% 10%;">
+                <p style="color: #F86624;" class="promo_menu_text">Вставить</p>
+                <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                <p id="btn_cozdat" style="color: #000000;" class="promo_menu_text">Создать</p>
+            </div>
+            <div style="margin-top: 8%; padding: 0% 3%; display: flex; justify-content: center;">
+                <p class="promo_text">Место для ввода промокода для получения скидки на месяц</p>
+            </div>
+            <form id="promo_form" method="post">
+                {% csrf_token %}
+                <div style="margin-top: 5%; display: flex; justify-content: center;">
+                    <input id="promo_place" required name="promo_place" placeholder="Промокод" class="promo_input">
+                </div>
+                <div style="margin-top: 5%; display: flex; justify-content: center;">
+                    <button class="promo_btn_use" type="submit">Использовать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="promo_invalid" style="display: none; position: fixed; z-index: 1010; right: 2%; top: 3%;">
+    <div style="padding: 5% 7%; width: 100%; background: #FFFFFF; border-radius: 50px;">
+        <p class="friend_promo_invalid_p">Промокод устарел или был уже использован.</p>
+        <p class="friend_promo_invalid_p">Попробуй вновь)</p>
+    </div>
+</div>
+<div id="block_cozdat" class="promo_block">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="friend_promo_wrapper">
+            <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                <div id="btn_close_cozdat">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <h2 class="promo_h2">Промокод</h2>
+                <div class="iconka_back"></div>
+            </div>
+            <div style="margin-top: 5%; display: flex; align-items: center; justify-content: space-between; padding: 0% 10%;">
+                <p id="btn_vstavit" style="color: #000;" class="promo_menu_text">Вставить</p>
+                <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                <p style="color: #F86624;" class="promo_menu_text">Создать</p>
+            </div>
+            <p class="promo_text" style="text-align: center; margin-top: 7%;">Твой код друга</p>
+            <p class="promo_text" style="margin-top: 7%;">Ты получишь 400р на кошелек за каждого нового участника школы, а твой близкий - 200р ;) </p>
+            <p class="promo_text">Приглашай друзей и учись бесплатно!</p>
+            <div style="margin-top: 5%; display: flex; justify-content: center;">
+                <input disabled value="{{ promo.content }}" class="your_promo_input">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#promo_form').submit(function() {
+        var fd = new FormData;
+        var promo = $(this).find('#promo_place');
+        if (promo.val()) {
+            fd.append('promo_place', promo.val());
+        }
+        fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+        $.ajax({
+            data: fd,
+            type: "post",
+            url: "{% url 'finances' %}",
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response.promo_invalid == "invalid") {
+                    $('#promo_invalid')[0].style.display = 'block';
+                    $('#promo_place')[0].style.border = "2px solid #F86624";
+                } else if (response.promo_invalid == "correct") {
+                    $('#promo_invalid')[0].style.display = 'none';
+                    $('#promo_place')[0].style.border = "2px solid #5FAD56";
+                }
+            },
+            error: function(response) {
+                console.log(response)
+            }
+        });
+        return false;
+    });
+
+</script>

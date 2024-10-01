@@ -1,0 +1,673 @@
+{% load static %}
+<button id="btn_add_group" style="cursor: pointer; width: 271px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E; box-sizing: border-box; border-radius: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; color: #000000; margin-left: 120px; margin-top: 50px;">Создать группу</button>
+<div style="display: flex; margin-top: 40px; margin-left: 120px;">
+    <div>
+        <div style="display: flex;">
+            <img src="{% static 'images/ic20-list.svg' %}" class="iconka_list" style="margin-top: 10px;" alt="alt">
+            <div style="margin-left: 15px;">
+                <span style=" font-family: Roboto; font-style: normal; font-weight: 500; font-size: 36px; color: #F9C80E;">Пользователи без групп</span>
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <table id="info-table_p_wo_g" class="table table-bordered" style="border-color:white; width: 640px;">
+                <tbody>
+                    <tr>
+                        <td style="width: 350px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">Алексеев Михаил</td>
+                        <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; color: #000000;">@alekseevmikhail56783</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 350px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">Алексеев Михаил</td>
+                        <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; color: #000000;">@alekseevmikhail56783</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="margin-left: 80px;">
+        <div style="display: flex;">
+            <img src="{% static 'images/ic20-list.svg' %}" class="iconka_list" style="margin-top: 10px;" alt="alt">
+            <div style="margin-left: 15px;">
+                <span style=" font-family: Roboto; font-style: normal; font-weight: 500; font-size: 36px; color: #F9C80E;">Список групп</span>
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <div style="position: absolute; left: 1160px; top: 550px;">
+                <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+            </div>
+            <input style="padding-left: 80px; width: 640px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск группы" id="search-text_g" onkeyup="tableSearch_g()">
+        </div>
+        <div style="margin-top: 30px;">
+            <table id="info-table_g" class="table table-bordered" style="border-color:white; width: 640px;">
+                <tbody>
+                    <tr style="cursor: pointer;">
+                        <td style="padding-top: 12px; width: 100px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">Группа 101</td>
+                        <td style="padding-top: 12px; width: 70px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">18 чел</td>
+                        <td style="padding-top: 12px; width: 50px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">1 препод</td>
+                        <td id="btn_edit_group" style="width: 10px;"><img src="{% static 'images/ic20-black_edit.svg' %}" class="iconka_edit" alt="alt"></td>
+                        <td style="width: 10px;"><img src="{% static 'images/ic20-trashcan.svg' %}" class="iconka_edit" alt="alt"></td>
+                    </tr>
+                    <tr style="cursor: pointer;">
+                        <td style="padding-top: 12px; width: 100px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">Группа 102</td>
+                        <td style="padding-top: 12px; width: 70px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">0 чел</td>
+                        <td style="padding-top: 12px; width: 50px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">0 препод</td>
+                        <td style="width: 10px;"><img src="{% static 'images/ic20-black_edit.svg' %}" class="iconka_edit" alt="alt"></td>
+                        <td style="width: 10px;"><img src="{% static 'images/ic20-trashcan.svg' %}" class="iconka_edit" alt="alt"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="add_group_1" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_add_group_1" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 365px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Создать группу </h1>
+            </div>
+            <input style="padding-left: 80px; margin-left: 95px; margin-top: 40px; width: 574px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000; border: 0px;" type="text" placeholder="Название группы">
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Выбранные преподаватели:</span>
+                    <div id="table_p_add_in_g" style="margin-top: 52px; width: 540px; height: 200px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_p_add_in_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable1">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Крупенёва Дарья</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 320px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <div style="position: absolute; left: 865px; top: 425px;">
+                        <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                    </div>
+                    <input style="padding-left: 80px; width: 523px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_p_f_g" onkeyup="tableSearch_p_f_g()">
+                    <div id="table_p_f_g" style="margin-top: 20px; width: 540px; height: 200px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_p_f_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable1">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Вишняков Павел</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Сапрыкин Юрий</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 67px;">
+                <button id="btn_cont_1" style="width: 340px; height: 71.62px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Далее</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add_group_2" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_add_group_2" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 365px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Создать группу </h1>
+            </div>
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Выбранные студенты:</span>
+                    <div id="table_s_add_in_g" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_s_add_in_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable2">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Крупенёва Дарья</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 440px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <div style="position: absolute; left: 865px; top: 315px;">
+                        <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                    </div>
+                    <input style="padding-left: 80px; width: 523px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_s_f_g" onkeyup="tableSearch_s_f_g()">
+                    <div id="table_s_f_g" style="margin-top: 20px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_s_f_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable2">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Вишняков Павел</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Сапрыкин Юрий</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <button id="btn_cont_2" style="width: 340px; height: 71.62px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Далее</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="add_group_end" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_add_group_end" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 415px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Группа 112</h1>
+            </div>
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Преподаватели:</span>
+                    <div id="table_p_add_in_g_end" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table class="table table-bordered" style="border-color:white; width: 530px;">
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 440px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Студенты:</span>
+                    <div id="table_s_add_in_g_end" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table class="table table-bordered" style="border-color:white; width: 530px;">
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <button id="btn_end" style="width: 340px; height: 71.62px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Создать</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit_group" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_edit_group" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 415px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Группа 112</h1>
+            </div>
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <div id="btn_plus_prepod" style="cursor: pointer; display: flex; align-items: center; ">
+                        <span style="margin-right: 20px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Преподаватели:</span>
+                        <img src="{% static 'images/ic20_yellow_plus.svg' %}" class="iconka_back" alt="alt">
+                    </div>
+                    <div id="table_p_edit_in_g" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table class="table table-bordered" style="border-color:white; width: 530px;">
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 440px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <div id="btn_plus_student" style="cursor: pointer; display: flex; align-items: center; ">
+                        <span style="margin-right: 20px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">Студенты:</span>
+                        <img src="{% static 'images/ic20_yellow_plus.svg' %}" class="iconka_back" alt="alt">
+                    </div>
+                    <div id="table_s_edit_in_g" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table class="table table-bordered" style="border-color:white; width: 530px;">
+                            <tbody>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                    <td><img src="{% static 'images/ic20-black_trash.svg' %}" alt="alt"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <button id="btn_save_edit_g" style="width: 340px; height: 71.62px; background: #F9C80E; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit_group_prepod" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_edit_group_prepod" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 248px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Добавить преподавателя</h1>
+            </div>
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">New Преподаватели:</span>
+                    <div id="table_newp_edit_in_g" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_newp_edit_in_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable3">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Крупенёва Дарья</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 440px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <div style="position: absolute; left: 865px; top: 315px;">
+                        <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                    </div>
+                    <input style="padding-left: 80px; width: 523px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_newp_f_g" onkeyup="tableSearch_newp_f_g()">
+                    <div id="table_newp_f_g" style="margin-top: 20px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_newp_f_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable3">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Вишняков Павел</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Сапрыкин Юрий</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <button id="btn_save_edit_prepod_g" style="width: 340px; height: 71.62px; background: #F9C80E; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="edit_group_student" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 1330px; height: 834px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 95px; display: flex; align-items: center;">
+                <img id="btn_close_edit_group_student" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 315px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Добавить студента</h1>
+            </div>
+            <div style="margin-top: 50px; margin-left: 95px; display: flex;">
+                <div style="margin-top: 30px;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 28px; color: #000000;">New Студенты:</span>
+                    <div id="table_news_edit_in_g" style="margin-top: 52px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_news_edit_in_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable4">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Крупенёва Дарья</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Алексеев Михаил</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <img src="{% static 'images/ic_grey_line.svg' %}" style="padding-top: 25px; width: 10px; height: 440px;" alt="alt">
+                <div style="margin-left: 40px; margin-top: 30px;">
+                    <div style="position: absolute; left: 865px; top: 315px;">
+                        <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                    </div>
+                    <input style="padding-left: 80px; width: 523px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск студента" id="search-text_news_f_g" onkeyup="tableSearch_news_f_g()">
+                    <div id="table_news_f_g" style="margin-top: 20px; width: 540px; height: 320px; overflow-y: scroll; overflow-x: hidden;">
+                        <table id="info-table_news_f_g" class="table table-bordered" style="border-color:white; width: 530px; min-height: 70px;">
+                            <tbody class="connectedSortable4">
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Вишняков Павел</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                                <tr style="cursor: move;">
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">Сапрыкин Юрий</td>
+                                    <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@alekseevmikhail56783</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <button id="btn_save_edit_student_g" style="width: 340px; height: 71.62px; background: #F9C80E; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; color: #FFFFFF;">Сохранить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_add_group').click(function() {
+            document.getElementById(`add_group_1`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_add_group_1').click(function() {
+            document.getElementById(`add_group_1`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_cont_1').click(function() {
+            document.getElementById(`add_group_1`).style.display = 'none';
+            document.getElementById(`add_group_2`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_add_group_2').click(function() {
+            document.getElementById(`add_group_2`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_cont_2').click(function() {
+            document.getElementById(`add_group_2`).style.display = 'none';
+            document.getElementById(`add_group_end`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_add_group_end').click(function() {
+            document.getElementById(`add_group_end`).style.display = 'none';
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        $('#btn_end').click(function() {
+            document.getElementById(`add_group_end`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_edit_group').click(function() {
+            document.getElementById(`edit_group`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_edit_group').click(function() {
+            document.getElementById(`edit_group`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_save_edit_g').click(function() {
+            document.getElementById(`edit_group`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_plus_prepod').click(function() {
+            document.getElementById(`edit_group`).style.display = 'none';
+            document.getElementById(`edit_group_prepod`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_edit_group_prepod').click(function() {
+            document.getElementById(`edit_group_prepod`).style.display = 'none';
+            document.getElementById(`edit_group`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_save_edit_prepod_g').click(function() {
+            document.getElementById(`edit_group_prepod`).style.display = 'none';
+            document.getElementById(`edit_group`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_plus_student').click(function() {
+            document.getElementById(`edit_group`).style.display = 'none';
+            document.getElementById(`edit_group_student`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_edit_group_student').click(function() {
+            document.getElementById(`edit_group_student`).style.display = 'none';
+            document.getElementById(`edit_group`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_save_edit_student_g').click(function() {
+            document.getElementById(`edit_group_student`).style.display = 'none';
+            document.getElementById(`edit_group`).style.display = 'block';
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        var $tabs1 = $('#info-table_p_f_g')
+        $("tbody.connectedSortable1")
+            .sortable({
+                connectWith: ".connectedSortable1",
+                items: "> tr",
+                appendTo: $tabs1,
+                helper: "clone",
+                zIndex: 999990
+            })
+    });
+
+    $(document).ready(function() {
+        var $tabs2 = $('#info-table_s_f_g')
+        $("tbody.connectedSortable2")
+            .sortable({
+                connectWith: ".connectedSortable2",
+                items: "> tr",
+                appendTo: $tabs2,
+                helper: "clone",
+                zIndex: 999990
+            })
+    });
+
+    $(document).ready(function() {
+        var $tabs3 = $('#info-table_newp_f_g')
+        $("tbody.connectedSortable3")
+            .sortable({
+                connectWith: ".connectedSortable3",
+                items: "> tr",
+                appendTo: $tabs3,
+                helper: "clone",
+                zIndex: 999990
+            })
+    });
+
+    $(document).ready(function() {
+        var $tabs4 = $('#info-table_news_f_g')
+        $("tbody.connectedSortable4")
+            .sortable({
+                connectWith: ".connectedSortable4",
+                items: "> tr",
+                appendTo: $tabs4,
+                helper: "clone",
+                zIndex: 999990
+            })
+    });
+
+</script>

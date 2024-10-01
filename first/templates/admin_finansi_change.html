@@ -1,0 +1,81 @@
+{% load static %}
+<div id="block_edit" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1622px; height: 960px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding: 90px; width: 836px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div class="" style="width: 100%; display: flex; align-items: center;">
+                <div id="btn_close_edit">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <a href="{% url 'account' uname_for_link %}" style="text-decoration: none;">
+                    <h1 style="margin-left: 90px; width: 394px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; color: #000000;">{{ user_user.last_name }} {{ user_user.first_name }}</h1>
+                </a>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <a href="{% url 'account' uname_for_link %}" style="text-decoration: none; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">@{{ user_user.username }}</a>
+            </div>
+            <form method="post" id="edit_form">
+                {% csrf_token %}
+                <input name="user" value="{{ user_user }}" type="hidden">
+                <input name="transaction_id" type="hidden" value="{{ user_transactions.id }}">
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <input required name="payment_amount_change" value="{{ user_transactions.payment_amount }}" placeholder="Cумма платежа" style="width: 609px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E9; box-sizing: border-box; border-radius: 100px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input required name="was_change" value="{{ user_transactions.was|date:'Y-m-d' }}" placeholder="Время зачисления" type="date" style="width: 609px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E9; box-sizing: border-box; border-radius: 100px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input required name="link_change" value="{{ user_transactions.link }}" placeholder="Ссылка на чек из налоговой" style="width: 609px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E9; box-sizing: border-box; border-radius: 100px; padding-left: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <button id="btn_q_edit_pay" type="submit" style="cursor: pointer; width: 340px; height: 71.62px; background: #F9C80E; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 42px; color: #FFFFFF;">Изменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="q_edit_pay" style="display: none; z-index: 3000; position: fixed; left: 280px; top: 0px;">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="width: 723px; height: 256px; background: #FFFFFF; border-radius: 100px; display: flex; justify-content: center; align-items: center;">
+            <div>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; text-align: center; color: #000000;">Сохранить изменения?</span>
+                </div>
+                <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center;">
+                    <button id="no_edit_pay" style="margin-right: 30px; width: 153px; height: 54px; background: #BABABA; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Нет</button>
+                    <button id="yes_edit_pay" style="margin-left: 30px; width: 153px; height: 54px; background: #F9C80E; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_close_edit').click(function() {
+            document.getElementById(`block_edit`).style.display = 'none';
+            document.getElementById(`block_student`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_q_edit_pay').click(function() {
+            document.getElementById(`q_edit_pay`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#no_edit_pay').click(function() {
+            document.getElementById(`q_edit_pay`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#yes_edit_pay').click(function() {
+            document.getElementById(`q_edit_pay`).style.display = 'none';
+            $('#edit_form').submit();
+            return false;
+        });
+    });
+
+</script>

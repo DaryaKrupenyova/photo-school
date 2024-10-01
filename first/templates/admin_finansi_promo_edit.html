@@ -1,0 +1,100 @@
+{% load static %}
+<div id="block_edit_promo" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1622px; height: 960px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 77px; padding-bottom: 77px; width: 836px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div class="" style="margin-left: 115px; display: flex; align-items: center;">
+                <div id="btn_close_edit_promo">
+                    <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                </div>
+                <h1 style="margin-left: 60px; width: 411px; height: 45px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Промокод</h1>
+            </div>
+            <div class="mt-5" style="display: flex; align-items: center; justify-content: center;">
+                <span style="margin-right: 60px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: #F9C80E;">Создать</span>
+                <img src="{% static 'images/ic20-line.svg' %}" class="iconka_back" alt="alt">
+                <span id="btn_izuch_edit" style="cursor: pointer; margin-left: 60px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: #000000;">Изучить</span>
+            </div>
+            <form id="promo_edit" method="post">
+                {% csrf_token %}
+                <input id="promo_id_edit" name="promo_id_edit" value="{{ db_promo.id }}" type="hidden">
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <input id="discount_edit" name="discount_edit" value="{{ db_promo.amount }}{% if db_promo.type == 'PERCENT' %}%{% endif %}" required placeholder="Размер скидки" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input id="expires_edit" type="date" name="expires_edit" value="{{ db_promo.expires|date:'Y-m-d' }}" required placeholder="Срок действия (дата)" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-4" style="display: flex; justify-content: center;">
+                    <input id="count_edit" name="count_edit" value="{{ db_promo.times_can_use }}" required placeholder="Макс. кол-во использований" style="border: 0px; padding-left: 50px; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">
+                </div>
+                <div class="mt-5" style="display: flex; justify-content: center;">
+                    <button style="border: 0px; width: 348px; height: 71.62px; background: #F9C80E; border-radius: 100px;font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 42px; color: #FFFFFF;" type="submit">Сохранить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="wrong_count" style="display: none; z-index: 2000; padding-top: 20px; padding-left: 40px; position: absolute; width: 466px; height: 105px; right: 15px; top: 5px; background: #FFFFFF; border-radius: 50px;">
+    <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">Промокодом воспользовалось<br>уже больше людей чем эта сумма.</span>
+</div>
+<div id="wrong_date" style="display: none; z-index: 2000; padding-top: 20px; padding-left: 40px; position: absolute; width: 466px; height: 105px; right: 15px; top: 5px; background: #FFFFFF; border-radius: 50px;">
+    <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000;">Срок действия промокода<br>истекает уже сегодня.</span>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#promo_edit').submit(function() {
+            var fd = new FormData;
+            var discount_edit = $(this).find('#discount_edit');
+            var expires_edit = $(this).find('#expires_edit');
+            var count_edit = $(this).find('#count_edit');
+            var promo_id_edit = $(this).find('#promo_id_edit');
+            console.log(promo_id_edit.val())
+
+            fd.append('discount_edit', discount_edit.val());
+            fd.append('expires_edit', expires_edit.val());
+            fd.append('count_edit', count_edit.val());
+            fd.append('promo_id_edit', promo_id_edit.val());
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'admin_fin' %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    if (response.promo_status == "date_invalid"){
+                        document.getElementById(`wrong_date`).style.display = 'block';
+                    }
+                    else if (response.promo_status == "count_invalid"){
+                        document.getElementById(`wrong_count`).style.display = 'block';
+                        document.getElementById(`wrong_date`).style.display = 'none';
+                    }
+                    else{
+                        document.getElementById(`wrong_count`).style.display = 'none';
+                        document.getElementById(`wrong_date`).style.display = 'none';
+                    }
+                },
+                error: function(response) {
+                    console.log(response)
+                }
+            });
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_edit_promo').click(function() {
+            document.getElementById(`block_edit_promo`).style.display = 'none';
+            document.getElementById(`wrong_date`).style.display = 'none';
+            document.getElementById(`wrong_count`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_izuch_edit').click(function() {
+            document.getElementById(`block_izuch`).style.display = 'block';
+            document.getElementById(`block_edit_promo`).style.display = 'none';
+            document.getElementById(`wrong_date`).style.display = 'none';
+            document.getElementById(`wrong_count`).style.display = 'none';
+            return false;
+        });
+    });
+</script>

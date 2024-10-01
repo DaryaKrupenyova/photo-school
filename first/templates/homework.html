@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_fin {
+            width: 32px;
+            height: 32px;
+        }
+
+        .iconka_fin_table {
+            width: 25px;
+            height: 20px;
+        }
+
+        .iconka_minus {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_settings {
+            width: 40px;
+            height: 40px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .pupil_images {
+            cursor: zoom-in;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .popup {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            text-align: center;
+        }
+
+        .popup_bg {
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+        }
+
+
+        .popup_img {
+            position: fixed;
+            z-index: 5;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-height: 90%;
+            max-width: 95%;
+        }
+
+        .popup_img {
+            pointer-events: none;
+        }
+
+        .remangator {
+            position: fixed;
+            z-index: 1;
+            top: 10px;
+            left: 50%;
+            bottom: 0;
+            right: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        .remangator_img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .form_radio_btn {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .form_radio_btn input[type=radio] {
+            display: none;
+        }
+
+        .form_radio_btn label {
+            display: inline-block;
+            cursor: pointer;
+            padding: 0px 15px;
+            font-size: 35px;
+            border: 1px solid #999;
+            border-radius: 10px;
+            user-select: none;
+        }
+
+        .form_radio_btn input[type=radio]:checked + label {
+            background: #FFECC9;
+            transition: 0.3s;
+        }
+
+        .form_radio_btn label:hover {
+            color: #666;
+        }
+
+        .form_radio_btn input[type=radio]:disabled + label {
+            background: #efefef;
+            color: #666;
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homework.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Домашняя работа</title>
+</head>
+
+<body>
+    <main>
+        <div class="row" style="position: relative;">
+            {% include "menu.html" %}
+            <div class="main_homework_wrapper smooth_redirect" style="display: none;">
+                <a class="transition" style="text-decoration: none; display: inline-flex; align-items: center;" href="{% url 'lesson' lesson.lesson_num %}">
+                    <img src="{% static 'images/ic20-arrow_left.svg' %}" class="iconka_arrow_left me-2" alt="alt">
+                    <span class="back_link">Назад</span>
+                </a>
+                <div>
+                    <h1 class="homework_title_h1">Домашняя работа</h1>
+                    <h2 class="homework_title_h2"> Студент: {{ lesson.user.first_name }} {{ lesson.user.last_name }}</h2>
+                </div>
+                <div class="photos_title_wrapper">
+                    <img src="{% static 'images/ic20-menu-red.svg' %}" class="iconka_menu me-2" alt="alt">
+                    <h2 class="photos_title_h2">Фотографии<span class="photos_title_span">(для увеличения нажмите на фото)</span></h2>
+                </div>
+                <div class="pupil_photos_grid">
+                    {% for image, fav_img in images %}
+                    <div>
+                        <img src="{{ image.homework.image_compressed.url }}" class="pupil_images">
+                        <input type="hidden" value="{{ image.homework.image.url }}">
+                        <input type="hidden" value="{{ image.homework.id }}">
+                        <form class="fav_id" method="post">
+                            {% csrf_token %}
+                            <input id="fav_id_id" name="favorite_img" type="hidden" value="{{ image.homework.id }}">
+                            <button style="background-color: transparent; border: 0px;" type="submit">
+                                <img src="{% if fav_img %}{% static 'images/icon_star_yellow.svg' %}{% else %}{% static 'images/icon_star_black.svg' %}{% endif %}" alt="">
+                            </button>
+                        </form>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="feedback_title_wrapper">
+                    <img src="{% static 'images/ic20-menu-red.svg' %}" class="iconka_menu me-2" alt="alt">
+                    <h2 class="feedback_title">Feedback</h2>
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <div style="display: flex; margin-bottom: 30px;">
+                        <div class="form_radio_btn">
+                            <input id="radio-1" type="radio" name="radio" value="2" {% if lesson.homework_status == 2 %}checked{% endif %}>
+                            <label for="radio-1">&#128528;</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input id="radio-2" type="radio" name="radio" value="3" {% if lesson.homework_status == 3 %}checked{% endif %}>
+                            <label for="radio-2">&#129392;</label>
+                        </div>
+                        <div class="form_radio_btn">
+                            <input id="radio-3" type="radio" name="radio" value="4" {% if lesson.homework_status == 4 %}checked{% endif %}>
+                            <label for="radio-3">&#129321;</label>
+                        </div>
+                    </div>
+                    <textarea placeholder="Комментарий преподавателя...." name="comment" class="comment_textarea">{{ lesson.comment }}</textarea>
+                    <button id="reg" class="comment_btn" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <script type="text/javascript">
+        $(".pupil_images").click(function() {
+            var img = $(this);
+            var src = $(this).parent().find('input')[0].value;
+            var link_part = $(this).parent().find('input')[1].value;
+            var link_part_2 = {{ lesson.lesson_num }}
+            $("body").append("<div class='popup'>" +
+                "<div class='popup_bg'></div>" +
+                "<img src='" + src + "' class='popup_img' />" +
+                "<a href='{% url 'remangotor' %}?photo=" + link_part + "&lesson=" + link_part_2 + "' target='_blank'>" +
+                "<div class='remangator'><img class='remangator_img' src='{% static 'images/ic20-edit_orange.svg' %}'></div></a>" +
+                "</div>");
+            $(".popup").fadeIn(200);
+            $(".popup_bg").click(function() {
+                $(".popup").fadeOut(200);
+                setTimeout(function() {
+                    $(".popup").remove();
+                }, 200);
+            });
+        });
+
+        $('.fav_id').submit(function() {
+            var fd = new FormData;
+            var favorite_img = $(this).find('#fav_id_id');
+            if (favorite_img.val()) {
+                fd.append('favorite_img', favorite_img.val());
+            }
+            fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+
+            $.ajax({
+                data: fd,
+                type: "post",
+                url: "{% url 'homework' lesson.lesson_num lesson.user_id %}",
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    var img_obj_src = favorite_img.parent().find('img');
+                    if (img_obj_src.attr('src').includes('yellow')){
+                        img_obj_src.attr('src', '{% static 'images/icon_star_black.svg' %}');
+                    }
+                    else{
+                        img_obj_src.attr('src', '{% static 'images/icon_star_yellow.svg' %}');
+                    }
+                },
+                error: function(response) {
+                    alert(response)
+                }
+            });
+            return false;
+        });
+    </script>
+</body>
+
+</html>

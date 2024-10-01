@@ -1,0 +1,13 @@
+Django
+django-crispy-forms
+django-widget-tweaks
+mysqlclient
+Pillow
+requests
+sqlparse
+transliterate
+pylint
+pylint-django
+sphinx
+pyTelegramBotAPI
+discord.py

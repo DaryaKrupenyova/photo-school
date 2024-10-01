@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_case {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_whiterub {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_yellowkurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_fin {
+            width: 32px;
+            height: 32px;
+        }
+
+        .iconka_fin_table {
+            width: 25px;
+            height: 20px;
+        }
+
+        .iconka_minus {
+            width: 25px;
+            height: 25px;
+        }
+
+        .iconka_settings {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_close {
+            width: 20px;
+            height: 20px;
+        }
+
+        .iconka_rub {
+            width: 20px;
+            height: 20px;
+        }
+
+        .iconka_popolnenie {
+            margin-right: 20px;
+        }
+
+        .iconka_check {
+            width: 25px;
+            height: 25px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .iconka_search {
+            width: 25px;
+            height: 25px;
+        }
+
+        .iconka_trash {
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Финансы</title>
+</head>
+
+<body>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <main>
+        <div class="row">
+            {% include "menu.html" with page="admin_fin" %}
+            <div class="col-10 smooth_redirect" style="display: none;">
+                <div class="" style="margin-top: 30px; margin-left: 1335px;">
+                    <button id="btn_prom" style="cursor: pointer; width: 200px; height: 65px; background: #F9C80E; border: 2px solid #F9C80E; box-sizing: border-box; border-radius: 50px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: rgba(255, 255, 255, 0.95);">Промокод</button>
+
+                    <div id="tmp2">
+                        {% include 'admin_finansi_info.html' %}
+                    </div>
+
+                    <div id="tmp4">
+                        {% include 'admin_finansi_add.html' %}
+                    </div>
+
+                    <div id="tmp3">
+                        {% include 'admin_finansi_change.html' %}
+                    </div>
+
+                    <div id="tmp5">
+                        {% include 'admin_finansi_promo_add.html' %}
+                    </div>
+
+                    <div id="tmp6">
+                        {% include 'admin_finansi_promo_learn.html' %}
+                    </div>
+
+                    <div id="tmp7">
+                        {% include 'admin_finansi_promo_edit.html' %}
+                    </div>
+                </div>
+                <div class="" style="padding-top: 10px; padding-left: 120px;">
+                    <div class="">
+                        <div>
+                            <h1 style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 64px; line-height: 75px; color: #000000;">Финансы</h1>
+                        </div>
+                        <div class="" style="display: flex; align-items: center; margin-top: 70px;">
+                            <div class="mt-1 me-3">
+                                <img src="{% static 'images/ic20-yellowcase.svg' %}" class="iconka_case" alt="alt">
+                            </div>
+                            <div class="" style=" margin-top: 10px; display: flex; align-items: center; justify-content: center;">
+                                <h2 style="margin-right: 35px; font-family: Roboto; font-style: normal; font-weight: 500; font-size: 36px; line-height: 42px; color: #F9C80E;">Оплата студентов</h2>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 50px; margin-bottom: 50px;">
+                            <div style="position: absolute; left: 445px; top: 380px;">
+                                <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                            </div>
+                            <input style="padding-left: 80px; width: 689px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск студента" id="search-text" onkeyup="tableSearch()">
+                        </div>
+
+                        <div style="margin-top: 50px; margin-bottom: 100px;">
+                            <table id="info-table" class="table table-bordered" style="border-color:white; width: 1205px;">
+                                <tbody id="btn">
+                                    {% for user, profaddinfo in profaddinfo_user_zip %}
+                                    <tr style="cursor: pointer;">
+                                        <td style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; color: #000000;">{{ user.last_name }} {{ user.first_name }}</td>
+                                        <td style="width: 157px; display: flex; justify-content: center; align-items: center;">
+                                            {% if profaddinfo.payment_status == 0 %}
+                                            not in course or staff
+                                            {% elif profaddinfo.payment_status == 1 %}
+                                            <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_close" alt="alt">
+                                            {% elif profaddinfo.payment_status == 2 %}
+                                            <img src="{% static 'images/ic20-close.svg' %}" class="iconka_close" alt="alt">
+                                            {% elif profaddinfo.payment_status == 3 %}
+                                            <img src="{% static 'images/ic20-check_yellow.svg' %}" class="iconka_close" alt="alt">
+                                            {% elif profaddinfo.payment_status == 4 %}
+                                            <img src="{% static 'images/ic20-check_green.svg' %}" class="iconka_close" alt="alt">
+                                            {% endif %}
+                                        </td>
+                                        <td id="unamefind" style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">@{{ user.username }}</td>
+                                        <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 35px; color: #000000;">Оплачено до <span style="color: #F86624;">17.09.21</span></td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <form method="post">
+                    {% csrf_token %}
+                    <input name="withdraw_payment" placeholder="Write 'sure' to confirm" type="text">
+                    <button type="submit">Снять оплату</button>
+                </form>
+                <form method="post">
+                    {% csrf_token %}
+                    <input name="before_withdraw" placeholder="Write 'sure' to confirm" type="text">
+                    <button type="submit">Проверить оплату</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        function tableSearch() {
+            var phrase = document.getElementById('search-text');
+            var table = document.getElementById('info-table');
+            var regPhrase = new RegExp(phrase.value, 'i');
+            var flag = false;
+            for (var i = 0; i < table.rows.length; i++) {
+                flag = false;
+                for (var j = table.rows[i].cells.length - 1; j >= 0; j--) {
+                    flag = regPhrase.test(table.rows[i].cells[j].innerHTML);
+                    if (flag) break;
+                }
+                if (flag) {
+                    table.rows[i].style.display = "";
+                } else {
+                    table.rows[i].style.display = "none";
+                }
+
+            }
+        }
+
+        $(document).ready(function() {
+            $('#btn_prom').click(function() {
+                document.getElementById(`block_cozdat`).style.display = 'block';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_cozdat').click(function() {
+                document.getElementById(`block_cozdat`).style.display = 'block';
+                document.getElementById(`block_izuch`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_close_izuch').click(function() {
+                document.getElementById(`block_izuch`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn').find('tr').click(function() {
+                document.getElementById(`block_student`).style.display = 'block';
+                username = $(this).find('#unamefind')[0].innerHTML.replace("@", "");
+
+                $.ajax({
+                    type: "get",
+                    url: `{% url 'admin_fin' %}?username=${ username }`,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        $('#tmp2').html(response.student_info)
+                        document.getElementById(`block_student`).style.display = 'block';
+                    },
+                    error: function(response) {
+                        console.log(response)
+                    }
+                });
+                return false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

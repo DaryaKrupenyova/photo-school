@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+        .icon_for_course {
+            width: 30px;
+            height: 30px;
+        }
+
+        .icon_for_question {
+            width: 30px;
+            height: 30px;
+        }
+
+        .icon_for_group {
+            width: 30px;
+            height: 30px;
+        }
+
+        .icon_for_finance {
+            width: 25px;
+            height: 25px;
+        }
+
+        .iconka_fin_table {
+            width: 25px;
+            height: 20px;
+        }
+
+        .iconka_minus {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_settings {
+            width: 40px;
+            height: 40px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 150%;
+            z-index: 10;
+            width: 600%;
+            height: auto;
+            background: rgba(233, 233, 233, 0.9);
+            border-radius: 50px;
+            padding: 45%;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/finance.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Финансы</title>
+</head>
+
+<body>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <main>
+        <div class="row" style="margin: 0px; position: relative;">
+            {% include "menu.html" with page="finances" %}
+            <div class="main_finance_wrapper smooth_redirect" style="display: none;">
+                {% if not signup_for_course %}
+                <div class="" style="padding-left: 100px;">
+                    <div style="display: block;">
+                        <h1 style="margin-top: 135px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 64px; line-height: 75px; color: #000000;">Курс</h1>
+                        <h1 style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 64px; line-height: 75px; color: #000000;">Основы фотографии</h1>
+                        <div style="display: flex; margin-top: 90px;">
+                            <span style="width: 737px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; line-height: 33px; color: #000000;">Это не просто лекции на Webinar или YouTube:<br><br>- Интерактивное онлайн обучение c живыми людьми<br><br>- С еженедельными квестами<br><br>- Обратная связь от преподавателей</span>
+                        </div>
+                        <div>
+                            <form method="post">
+                                {% csrf_token %}
+                                <input style="margin-top: 85px; border: 0px; width: 350px; height: 78px; background: #F9C80E; border-radius: 100px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 40px; line-height: 47px; text-align: center; color: #FFFFFF;" name="signup_for_course_btn" value="Записаться" type="submit">
+                            </form>
+                        </div>
+                        <img src="{% static 'images/picture_for_new_student_pages.jpg' %}" style="position: absolute; left: 1270px; top: 0px; height: 100vh;">
+                    </div>
+                </div>
+                {% else %}
+                <div class="" style="display: flex; justify-content: flex-end;">
+                    <button id="btn" class="promo_btn">Промокод</button>
+
+                    <div id="promo_block">
+                        {% include 'finance_promo.html' %}
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">?</button>
+                        <div class="dropdown-content">
+                            <h2 class="hint_block_h2">Оплата месяца</h2>
+                            <p class="hint_block_text">Оплата зачислится на кошелек в течение одних суток </p>
+                            <p class="hint_block_text">Во время перевода денег в Tinkoff:</p>
+                            <ol>
+                                <li class="hint_block_text">В поле<span style="font-weight: bold;"> "Как вас зовут?"</span> укажи свое <span style="font-weight: bold;">настоящее ФИО</span></li>
+                                <li class="hint_block_text">в поле <span style="font-weight: bold;">"Сообщение Елизавете"</span> укажи <span style="font-weight: bold;">логин в Mango PhotoClub</span></li>
+                            </ol>
+                            <p class="hint_block_text">Остались вопросы? Напиши нам в Telegram)</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Финансы</h1>
+                <div class="" style="display: flex; align-items: center; margin-top: 4%;">
+                    <img src="{% static 'images/ic20-yellowcase.svg' %}" class="iconka_case" alt="alt">
+                    <h2 class="my_wallet_h2">Мой кошелек</h2>
+                    <div class="balance_background">
+                        <span class="balance_span">{{ ava.wallet }}</span>
+                        <img src="{% static 'images/ic20-whiterub.svg' %}" class="iconka_whiterub" alt="alt">
+                    </div>
+                </div>
+
+                {% if transactions %}
+                {% if promo_use %}
+                <div style="margin-top: 5%;">
+                    <span class="next_month_span">Следующий месяц <br> со скидкой: {{ promo_use.what_promo.amount }}%</span>
+                </div>
+                {% endif %}
+                <div style="margin-top: 2%">
+                    <a class="add_balance" href="https://www.tinkoff.ru/rm/grinenko.elizaveta2/q5B6h64348">Пополнить кошелек</a>
+                </div>
+                {% else %}
+                <div style="margin-top: 5%;">
+                    <span class="use_friend_promo" style="font-weight: 300;">Воспользуйся <span class="use_friend_promo" style="font-weight: bold;">кодом друга</span> для получения скидки <br> для нового пользователя</span>
+                </div>
+
+                <div style="margin-top: 2%;">
+                    <button id="plus_btn" class="add_balance" style="border: 0px; background: transparent;">Пополнить кошелек</button>
+
+                    <div id="friend_promo_block">
+                        {% include 'finance_friend_promo.html' %}
+                    </div>
+
+                    <div id="block_popoln" class="add_balance_step2_block">
+                        <div style="background: rgba(233, 233, 233, 0.6); width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+                            <div class="friend_promo_wrapper">
+                                <div class="" style="display: flex; align-items: center; justify-content: space-between;">
+                                    <div id="btn_close_popoln">
+                                        <img src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                                    </div>
+                                    <h2 class="add_balance_step2_h2">Пополнение</h2>
+                                    <div class="iconka_back"></div>
+                                </div>
+                                <div style="padding: 4%;">
+                                    <p class="add_balance_step2_text">Оплата зачислится на кошелек в течение одних суток </p>
+                                    <p class="add_balance_step2_text">Во время перевода денег в Tinkoff:</p>
+                                    <ol style="padding: 0;">
+                                        <li class="hint_block_text">В поле <span style="font-weight: bold;"> "Как вас зовут?"</span> укажи свое <span style="font-weight: bold;">настоящее ФИО</span></li>
+                                        <li class="hint_block_text">В поле <span style="font-weight: bold;">"Сообщение Елизавете"</span> укажи <span style="font-weight: bold;">логин в Mango PhotoClub</span></li>
+                                    </ol>
+                                </div>
+                                <div style="display: flex; justify-content: center;">
+                                    <a href="https://www.tinkoff.ru/rm/grinenko.elizaveta2/q5B6h64348" class="add_balance_step2_a_wrapper">
+                                        <p id="btn_pon" class="add_balance_step2_a">Понятно</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="" style="display: flex; margin-top: 10%; align-items: center;">
+                    <img src="{% static 'images/ic20-yellowkurs.svg' %}" class="iconka_yellowkurs" alt="alt">
+                    <h2 class="transactions_history">История платежей</h2>
+                </div>
+                {% if transactions %}
+                <div style="margin-top: 3%;">
+                    <table class="table table-bordered" style="border-color:white; width: 60%;">
+                        <tbody>
+                            {% for transaction in transactions %}
+                            <tr>
+                                <td class="transaction_reason">
+                                    {% if transaction.type == "adding" %}
+                                    <a style="text-decoration: none;" href="{{ transaction.link }}">
+                                        <img src="{% static 'images/ic20-popolnenie.svg' %}" class="iconka_popolnenie" alt="alt">
+                                    </a>Пополнение
+                                    {% else %}
+                                    Оплата месяца
+                                    {% endif %}
+                                </td>
+                                <td style="font-weight: bold;" class="transaction_reason">
+                                    {% if transaction.type == "adding" %}
+                                    +
+                                    {% else %}
+                                    -
+                                    {% endif %}
+                                    {{ transaction.payment_amount }}
+                                </td>
+                                <td class="transaction_reason">{{ transaction.was|date:"d.m.Y" }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div style="margin-top: 3%;">
+                    <p class="no_transactions_p" style="margin: 0px;">Здесь пусто... </p>
+                    <p class="no_transactions_p" style="margin-top: 2%;">Оплата зачислится на кошелек в течение одних суток</p>
+                </div>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#btn').click(function() {
+                document.getElementById(`block_vstavit`).style.display = 'block';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_cozdat').click(function() {
+                document.getElementById(`block_cozdat`).style.display = 'block';
+                document.getElementById(`block_vstavit`).style.display = 'none';
+                document.getElementById(`promo_invalid`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_vstavit').click(function() {
+                document.getElementById(`block_vstavit`).style.display = 'block';
+                document.getElementById(`block_cozdat`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_close_vstavit').click(function() {
+                document.getElementById(`block_vstavit`).style.display = 'none';
+                document.getElementById(`promo_invalid`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_close_cozdat').click(function() {
+                document.getElementById(`block_cozdat`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#plus_btn').click(function() {
+                document.getElementById(`block_kod_druga`).style.display = 'block';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_close_kod_druga').click(function() {
+                document.getElementById(`block_kod_druga`).style.display = 'none';
+                document.getElementById(`friend_promo_invalid`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#dalee_btn').click(function() {
+                document.getElementById(`block_kod_druga`).style.display = 'none';
+                document.getElementById(`block_popoln`).style.display = 'block';
+                document.getElementById(`friend_promo_invalid`).style.display = 'none';
+                return false;
+            });
+        });
+
+        $(document).ready(function() {
+            $('#btn_close_popoln').click(function() {
+                document.getElementById(`block_popoln`).style.display = 'none';
+                return false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

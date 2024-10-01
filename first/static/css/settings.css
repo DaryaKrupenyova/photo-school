@@ -1,0 +1,626 @@
+.main_settings_wrapper {
+    width: auto;
+    padding-top: 2%;
+    padding-right: 4%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
+
+.iconka_arrow {
+    width: 40px;
+    height: 40px;
+}
+
+.iconka_menu {
+    width: 40px;
+    height: 40px;
+}
+
+.iconka_exit {
+    width: 40px;
+    height: 40px;
+}
+
+.back_link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.back_link:hover {
+    color: #000000;
+}
+
+.log_off_link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #F86624;
+}
+
+.log_off_link:hover {
+    color: #F86624;
+}
+
+.settings_main_title {
+    margin-top: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.settings_sections_h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #F9C80E;
+    margin: 0px;
+}
+
+.info_change_form {
+    width: 70%;
+}
+
+.edit_button {
+    width: 30%;
+    height: 70px;
+    background: #D1D1D1;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+.edit_button2 {
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.edit_button2:hover {
+    color: #fff;
+}
+
+.edit_button3 {
+    width: 30%;
+    height: 70px;
+    background: #D1D1D1;
+    border-radius: 100px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_change_spans {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #000000;
+}
+
+.info_change_inputs {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 67%;
+    height: 70px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    color: #000000;
+    background: #E9E9E9;
+    border-radius: 50px;
+    border: 0px;
+}
+
+.input__file-button3 {
+    width: 33%;
+    height: 70px;
+    background: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel_control_btn {
+    background-color: #D1D1D1;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    position: relative;
+}
+
+.photos_for_change {
+    color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    border: 0px;
+    background-repeat: no-repeat;
+}
+
+.change_photo_a {
+    width: 100%;
+    height: 70px;
+    background: #D1D1D1;
+    border-radius: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ph_txt_pos_help_div {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.upload_photots_wrapper {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mango_style_wrapper {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.my_style_wrapper {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.carousel_wrapper {
+    display: none;
+    width: 120%;
+    margin-top: 10%;
+}
+
+@media screen and (min-width: 2500px) {
+    .main_settings_wrapper {
+        width: calc(100% - 340px);
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+    .main_settings_wrapper {
+        width: calc(100% - 310px);
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+    .main_settings_wrapper {
+        width: calc(100% - 280px);
+    }
+
+    .back_link {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .log_off_link {
+        font-size: calc(26px + 4 * (100vw - 1500px) / 500);
+    }
+
+    .settings_main_title {
+        font-size: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .settings_sections_h2 {
+        font-size: calc(30px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .info_change_spans {
+        font-size: calc(24px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .edit_button {
+        font-size: calc(24px + 6 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .edit_button2 {
+        font-size: calc(24px + 6 * (100vw - 1500px) / 500);
+    }
+
+    .edit_button3 {
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .info_change_inputs {
+        font-size: calc(20px + 4 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .input__file-button3 {
+        font-size: calc(24px + 4 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .photos_for_change {
+        width: calc(70px + 30 * (100vw - 1500px) / 500);
+        height: calc(70px + 30 * (100vw - 1500px) / 500);
+        border-radius: calc(20px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .carousel_control_btn {
+        width: calc(30px + 10 * (100vw - 1500px) / 500);
+        height: calc(30px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .change_photo_a {
+        font-size: calc(24px + 4 * (100vw - 1500px) / 500);
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .ph_txt_pos_help_div {
+        height: calc(60px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_arrow {
+        width: calc(35px + 5 * (100vw - 1500px) / 500);
+        height: calc(35px + 5 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_menu {
+        width: calc(30px + 10 * (100vw - 1500px) / 500);
+        height: calc(30px + 10 * (100vw - 1500px) / 500);
+    }
+
+    .iconka_exit {
+        width: calc(30px + 10 * (100vw - 1500px) / 500);
+        height: calc(30px + 10 * (100vw - 1500px) / 500);
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .main_settings_wrapper {
+        width: calc(100% - 250px);
+    }
+
+    .info_change_form {
+        width: 80%;
+    }
+
+    .back_link {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .log_off_link {
+        font-size: calc(22px + 4 * (100vw - 1100px) / 400);
+    }
+
+    .settings_main_title {
+        font-size: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .settings_sections_h2 {
+        font-size: calc(24px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .info_change_spans {
+        font-size: calc(18px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .edit_button {
+        font-size: calc(18px + 6 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .edit_button2 {
+        font-size: calc(18px + 6 * (100vw - 1100px) / 400);
+    }
+
+    .edit_button3 {
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .info_change_inputs {
+        font-size: calc(16px + 4 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .input__file-button3 {
+        font-size: calc(18px + 6 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+        border-radius: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .photos_for_change {
+        width: calc(50px + 20 * (100vw - 1100px) / 400);
+        height: calc(50px + 20 * (100vw - 1100px) / 400);
+        border-radius: calc(15px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .carousel_control_btn {
+        width: calc(20px + 10 * (100vw - 1100px) / 400);
+        height: calc(20px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .change_photo_a {
+        font-size: calc(20px + 4 * (100vw - 1100px) / 400);
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+        border-radius: calc(20px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .ph_txt_pos_help_div {
+        height: calc(50px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_arrow {
+        width: calc(25px + 10 * (100vw - 1100px) / 400);
+        height: calc(25px + 10 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_menu {
+        width: calc(25px + 5 * (100vw - 1100px) / 400);
+        height: calc(25px + 5 * (100vw - 1100px) / 400);
+    }
+
+    .iconka_exit {
+        width: calc(20px + 10 * (100vw - 1100px) / 400);
+        height: calc(20px + 10 * (100vw - 1100px) / 400);
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+    .info_change_form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .info_change_form {
+        width: 100%;
+    }
+
+    .upload_photots_wrapper {
+        flex-direction: column;
+    }
+
+    .mango_style_wrapper {
+        margin-left: 0;
+        margin-top: 2%;
+        flex-direction: row;
+
+        width: 100%;
+    }
+
+    .my_style_wrapper {
+        margin-left: 0;
+        margin-top: 2%;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .change_photo_a {
+        width: 33%;
+        margin-right: 5%;
+    }
+
+    .carousel_wrapper {
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1099px) {
+    .main_settings_wrapper {
+        width: calc(100% - 50px);
+    }
+
+    .back_link {
+        font-size: calc(18px + 4 * (100vw - 500px) / 600);
+    }
+
+    .log_off_link {
+        font-size: calc(18px + 4 * (100vw - 500px) / 600);
+    }
+
+    .settings_main_title {
+        font-size: calc(40px + 10 * (100vw - 500px) / 600);
+    }
+
+    .settings_sections_h2 {
+        font-size: calc(18px + 6 * (100vw - 500px) / 600);
+    }
+
+    .info_change_spans {
+        font-size: calc(12px + 6 * (100vw - 500px) / 600);
+    }
+
+    .edit_button {
+        font-size: calc(12px + 6 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+    }
+
+    .edit_button2 {
+        font-size: calc(12px + 6 * (100vw - 500px) / 600);
+    }
+
+    .edit_button3 {
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+    }
+
+    .info_change_inputs {
+        font-size: calc(12px + 4 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+    }
+
+    .input__file-button3 {
+        font-size: calc(12px + 6 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+        border-radius: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .photos_for_change {
+        width: calc(35px + 15 * (100vw - 500px) / 600);
+        height: calc(35px + 15 * (100vw - 500px) / 600);
+        border-radius: calc(10px + 5 * (100vw - 500px) / 600);
+    }
+
+    .carousel_control_btn {
+        width: calc(15px + 5 * (100vw - 500px) / 600);
+        height: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .change_photo_a {
+        font-size: calc(12px + 8 * (100vw - 500px) / 600);
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+        border-radius: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+
+    .ph_txt_pos_help_div {
+        height: calc(40px + 10 * (100vw - 500px) / 600);
+    }
+
+    .iconka_arrow {
+        width: calc(20px + 5 * (100vw - 500px) / 600);
+        height: calc(20px + 5 * (100vw - 500px) / 600);
+    }
+
+    .iconka_menu {
+        width: calc(20px + 5 * (100vw - 500px) / 600);
+        height: calc(20px + 5 * (100vw - 500px) / 600);
+    }
+
+    .iconka_exit {
+        width: calc(15px + 5 * (100vw - 500px) / 600);
+        height: calc(15px + 5 * (100vw - 500px) / 600);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main_settings_wrapper {
+        width: calc(100% - 30px);
+    }
+
+    .back_link {
+        font-size: calc(12px + 6 * (100vw - 300px) / 200);
+    }
+
+    .log_off_link {
+        font-size: calc(12px + 6 * (100vw - 300px) / 200);
+    }
+
+    .settings_main_title {
+        font-size: calc(20px + 20 * (100vw - 300px) / 200);
+    }
+
+    .settings_sections_h2 {
+        font-size: calc(14px + 4 * (100vw - 300px) / 200);
+    }
+
+    .info_change_spans {
+        font-size: calc(8px + 4 * (100vw - 300px) / 200);
+    }
+
+    .edit_button {
+        font-size: calc(8px + 4 * (100vw - 300px) / 200);
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+    }
+
+    .edit_button2 {
+        font-size: calc(8px + 4 * (100vw - 300px) / 200);
+    }
+
+    .edit_button3 {
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+    }
+
+    .info_change_inputs {
+        font-size: calc(8px + 4 * (100vw - 300px) / 200);
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+    }
+
+    .input__file-button3 {
+        font-size: calc(7px + 7 * (100vw - 300px) / 200);
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+        border-radius: calc(10px + 5 * (100vw - 300px) / 200);
+    }
+
+    .photos_for_change {
+        width: calc(20px + 15 * (100vw - 300px) / 200);
+        height: calc(20px + 15 * (100vw - 300px) / 200);
+        border-radius: calc(5px + 5 * (100vw - 300px) / 200);
+    }
+
+    .carousel_control_btn {
+        width: calc(10px + 5 * (100vw - 300px) / 200);
+        height: calc(10px + 5 * (100vw - 300px) / 200);
+    }
+
+    .change_photo_a {
+        font-size: calc(7px + 5 * (100vw - 300px) / 200);
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+        border-radius: calc(10px + 5 * (100vw - 300px) / 200);
+    }
+
+    .ph_txt_pos_help_div {
+        height: calc(25px + 15 * (100vw - 300px) / 200);
+    }
+
+    .iconka_arrow {
+        width: calc(15px + 5 * (100vw - 300px) / 200);
+        height: calc(15px + 5 * (100vw - 300px) / 200);
+    }
+
+    .iconka_menu {
+        width: calc(15px + 5 * (100vw - 300px) / 200);
+        height: calc(15px + 5 * (100vw - 300px) / 200);
+    }
+
+    .iconka_exit {
+        width: calc(12px + 3 * (100vw - 300px) / 200);
+        height: calc(12px + 3 * (100vw - 300px) / 200);
+    }
+}

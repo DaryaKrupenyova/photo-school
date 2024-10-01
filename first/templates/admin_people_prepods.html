@@ -1,0 +1,201 @@
+{% load static %}
+<button id="btn_add_prepod" style="cursor: pointer; width: 390px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E; box-sizing: border-box; border-radius: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; color: #000000; margin-left: 120px; margin-top: 50px;">Добавить преподавателя</button>
+<button id="btn_del_prepod" style="cursor: pointer; width: 390px; height: 72px; background: #FFFFFF; border: 2px solid #E9E9E; box-sizing: border-box; border-radius: 50px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; color: #000000; margin-left: 100px; margin-top: 50px;">Удалить преподавателя</button>
+<div class="menu" style="margin-top: 80px;">
+    <img src="{% static 'images/ic20-list.svg' %}" class="iconka_list" alt="alt">
+    <span style="margin-left: 15px; font-family: Roboto; font-style: normal; font-weight: 500; font-size: 36px; color: #F9C80E;">Список преподавателей</span>
+</div>
+<div class="menu" style="margin-top: 30px;">
+    <div style="position: absolute; left: 445px; top: 590px;">
+        <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+    </div>
+    <input style="padding-left: 80px; width: 689px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_p" onkeyup="tableSearch_p()">
+</div>
+<div class="menu">
+    <table id="info-table_p" class="table table-bordered" style="border-color:white; width: 1205px;">
+        <tbody id="btn_p">
+            {% for profaddinfo in profaddinfo_list %}
+            {% if profaddinfo.is_teacher == 1 %}
+            <tr style="cursor: pointer;">
+                <td style="width: 350px; font-family: Roboto; font-style: normal; font-weight: normal; font-size: 30px; color: #000000;">{{ profaddinfo.user.last_name }} {{ profaddinfo.user.first_name }}</td>
+                <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; color: #000000;">@{{ profaddinfo.user.username }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div id="add_prepod" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 960px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 135px; display: flex; align-items: center;">
+                <img id="btn_close_add_prepod" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 30px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Добавить преподавателя</h1>
+            </div>
+            <div style="margin-left: 135px; margin-top: 40px;">
+                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; line-height: 33px; color: #000000;">Список аккаунтов в Mango:</span>
+            </div>
+            <div style="margin-left: 135px; margin-top: 20px;">
+                <div style="position: absolute; left: 520px; top: 363px;">
+                    <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                </div>
+                <input style="padding-left: 80px; width: 690px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_p_add" onkeyup="tableSearch_p_add()">
+            </div>
+            <div id="table_p_add" style="margin-left: 135px; margin-top: 20px; width: 665px; height: 390px; overflow-y: scroll; overflow-x: hidden;">
+                <table id="info-table_p_add" class="table table-bordered" style="border-color:white; width: 615px;">
+                    <tbody id="btn_p_add">
+                        {% for profaddinfo in profaddinfo_list %}
+                        {% if profaddinfo.user.is_staff == 0 %}
+                        <tr class="tr_p_add" style="cursor: pointer;">
+                            <input type="hidden" value="{{ profaddinfo.id }}">
+                            <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">{{ profaddinfo.user.last_name }} {{ profaddinfo.user.first_name }}</td>
+                            <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@{{ profaddinfo.user.username }}</td>
+                            {% if profaddinfo.is_teacher == 0 %}
+                            <td><img src="{% static 'images/ic20-minus.svg' %}" class="iconka_minus" alt="alt"></td>
+                            {% elif profaddinfo.is_teacher == 1 %}
+                            <td><img src="{% static 'images/ic20-greencheck.svg' %}" class="iconka_check" alt="alt"></td>
+                            {% endif %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="del_prepod" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px; ">
+    <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+        <div style="padding-top: 80px; width: 960px; height: 761px; background: #FFFFFF; border-radius: 100px;">
+            <div style="margin-left: 135px; display: flex; align-items: center;">
+                <img id="btn_close_del_prepod" src="{% static 'images/ic20-arrow-circle-left.svg' %}" class="iconka_back" alt="alt">
+                <h1 style="margin-left: 30px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; text-align: center; color: #000000;">Удалить преподавателя</h1>
+            </div>
+            <div style="margin-left: 135px; margin-top: 40px;">
+                <span style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 28px; line-height: 33px; color: #000000;">Список аккаунтов в Mango:</span>
+            </div>
+            <div style="margin-left: 135px; margin-top: 20px;">
+                <div style="position: absolute; left: 520px; top: 363px;">
+                    <img src="{% static 'images/ic20-search.svg' %}" class="iconka_search" alt="alt">
+                </div>
+                <input style="padding-left: 80px; width: 690px; height: 72px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 150%; line-height: 60%; color: #000000; background: #E9E9E9; border-radius: 50px; border: 0px;" type="text" placeholder="Поиск преподавателя" id="search-text_p_del" onkeyup="tableSearch_p_del()">
+            </div>
+            <div id="table_p_del" style="margin-left: 135px; margin-top: 20px; width: 665px; height: 390px; overflow-y: scroll; overflow-x: hidden;">
+                <table id="info-table_p_del" class="table table-bordered" style="border-color:white; width: 615px;">
+                    <tbody id="btn_p_del">
+                        {% for profaddinfo in profaddinfo_list %}
+                        {% if profaddinfo.is_teacher == 1 %}
+                        <tr class="tr_p_del" style="cursor: pointer;">
+                            <input type="hidden" value="{{ profaddinfo.id }}">
+                            <td style="font-family: Roboto; font-style: normal; font-weight: normal; font-size: 24px; color: #000000;">{{ profaddinfo.user.last_name }} {{ profaddinfo.user.first_name }}</td>
+                            <td style="font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; color: #000000;">@{{ profaddinfo.user.username }}</td>
+                            <td><img src="{% static 'images/ic20-black_trash.svg' %}" class="iconka_minus" alt="alt"></td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="q_add_prepod" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px;">
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" value="" name="q_user_teach">
+        <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 725px; height: 325px; background: #FFFFFF; border-radius: 100px; display: flex; justify-content: center; align-items: center;">
+                <div>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; text-align: center; color: #000000;">Сделать преподавателем<br><span id="text_q_add_prerod" style="font-weight: 300;">Алексеев Михаил<br>@alekseevmikhail25678</span> ?</span>
+                    </div>
+                    <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center;">
+                        <button id="no_q_add_prepod" style="margin-right: 30px; width: 153px; height: 54px; background: #BABABA; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Нет</button>
+                        <button type="submit" id="yes_q_add_prepod" style="margin-left: 30px; width: 153px; height: 54px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Да</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="q_del_prepod" style="display: none; z-index: 1000; position: fixed; left: 280px; top: 0px;">
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" value="" name="q_delete_teach">
+        <div style="background: rgba(233, 233, 233, 0.6); width: 1640px; height: 970px; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 725px; height: 325px; background: #FFFFFF; border-radius: 100px; display: flex; justify-content: center; align-items: center;">
+                <div>
+                    <div style="display: flex; align-items: center; justify-content: center;">
+                        <span style="font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; line-height: 35px; text-align: center; color: #000000;">Удалить преподавателя<br><span id="text_q_del_prerod" style="font-weight: 300;">Алексеев Михаил<br>@alekseevmikhail25678</span> ?</span>
+                    </div>
+                    <div style="margin-top: 40px; display: flex; align-items: center; justify-content: center;">
+                        <button id="no_q_del_prepod" style="margin-right: 30px; width: 153px; height: 54px; background: #BABABA; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Нет</button>
+                        <button id="yes_q_del_prepod" style="margin-left: 30px; width: 153px; height: 54px; background: #F86624; border-radius: 100px; border: 0px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 30px; text-align: center; color: #FFFFFF;">Да</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#btn_add_prepod').click(function() {
+            document.getElementById(`add_prepod`).style.display = 'block';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_del_prepod').click(function() {
+            document.getElementById(`del_prepod`).style.display = 'block';
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        $('#btn_close_add_prepod').click(function() {
+            document.getElementById(`add_prepod`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#btn_close_del_prepod').click(function() {
+            document.getElementById(`del_prepod`).style.display = 'none';
+            return false;
+        });
+    });
+
+    $(document).ready(function() {
+        $('.tr_p_add').click(function() {
+            document.getElementById(`q_add_prepod`).style.display = 'block';
+            document.getElementById(`text_q_add_prerod`).innerHTML = $(this).find("td")[0].innerHTML + "<br>" + $(this).find("td")[1].innerHTML;
+            document.getElementsByName('q_user_teach')[0].value = $(this).find("input")[0].value;
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('.tr_p_del').click(function() {
+            document.getElementById(`q_del_prepod`).style.display = 'block';
+            document.getElementById(`text_q_del_prerod`).innerHTML = $(this).find("td")[0].innerHTML + "<br>" + $(this).find("td")[1].innerHTML;
+            document.getElementsByName('q_delete_teach')[0].value = $(this).find("input")[0].value;
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#no_q_add_prepod').click(function() {
+            document.getElementById(`q_add_prepod`).style.display = 'none';
+            return false;
+        });
+    });
+    $(document).ready(function() {
+        $('#no_q_del_prepod').click(function() {
+            document.getElementById(`q_del_prepod`).style.display = 'none';
+            return false;
+        });
+    });
+
+</script>

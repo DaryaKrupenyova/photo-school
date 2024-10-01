@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <header class="hed1">
+        <div class="dh">
+            <div class="dh2"> </div>
+        </div>
+    </header>
+    <main>
+        <div class="dm">
+            <h1 class="dh1">Начни делать красиво.</h1>
+            <div class="mt4">
+                <span class="sp">Вместе с нами</span>
+            </div>
+            <div class="divbtn">
+				<div class="ds">
+					<a href="#anchor" class="btn btn-primary a">Начать</a>
+				</div>
+			</div>	
+        </div>
+        <div id="anchor" class="t1">
+            <h2 class="th2">Та фотошкола, что ты искал</h2>
+            <div class="row tdt">
+                <div class="col ml1">
+                    <div class="tdt2"></div>
+                </div>
+                <div class="col dtg">
+                    <p class="tp">Мы не знаем какое блюдо ты будешь готовить, но мы обеспечим тебя специями из стилей и вкусов для дальнейшей готовки</p>
+                </div>
+            </div>
+            <div class="row dtp">
+                <div class="col dtk">
+                    <p class="ptk">Тебе здесь понравится даже, когда мы будем говорить о выдержке, компановке и всякой мути :D</p>
+                </div>
+                <div class="col ml2">
+                    <div class="di"></div>
+                </div>
+            </div>
+        </div>
+        <div class="dr">
+            <h2 class="hr1">Перейдем к делу.</h2>
+            <div style="display: flex;">
+                <div class="dk">
+                    <p class="pk">Курс “Основы фотографии”</p>
+                </div>
+                <p class="ps">Старт потока - 15 АПРЕЛЯ</p>
+                <div class="ed">
+                </div>
+            </div>
+            <div class="divs">
+                <p class="TY">Это не просто лекции на Webinar или YouTube:</p>
+                <p class="TP"> - Интерактивное онлайн обучение c живыми людьми</p>
+                <p class="TP">- С еженедельными квестами</p>
+                <p class="TP">- Обратная связь от преподавателей</p>
+            </div>
+            <div class="row mt100">
+                <div class="col-6">
+                </div>
+                <div class="col pr1">
+                    <div class="dkp">
+                        <p class="tkp">Подписка:</p>
+                        <p class="tkc">2000₽ месяц</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                </div>
+            </div>
+        </div>
+        <div class="dsp">
+            <h2 class="hp">Скоро тут будет список занятий курса и преподаватели</h2>
+        </div>
+        <div class="divph">
+            <p class="TR">Скорее записывайся!</p>
+            <p class="TR">Осталось _ мест</p>
+            <form method="post" class="form1">
+                <div class="divt1">
+                    <div class="divt2">
+                        <h2 class="text-center ht">Записаться на курс</h2>
+                        <input placeholder="Фамилия и Имя" class="in1">
+                        <input placeholder="Почта" class="in2">
+                        <input placeholder="Телефон" class="in3">
+
+                        <div class="divb">
+                            <button class="btn btn-primary btnz" type="submit">Записаться</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('a[href*=#]').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({
+                            scrollTop: targetOffset
+                        }, 500); //скорость прокрутки
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

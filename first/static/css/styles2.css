@@ -1,0 +1,909 @@
+    @keyframes opacity {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes main_div {
+        from {
+            opacity: 0;
+            left: 650px;
+        }
+
+        to {
+            opacity: 1;
+            left: 660px;
+        }
+    }
+
+    .lending_first_chapter_inner_a:hover{
+        color: #fff;
+    }
+
+    .lending_fourth_chapter_inner_link:hover{
+        color: #fff;
+    }
+
+    .lending_header_to-main_link:hover{
+        color: #000;
+    }
+
+    @media screen and (max-width: 425px) {
+
+
+         .logo_cont {
+                margin-left: 7%;
+                padding-top: 15%;
+            }
+
+            .logo_mango {
+                width: 40%;
+            }
+
+        .message {
+            position: absolute;
+            margin-right: 3%;
+            margin-top: 13%;
+            background: #fff;
+            width 25%;
+            height: auto;
+            padding: 2%;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-text {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2vw;
+            color: #000000;
+        }
+
+        .signup_authorization_cont {
+            margin-top: 30%;
+            margin-left: 7.5%;
+            padding-top: 13%;
+            padding-bottom: 13%;
+            width: 85%;
+            background: #FFFFFF;
+            border-radius: 13%;
+        }
+
+        .form-h1_container {
+            display: flex;
+            margin-left: 13%;
+            margin-bottom: 6%;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .registr_back_button{
+            width: 7%;
+            margin-top: 0%;
+        }
+
+        .iconka_back {
+            width: 100%;
+        }
+
+        .form-h1 {
+            width: 80%;
+            text-align: center;
+            margin-bottom: 0%;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2vw;
+            color: #000000;
+        }
+
+        .inputs {
+            margin-top: 5%;
+            margin-left: 10%;
+            width: 80%;
+            height: auto;
+            background: #E9E9E9;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 4vw;
+            color: #000000;
+            border: 0px;
+            padding-left: 8.5%;
+            padding-top: 3.2%;
+            padding-bottom: 3.2%;
+        }
+
+        .create_button {
+            margin-top: 2%;
+            width: 80%;
+            padding: 2%;
+            background: #F9C80E;
+            border-radius: 200px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 6vw;
+            color: #FFFFFF;
+            border: 0px;
+        }
+        .authorization_heading {
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 8vw;
+            color: #000000;
+        }
+        .enter_button {
+            width: 57%;
+            padding: 1%;
+            background: #F9C80E;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 5.8vw;
+            color: #FFFFFF;
+            border: 0px;
+        }
+
+       .reg_button {
+            margin-right: 3%;
+            text-align: center;
+            text-decoration: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5.3vw;
+            color: #F9C80E;
+        }
+        .ask-pass_button {
+            margin-left: 3%;
+            text-align: center;
+            text-decoration: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 5.3vw;
+            color: #F9C80E;
+        }
+
+    .lending_header_bar {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        padding-top: 1.3%;
+        padding-bottom: 1.3%;
+        padding-left: 3%;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+    }
+    .lending_left_ico {
+        width: 23%
+    }
+
+    .lending_right_ico {
+        width: 50%
+    }
+
+    .lending_header_to-main_link {
+        text-decoration: none;
+        margin-left: 60%;
+        margin-right: 0.5%;
+        width: 5%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.3vw;
+        color: #000000;
+    }
+
+    .lending_main {
+        padding-top: 5%;
+    }
+
+    .lending_first_chapter {
+        width: 100%;
+        padding-top: 9%;
+        padding-bottom: 9%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .lending_first_chapter_inner_cont {
+        padding-left: 10%;
+    }
+
+    .lending_first_chapter_inner_h1 {
+        width: 70%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4vw;
+        color: #000000;
+    }
+
+    .lending_first_chapter_inner_p {
+        margin-top: 3%;
+        margin-bottom: 5%;
+        width: 50%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.7vw;
+        color: #000000;
+    }
+
+    .lending_first_chapter_inner_a {
+        text-decoration: none;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 100%;
+        background: #F9C80E;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.5vw;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .lending_second_chapter {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+    .lending_second_chapter_h2 {
+        width: 100%;
+        margin-bottom: 3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.2vw;
+        color: #000000;
+    }
+
+    .lending_second_chapter_inner_photos {
+        margin: 0px;
+        padding: 0px;
+        width: 10%;
+        padding: 50%;
+    }
+
+    .lending_second_chapter_inner_text1 {
+        margin: 0px;
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2vw;
+        color: #000000;
+        text-align: left;
+    }
+
+    .lending_second_chapter_inner_text2 {
+        margin: 0px;
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2vw;
+        color: #000000;
+        text-align: right;
+    }
+
+    .lending_third_chapter {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+     .lending_third_chapter_h2 {
+         margin-bottom: 3%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 3.2vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_date-line {
+         padding-left: 6%;
+         width: 70%;
+         padding-top: 1.2%;
+         padding-bottom: 1.2%;
+         background: #F9C80E;
+         display: flex;
+         align-items: center;
+     }
+
+     .lending_third_chapter_date-line_text {
+         width: 100%;
+         margin: 0%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_third_chapter_date-line_date-text {
+         margin-left: 1.5%;
+         margin-bottom: 0%;
+         width: 18%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_date-line_useless-dumb-piece {
+         width: 15%;
+         padding: 3%;
+         background: #F9C80E;
+     }
+
+     .lending_third_chapter_list_text {
+         padding-left: 6%;
+         margin-top: 3%;
+         width: 90%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_cont_price {
+         margin-left: 50%;
+         margin-top: 5%;
+         padding-top: 1%;
+         padding-bottom: 1%;
+         padding-right: 2%;
+         padding-left: 2%;
+         width: 38%;
+         background: #F86624;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .lending_third_chapter_price-text1 {
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_third_chapter_price-text2 {
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_fourth_chapter {
+         width: 100%;
+         margin-top: 5%;
+         padding-top: 11%;
+         padding-bottom: 11%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .lending_fourth_chapter_cont {
+         width: 35%;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         background: rgba(255, 255, 255, 0.95);
+         display: flex; justify-content: center;
+         align-items: center;
+     }
+
+     .lending_fourth_chapter_inner_h2 {
+         width: 100%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 3.2vw;
+         text-align: center;
+         color: #000000;
+     }
+
+     .lending_fourth_chapter_inner_text {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         padding-left: 8.7%;
+         width: 100%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_fourth_chapter_inner_link {
+         text-decoration: none;
+         margin-left: 30%;
+         padding-left: 3%;
+         padding-right: 3%;
+         padding-top: 1%;
+         padding-bottom: 1%;
+         background: #F86624;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 2.3vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+}
+
+    @media screen and (min-width: 426px) {
+
+
+         .logo_cont {
+                margin-left: 3%;
+                padding-top: 3%;
+            }
+
+            .logo_mango {
+                width: 13.5%;
+            }
+
+        .message {
+            position: absolute;
+            margin-right: 3%;
+            margin-top: 13%;
+            background: #fff;
+            width 25%;
+            height: auto;
+            padding: 2%;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message-text {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2vw;
+            color: #000000;
+        }
+
+        .signup_authorization_cont {
+            margin-top: 5%;
+            margin-left: 36%;
+            padding-top: 3.2%;
+            padding-bottom: 3.2%;
+            width: 28%;
+            height: 56%;
+            background: #FFFFFF;
+            border-radius: 18%;
+        }
+
+        .form-h1_container {
+            display: flex;
+            margin-left: 13%;
+            flex-direction: row;
+            margin-bottom: 2%;
+        }
+
+        .registr_back_button{
+            width: 7%;
+            margin-top: 3.5%;
+        }
+
+        .iconka_back {
+            width: 100%;
+        }
+
+        .form-h1 {
+            width: 80%;
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2vw;
+            color: #000000;
+        }
+
+        .inputs {
+            margin-top: 3%;
+            margin-left: 13%;
+            width: 73%;
+            height: auto;
+            background: #E9E9E9;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.1vw;
+            color: #000000;
+            border: 0px;
+            padding-left: 8.5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        .create_button {
+            margin-top: 2%;
+            width: 73%;
+            padding: 2%;
+            background: #F9C80E;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6vw;
+            color: #FFFFFF;
+            border: 0px;
+        }
+        .authorization_heading {
+            text-align: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 2.5vw;
+            color: #000000;
+        }
+
+        .enter_button {
+            width: 57%;
+            padding: 1%;
+            background: #F9C80E;
+            border-radius: 100px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.8vw;
+            color: #FFFFFF;
+            border: 0px;
+        }
+
+        .reg_button {
+            margin-right: 3%;
+            text-align: center;
+            text-decoration: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.3vw;
+            color: #F9C80E;
+        }
+        .ask-pass_button {
+            margin-left: 3%;
+            text-align: center;
+            text-decoration: none;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.3vw;
+            color: #F9C80E;
+        }
+
+    .lending_header_bar {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        padding-top: 1.3%;
+        padding-bottom: 1.3%;
+        padding-left: 3%;
+        background: #FFFFFF;
+        border: 1px solid #E9E9E9;
+        box-sizing: border-box;
+    }
+
+    .lending_header_to-main_link {
+        text-decoration: none;
+        margin-left: 70%;
+        margin-right: 0.5%;
+        width: 5%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.3vw;
+        color: #000000;
+    }
+
+    .lending_main {
+        padding-top: 5%;
+    }
+
+    .lending_first_chapter {
+        width: 100%;
+        padding-top: 9%;
+        padding-bottom: 9%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+
+    .lending_first_chapter_inner_cont {
+        padding-left: 10%;
+    }
+
+    .lending_first_chapter_inner_h1 {
+        width: 70%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4vw;
+        color: #000000;
+    }
+
+    .lending_first_chapter_inner_p {
+        margin-top: 3%;
+        margin-bottom: 5%;
+        width: 50%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 2.7vw;
+        color: #000000;
+    }
+
+    .lending_first_chapter_inner_a {
+        text-decoration: none;
+        padding-left: 6%;
+        padding-right: 6%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 100%;
+        background: #F9C80E;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.5vw;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .lending_second_chapter {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+    .lending_second_chapter_h2 {
+        width: 100%;
+        margin-bottom: 3%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.2vw;
+        color: #000000;
+    }
+
+    .lending_second_chapter_inner_photos {
+        margin: 0px;
+        padding: 0px;
+        width: 10%;
+        padding: 50%;
+    }
+
+    .lending_second_chapter_inner_text1 {
+        margin: 0px;
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2vw;
+        color: #000000;
+        text-align: left;
+    }
+
+    .lending_second_chapter_inner_text2 {
+        margin: 0px;
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 100%;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.2vw;
+        color: #000000;
+        text-align: right;
+    }
+
+    .lending_third_chapter {
+        padding-left: 7%;
+        padding-right: 7%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        width: 100%;
+        background: #FFFFFF;
+    }
+
+     .lending_third_chapter_h2 {
+         margin-bottom: 3%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 3.2vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_date-line {
+         padding-left: 6%;
+         width: 70%;
+         padding-top: 1.2%;
+         padding-bottom: 1.2%;
+         background: #F9C80E;
+         display: flex;
+         align-items: center;
+     }
+
+     .lending_third_chapter_date-line_text {
+         width: 100%;
+         margin: 0%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_third_chapter_date-line_date-text {
+         margin-left: 1.5%;
+         margin-bottom: 0%;
+         width: 18%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_date-line_useless-dumb-piece {
+         width: 15%;
+         padding: 3%;
+         background: #F9C80E;
+     }
+
+     .lending_third_chapter_list_text {
+         padding-left: 6%;
+         margin-top: 3%;
+         width: 90%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_third_chapter_cont_price {
+         margin-left: 50%;
+         margin-top: 5%;
+         padding-top: 1%;
+         padding-bottom: 1%;
+         padding-right: 2%;
+         padding-left: 2%;
+         width: 38%;
+         background: #F86624;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .lending_third_chapter_price-text1 {
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_third_chapter_price-text2 {
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 2vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+
+     .lending_fourth_chapter {
+         width: 100%;
+         margin-top: 5%;
+         padding-top: 11%;
+         padding-bottom: 11%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .lending_fourth_chapter_cont {
+         width: 35%;
+         padding-top: 5%;
+         padding-bottom: 5%;
+         background: rgba(255, 255, 255, 0.95);
+         display: flex; justify-content: center;
+         align-items: center;
+     }
+
+     .lending_fourth_chapter_inner_h2 {
+         width: 100%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 3.2vw;
+         text-align: center;
+         color: #000000;
+     }
+
+     .lending_fourth_chapter_inner_text {
+         margin-top: 5%;
+         margin-bottom: 5%;
+         padding-left: 8.7%;
+         width: 100%;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 1.8vw;
+         color: #000000;
+     }
+
+     .lending_fourth_chapter_inner_link {
+         text-decoration: none;
+         margin-left: 30%;
+         padding-left: 3%;
+         padding-right: 3%;
+         padding-top: 1%;
+         padding-bottom: 1%;
+         background: #F86624;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: bold;
+         font-size: 2.3vw;
+         color: rgba(255, 255, 255, 0.95);
+     }
+}
+

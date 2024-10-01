@@ -1,0 +1,1365 @@
+@media screen and (min-width: 300px) and (max-width: 768px) {
+	
+		.av {
+			padding-top: 33px;
+			padding-left: 7px;
+			background-color: #F9C80E;
+			position: sticky;
+			height: 210px;
+			
+		}
+	
+		.ava {
+			width: auto; 
+			height: auto;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			padding: 0px;
+		}
+		
+		.img_av {
+			
+			width: auto;
+			height: auto;
+			background: url(images/avaratka.png);
+			border-radius: 50%
+		}
+		
+		.mn {
+			
+			width: auto;
+			height: auto;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			padding: 0px;
+		}
+		
+		.name {
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 6px;
+			line-height: 7px;
+			color: #000000;
+		}
+		
+		.st {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 4px;
+			line-height: 5px;
+			color: #000000;
+			
+		}
+		
+		.tb {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 6px;
+			line-height: 7px;
+			color: #000000;
+		}
+		
+		.tc {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 6px;
+			line-height: 7px;
+			color: #F86624;
+		}
+		
+		.mt25 {
+			margin-top: 5px;
+		}
+		
+		.mt30 {
+			margin-top: 6px;
+		}
+		
+		.p100 {
+			padding: 21px;
+		}
+		
+		.Tm {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+			color: #000000;
+		}
+		
+		.Ts {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 9px;
+			color: #000000;
+		}
+		
+		.lesson {
+			width: auto;
+			height: auto;
+			background: #FFFFFF;
+			border: 2px solid #E9E9E9;
+			box-sizing: border-box;
+			border-radius: 10px;
+			padding: 0px
+		}
+		
+		.Tml {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 6px;
+			line-height: 7px;
+			color: #43BCCD;
+		}
+		
+		.Tz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 4px;
+			line-height: 5px;
+			color: #000000;
+		}
+		
+		.Tl {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 4px;
+			line-height: 5px;
+			color: #000000;
+		}
+		
+		.Tdz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 4px;
+			line-height: 5px;
+			color: #000000;
+		}
+				
+		.hed1 {
+			position: sticky;
+			top: 0px;
+		}
+		
+		.dh {
+			padding-left: 13px;
+			padding-top: 1px;
+			width: 100%;
+			height: auto;
+			background-color: #FFFFFF;
+			border: 2px solid #E9E9E9;
+		}
+		
+		.dh2 {
+			width: 22px;
+			height: 22px;
+			background: #F9C80E;
+			border-radius: 14px;
+		}
+		
+		.dm {
+			padding-left: 28px;
+			padding-top: 90px;
+			width: 100%;
+			background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+			background-size: cover;
+			height: auto;
+		}
+		
+		.dh1 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 23px;
+			line-height: 16px;
+			color: #000000;
+		}
+		
+		.mt4 {
+			margin-top: 7px;
+		}
+		
+		.sp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 10px;
+			color: #000000;
+		}
+		
+		.ds {
+			margin-top: 13px;
+			margin-left: 100px;
+		}
+		
+		.a {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 14px;
+			text-align: center;
+			color: #FFFFFF;
+			width: auto;
+			height: auto;
+			background: #F9C80E;
+			border-radius: 14px;
+			border: 0px;
+		}
+		
+		.t1 {
+			padding: 28px;
+			width: 100%;
+			height: auto;
+		}
+		
+		.th2 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 23px;
+			line-height: 16px;
+			color: #000000;
+		}
+		
+		.tdt {
+			margin-top: 20px;
+			padding-left: 28px;
+			padding-right: 28px;
+		}
+		
+		.tdt2 {
+			width: 125px;
+			height: 125px;
+			background-image: url(images/fotki1.png);
+			background-size: cover;
+		}
+		
+		.dtg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.tp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 10px;
+			line-height: 16px;
+			text-align: right;
+			color: #000000;
+		}
+		
+		.dtp {
+			padding-left: 28px;
+			padding-right: 28px;
+		}
+		
+		.dtk {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.divbtn {
+			padding-bottom: 30px;
+		}
+		
+		.ptk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 10px; line-height: 16px; text-align: left; color: #000000;
+		}
+		
+		.di {
+			width: 125px; height: 125px; background-image: url(images/fotki2.png); background-size: cover;
+		}
+		
+		.dr {
+			padding-top: 28px; padding-bottom: 28px; width: 100%; height: auto;
+		}
+		
+		.hr1 {
+			margin-left: 28px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 23px; line-height: 16px; color: #000000;
+		}
+		
+		.dk {
+			margin-top: 13px;
+			padding-left: 28px; width: auto; height: auto; background: #F9C80E;
+		}
+		
+		.pk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16px; line-height: 27px; color: rgba(255, 255, 255, 0.95); white-space: nowrap;
+		}
+		
+		.ps {
+			margin-left: 7px;
+			margin-right: 7px;
+			margin-top: 13px; width: 400px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 15px; color: #000000;
+		}
+		
+		.ed {
+			margin-top: 13px;
+			padding-left: 28px; width: auto; height: auto; background: #F9C80E;
+		}
+		
+		.divs {
+			padding-top: 28px; padding-left: 10px;
+		}
+		
+		.TY {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 7px; color: #000000;
+		}
+		
+		.TP {
+			margin-top: 20px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 7px; color: #000000;
+		}
+		
+		.mt100 {
+			margin-top: 28px;
+		}
+		
+		.ml1 {
+			margin-left: 0px;
+		}
+		
+		.ml2 {
+			margin-right: 0px;
+		}
+		
+		.pr1 {
+			padding-right: 50px;
+		}
+		
+		.dkp {
+			padding: 5px;
+			background: #43BCCD; height: auto;
+		}
+		
+		.tkp {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 14px; line-height: 10px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.tkc {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 14px; line-height: 18px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.dsp {
+			padding-top: 28px; padding-bottom: 28px; width: 100%; height: auto; background: #C4C4C4;
+		}
+		
+		.hp {
+			margin-left: 28px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 20px; line-height: 16px; color: #000000; text-align: center;
+		}
+		
+		.divph {
+			padding-top: 22px; padding-bottom: 22px; width: 100%; height: auto; background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png); background-size: cover;
+		}
+		
+		.TR {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 14px; line-height: 10px; color: #000000; text-align: center;
+		}
+		
+		.divt1 {
+			margin-top: 16px; display: flex; justify-content: center; align-items: center;
+		}
+		
+		.divt2 {
+			padding: 13px;
+			background-color: rgba(255,255,255,0.9);  width: 200px; height: auto; border-radius: 28px;
+		}
+		
+		.ht {
+			width: auto; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 13px; line-height: 15px; color: #000000;
+		}
+		
+		.in1 {
+			margin-top: 8px;  font-family: Roboto; font-style: normal; font-weight: 300; font-size: 10px; line-height: 8px; color: #000000; opacity: 1; width: auto; height: auto; background: #E9E9E9; border-radius: 28px; border: 0px; padding-left: 16px;
+		}
+		
+		.in2 {
+			margin-top: 5px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 10px; line-height: 8px; color: #000000; width: auto; height: auto; background: #E9E9E9; border-radius: 28px; border: 0px; padding-left: 16px;
+		}
+		
+		.in3 {
+			margin-top: 5px;  font-family: Roboto; font-style: normal; font-weight: 300; font-size: 10px; line-height: 8px; color: #000000; opacity: 1; width: auto; height: auto; background: #E9E9E9; border-radius: 28px; border: 0px; padding-left: 16px;
+		}
+		
+		.divb {
+			margin-top: 5px;
+		}
+		
+		.form1 {
+			text-align:center;
+		}
+		
+		
+		.btnz {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 10px; line-height: 12px; color: #FFFFFF; width: auto; height: auto; background: #43BCCD; border-radius: 28px; border: 0px;
+		}
+		
+        .iconka_kurs {
+            width: auto;
+            height: auto;
+        }
+
+        .iconka_kurs path {
+            fill: #F86624;
+        }
+
+        .iconka_que {
+            width: auto;
+            height: auto;
+        }
+
+
+        .iconka_gr {
+            width: auto;
+            height: auto;
+        }
+
+
+        .iconka_fin {
+            width: auto;
+            height: auto;
+        }
+
+        .iconka_arrow {
+            width: auto;
+            height: auto;
+        }
+
+        .fixed-box {
+            height: auto;
+        }
+
+        .fixed-div {
+            height: auto;
+        }
+
+        .fixed {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1068px) {
+		
+		.av {
+			padding-top: 66px;
+			padding-left: 14px;
+			background-color: #F9C80E;
+			position: sticky;
+			height: auto;
+			
+		}
+	
+		.ava {
+			width: auto; 
+			height: auto;
+			background-color: #FFFFFF;
+			border-radius: 21px;
+			padding: 0px;
+		}
+		
+		.img_av {
+			
+			width: auto;
+			height: auto;
+			background: url(images/avaratka.png);
+			border-radius: 50%
+		}
+		
+		.mn {
+			
+			width: auto;
+			height: auto;
+			background-color: #FFFFFF;
+			border-radius: 21px;
+			padding: 0px;
+		}
+		
+		.name {
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 14px;
+			color: #000000;
+		}
+		
+		.st {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 9px;
+			color: #000000;
+			
+		}
+		
+		.tb {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 14px;
+			color: #000000;
+		}
+		
+		.tc {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 14px;
+			color: #F86624;
+		}
+		
+		.mt25 {
+			margin-top: 10px;
+		}
+		
+		.mt30 {
+			margin-top: 12px;
+		}
+		
+		.p100 {
+			padding: 42px;
+		}
+		
+		.Tm {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 27px;
+			line-height: 32px;
+			color: #000000;
+		}
+		
+		.Ts {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 17px;
+			color: #000000;
+		}
+		
+		.lesson {
+			width: auto;
+			height: auto;
+			background: #FFFFFF;
+			border: 2px solid #E9E9E9;
+			box-sizing: border-box;
+			border-radius: 21px;
+			padding: 0px
+		}
+		
+		.Tml {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 14px;
+			color: #43BCCD;
+		}
+		
+		.Tz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 9px;
+			color: #000000;
+		}
+		
+		.Tl {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 9px;
+			color: #000000;
+		}
+		
+		.Tdz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 8px;
+			line-height: 9px;
+			color: #000000;
+		}
+				
+		.hed1 {
+			position: sticky;
+			top: 0px;
+		}
+		
+		.dh {
+			padding-left: 34px;
+			padding-top: 2px;
+			width: 100%;
+			height: auto;
+			background-color: #FFFFFF;
+			border: 2px solid #E9E9E9;
+		}
+		
+		.dh2 {
+			width: 80px;
+			height: 80px;
+			background: #F9C80E;
+			border-radius: 36px;
+		}
+		
+		.dm {
+			padding-left: 73px;
+			padding-top: 232px;
+			width: 100%;
+			background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+			background-size: cover;
+			height: auto;
+		}
+		
+		.dh1 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 59px;
+			line-height: 42px;
+			color: #000000;
+		}
+		
+		.mt4 {
+			margin-top: 17px;
+		}
+		
+		.sp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 36px;
+			line-height: 25px;
+			color: #000000;
+		}
+		
+		.divbtn {
+			padding-bottom: 50px;
+		}
+		
+		.ds {
+			margin-top: 34px;
+			margin-left: 300px;
+		}
+		
+		.a {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 40px;
+			line-height: 35px;
+			text-align: center;
+			color: #FFFFFF;
+			width: auto;
+			height: auto;
+			background: #F9C80E;
+			border-radius: 35px;
+			border: 0px;
+		}
+		
+		.t1 {
+			padding: 73px;
+			width: 100%;
+			height: auto;
+		}
+		
+		.th2 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 59px;
+			line-height: 42px;
+			color: #000000;
+		}
+		
+		.tdt {
+			margin-top: 51px;
+			padding-left: 73px;
+			padding-right: 73px;
+		}
+		
+		.tdt2 {
+			width: 250px;
+			height: 300px;
+			background-image: url(images/fotki1.png);
+			background-size: cover;
+		}
+		
+		.dtg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 15px;
+		}
+		
+		.tp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16.5px;
+			line-height: 43px;
+			text-align: right;
+			color: #000000;
+
+		}
+		
+		.dtp {
+			padding-left: 73px;
+			padding-right: 73px;
+		}
+		
+		.dtk {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 15px;
+		}
+		
+		.ptk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 16.5px; line-height: 43px; text-align: left; color: #000000;
+		}
+		
+		.di {
+			width: 250px; height: 300px; background-image: url(images/fotki2.png); background-size: cover;
+		}
+		
+		.dr {
+			padding-top: 73px; padding-bottom: 100px; width: 100%; height: auto;
+		}
+		
+		.hr1 {
+			margin-left: 73px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 59px; line-height: 42px; color: #000000;
+		}
+		
+		.dk {
+			margin-top: 34px;
+			padding-left: 73px; width: auto; height: auto; background: #F9C80E;
+		}
+		
+		.pk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 69px; color: rgba(255, 255, 255, 0.95); white-space: nowrap;
+		}
+		
+		.ps {
+			margin-left: 17px;
+			margin-right: 17px;
+			margin-top: 33px; width: 400px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 36px; line-height: 38px; color: #000000;
+		}
+		
+		.ed {
+			margin-top: 34px;
+			padding-left: 73px; width: auto; height: auto; background: #F9C80E;
+		}
+		
+		.divs {
+			padding-top: 73px; padding-left: 25px;
+		}
+		
+		.TY {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 25px; line-height: 17px; color: #000000;
+		}
+		
+		.TP {
+			margin-top: 30px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 30px; line-height: 17px; color: #000000; white-space: nowrap;
+		}
+		
+		.mt100 {
+			margin-top: 73px;
+		}
+		
+		.ml1 {
+			margin-right: 0px;
+		}
+		
+		.ml2 {
+			margin-left: 0px;
+		}
+		
+		.pr1 {
+			padding-right: 150px;
+		}
+		
+		.dkp {
+			padding: 11px;
+			background: #43BCCD; height: auto;
+		}
+		
+		.tkp {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 25px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.tkc {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 36px; line-height: 48px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.dsp {
+			padding-top: 73px; padding-bottom: 73px; width: 100%; height: 200px; background: #C4C4C4;
+		}
+		
+		.hp {
+			margin-left: 73px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 40px; line-height: 42px; color: #000000; text-align: center;
+		}
+		
+		.divph {
+			padding-top: 57px; padding-bottom: 57px; width: 100%; height: auto; background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png); background-size: cover;
+		}
+		
+		.TR {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 25px; line-height: 25px; color: #000000; text-align: center;
+		}
+		
+		.divt1 {
+			margin-top: 43px; display: flex; justify-content: center; align-items: center;
+		}
+		
+		.divt2 {
+			padding: 34px;
+			background-color: rgba(255,255,255,0.9);  width: 430px; height: auto; border-radius: 73px;
+		}
+		
+		.ht {
+			margin-left: 35px; width: auto; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 34px; line-height: 40px; color: #000000;
+		}
+		
+		.in1 {
+			margin-top: 21px;  font-family: Roboto; font-style: normal; font-weight: 300; font-size: 17px; line-height: 20px; color: #000000; opacity: 1; width: auto; height: auto; background: #E9E9E9; border-radius: 73px; border: 0px; padding-left: 43px;
+		}
+		
+		.in2 {
+			margin-top: 14px;  font-family: Roboto; font-style: normal; font-weight: 300; font-size: 17px; line-height: 20px; color: #000000; width: auto; height: auto; background: #E9E9E9; border-radius: 73px; border: 0px; padding-left: 43px;
+		}
+		
+		.in3 {
+			margin-top: 14px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 17px; line-height: 20px; color: #000000; opacity: 1; width: auto; height: auto; background: #E9E9E9; border-radius: 73px; border: 0px; padding-left: 43px;
+		}
+		
+		.divb {
+			margin-top: 14px;
+		}
+		
+		.form1 {
+			text-align:center;
+		}
+		
+		.btnz {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 26px; line-height: 30px; color: #FFFFFF; width: auto; height: auto; background: #43BCCD; border-radius: 73px; border: 0px;
+		}
+		
+        .iconka_kurs {
+            width: auto;
+            height: auto;
+        }
+
+        .iconka_kurs path {
+            fill: #F86624;
+        }
+
+        .iconka_que {
+            width: auto;
+            height: auto;
+        }
+
+
+        .iconka_gr {
+            width: auto;
+            height: auto;
+        }
+
+
+        .iconka_fin {
+            width: auto;
+            height: auto;
+        }
+
+        .iconka_arrow {
+            width: auto;
+            height: auto;
+        }
+
+        .fixed-box {
+            height: auto;
+        }
+
+        .fixed-div {
+            height: auto;
+        }
+
+        .fixed {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+        }
+
+}
+
+@media screen and (min-width: 1068px) {
+
+		.av {
+			padding-top: 150px;
+			padding-left: 35px;
+			background-color: #F9C80E;
+			position: sticky;
+			height: 980px;
+			
+		}
+	
+		.ava {
+			width: 239px; 
+			height: 271px;
+			background-color: #FFFFFF;
+			border-radius: 50px;
+			padding: 48px;
+		}
+		
+		.img_av {
+			
+			width: 100px;
+			height: 100px;
+			background: url(images/avaratka.png);
+			border-radius: 50%
+		}
+		
+		.mn {
+			
+			width: 239px;
+			height: 329px;
+			background-color: #FFFFFF;
+			border-radius: 50px;
+			padding: 16px;
+		}
+		
+		.name {
+			
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 35px;
+			color: #000000;
+		}
+		
+		.st {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 23px;
+			color: #000000;
+			
+		}
+		
+		.tb {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 35px;
+			color: #000000;
+		}
+		
+		.tc {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 35px;
+			color: #F86624;
+		}
+		
+		.mt25 {
+			margin-top: 25px;
+		}
+		
+		.mt30 {
+			margin-top: 30px;
+		}
+		
+		.p100 {
+			padding: 100px;
+		}
+		
+		.Tm {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 64px;
+			line-height: 75px;
+			color: #000000;
+		}
+		
+		.Ts {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 36px;
+			line-height: 42px;
+			color: #000000;
+		}
+		
+		.lesson {
+			width: 320px;
+			height: 382px;
+			background: #FFFFFF;
+			border: 2px solid #E9E9E9;
+			box-sizing: border-box;
+			border-radius: 50px;
+			padding: 48px
+		}
+		
+		.Tml {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 30px;
+			line-height: 35px;
+			color: #43BCCD;
+		}
+		
+		.Tz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 23px;
+			color: #000000;
+		}
+		
+		.Tl {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 23px;
+			color: #000000;
+		}
+		
+		.Tdz {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 23px;
+			color: #000000;
+		}
+		
+		.hed1 {
+			position: sticky;
+			top: 0px;
+		}
+		
+		.dh {
+			padding-left: 48px;
+			padding-top: 4px;
+			width: 100%;
+			height: 100px;
+			background-color: #FFFFFF;
+			border: 2px solid #E9E9E9;
+		}
+		
+		.dh2 {
+			width: 80px;
+			height: 80px;
+			background: #F9C80E;
+			border-radius: 50px;
+		}
+		
+		.dm {
+			padding-left: 100px;
+			padding-top: 320px;
+			width: 100%;
+			background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%201.png);
+			background-size: cover;
+			height: 880px;
+		}
+		
+		.dh1 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 78px;
+			line-height: 59px;
+			color: #000000;
+		}
+		
+		.mt4 {
+			margin-top: 24px;
+		}
+		
+		.sp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 50px;
+			line-height: 35px;
+			color: #000000;
+		}
+		
+		.ds {
+			margin-top: 48px;
+			margin-left: 710px;
+		}
+		
+		.a {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 55px;
+			line-height: 50px;
+			text-align: center;
+			color: #FFFFFF;
+			width: 314px;
+			height: 70px;
+			background: #F9C80E;
+			border-radius: 50px;
+			border: 0px;
+		}
+		
+		.t1 {
+			padding: 100px;
+			width: 100%;
+			height: auto;
+		}
+		
+		.th2 {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 78px;
+			line-height: 59px;
+			color: #000000;
+		}
+		
+		.tdt {
+			margin-top: 70px;
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		
+		.tdt2 {
+			width: 740px;
+			height: 1030px;
+			background-image: url(images/fotki1.png);
+			background-size: cover;
+		}
+		
+		.dtg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.tp {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 50px;
+			line-height: 60px;
+			text-align: right;
+			color: #000000;
+		}
+		
+		.dtp {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		
+		.dtk {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.ptk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 50px; line-height: 60px; text-align: left; color: #000000;
+		}
+		
+		.di {
+			width: 740px; height: 1030px; background-image: url(images/fotki2.png); background-size: cover;
+		}
+		
+		.dr {
+			padding-top: 100px; padding-bottom: 100px; width: 100%; height: auto;
+		}
+		
+		.hr1 {
+			margin-left: 100px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 78px; line-height: 59px; color: #000000;
+		}
+		
+		.dk {
+			margin-top: 48px;
+			padding-left: 100px; width: 1100px; height: 100px; background: #F9C80E;
+		}
+		
+		.pk {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 60px; line-height: 95px; color: rgba(255, 255, 255, 0.95);
+		}
+		
+		.ps {
+			margin-left: 24px;
+			margin-right: 24px;
+			margin-top: 45px; width: 400px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 50px; line-height: 53px; color: #000000;
+		}
+		
+		.ed {
+			margin-top: 48px;
+			padding-left: 100px; width: 355px; height: 100px; background: #F9C80E;
+		}
+		
+		.divs {
+			padding-top: 100px; padding-left: 250px;
+		}
+		
+		.TY {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 50px; line-height: 23px; color: #000000;
+		}
+		
+		.TP {
+			margin-top: 70px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 50px; line-height: 23px; color: #000000;
+		}
+		
+		.mt100 {
+			margin-top: 100px;
+		}
+		
+		.dkp {
+			padding: 16px;
+			background: #43BCCD; height: 150px;
+		}
+		
+		.tkp {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 50px; line-height: 35px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.tkc {
+			font-family: Roboto; font-style: normal; font-weight: 300; font-size: 50px; line-height: 65px; color: rgba(255, 255, 255, 0.95); text-align: center;
+		}
+		
+		.dsp {
+			padding-top: 100px; padding-bottom: 100px; width: 100%; height: auto; background: #C4C4C4;
+		}
+		
+		.hp {
+			margin-left: 100px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 78px; line-height: 59px; color: #000000; text-align: center;
+		}
+		
+		.divph {
+			padding-top: 80px; padding-bottom: 80px; width: 100%; height: 880px; background-image: url(images/parco-chan-Ztp54-7b5Qc-unsplash%202.png); background-size: cover;
+		}
+		
+		.TR {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 50px; line-height: 35px; color: #000000; text-align: center;
+		}
+		
+		.divt1 {
+			margin-top: 60px; display: flex; justify-content: center; align-items: center;
+		}
+		
+		.divt2 {
+			padding: 48px;
+			background-color: rgba(255,255,255,0.9);  width: 600px; height: auto; border-radius: 100px;
+		}
+		
+		.ht {
+			margin-left: 50px; width: 400px; font-family: Roboto; font-style: normal; font-weight: bold; font-size: 48px; line-height: 56px; color: #000000;
+		}
+		
+		.in1 {
+			margin-top: 30px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000; opacity: 1; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 60px;
+		}
+		
+		.in2 {
+			margin-top: 20px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 60px;
+		}
+		
+		.in3 {
+			margin-top: 20px; font-family: Roboto; font-style: normal; font-weight: 300; font-size: 24px; line-height: 28px; color: #000000; opacity: 1; width: 450px; height: 72px; background: #E9E9E9; border-radius: 100px; border: 0px; padding-left: 60px;
+		}
+		
+		.divb {
+			margin-top: 20px;
+		}
+		
+		.form1 {
+			text-align:center;
+		}
+		
+		
+		.btnz {
+			font-family: Roboto; font-style: normal; font-weight: bold; font-size: 36px; line-height: 42px; color: #FFFFFF; width: 300px; height: 72px; background: #43BCCD; border-radius: 100px; border: 0px;
+		}
+		
+        .iconka_kurs {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_kurs path {
+            fill: #F86624;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .iconka_fin {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_arrow {
+            width: 30px;
+            height: 30px;
+        }
+
+        .fixed-box {
+            height: 60px;
+        }
+
+        .fixed-div {
+            height: 60px;
+        }
+
+        .fixed {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+        }
+		
+        .row {
+            width: 100%;
+        }
+
+}

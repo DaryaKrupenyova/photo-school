@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+{% load static %}
+{% load widget_tweaks %}
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .iconka_kurs {
+            width: 30px;
+            height: 30px;
+        }
+
+        .iconka_que {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_gr {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_fin {
+            width: 40px;
+            height: 40px;
+        }
+
+        .iconka_check {
+            width: 22px;
+            height: 22px;
+        }
+
+        .iconka_close {
+            width: 22px;
+            height: 22px;
+        }
+
+        .input__file {
+            opacity: 0;
+            position: absolute;
+        }
+
+        .input__file-button {
+
+            width: 90%;
+            height: 700px;
+            background: repeating-linear-gradient(135deg,
+                    rgba(233, 233, 233, 0.5),
+                    rgba(233, 233, 233, 0.5) 2px,
+                    #FFFFFF 2px,
+                    #FFFFFF 35px);
+            border-radius: 50px;
+            border: 2px solid rgba(233, 233, 233, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            cursor: pointer;
+
+            padding: 30px;
+        }
+
+        .iconka_trash {
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+        }
+
+        .text_del {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 17px;
+            color: #000000;
+        }
+
+        .one_foto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .del_foto {
+            width: 100%;
+        }
+
+        .del_foto_in_mat {
+            width: 100%;
+            display: none;
+        }
+
+        /* .col-2 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        .col-10 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        
+        .col {
+            padding-left: 0px;
+            padding-right: 0px;
+        } */
+
+        .row {
+            width: 100%;
+        }
+
+        @keyframes opacity {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hidden_ph_del {}
+
+        .input_ph_id {}
+
+        .pupil_images {
+            cursor: zoom-in;
+        }
+
+        .popup {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            text-align: center;
+        }
+
+        .popup_bg {
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+        }
+
+
+        .popup_img {
+            position: fixed;
+            z-index: 5;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-height: 90%;
+        }
+
+        .popup_img {
+            pointer-events: none;
+        }
+
+    </style>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/lesson.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Урок</title>
+</head>
+
+<body>
+    <main>
+        <div class="row" style="margin: 0px; position: relative;">
+            {% include "menu.html" %}
+            <div class="main_lesson_wrapper smooth_redirect" style="display: none;">
+                <div class="" style="display: flex; justify-content: space-between;">
+                    {% if prev_lesson %}
+                    <a class="transition" style="text-decoration: none; display: flex;" href="{% url 'lesson' prev_lesson.lesson_num %}">
+                        <img src="{% static 'images/ic20-arrow_left.svg' %}" class="iconka_arrow_left me-2" alt="alt">
+                        <span class="back_link">Предыдущее занятие</span>
+                    </a>
+                    {% endif %}
+                    {% if next_lesson %}
+                    <a href="{% url 'lesson' next_lesson.lesson_num %}" style="text-decoration: none; display: flex; align-items: center;">
+                        <span class="next_lesson_link">Следующее занятие
+                        </span>
+                        <img src="{% static 'images/ic20-arrow_right.svg' %} " class="iconka_arrow_right ms-2" alt="alt">
+                    </a>
+                    {% endif %}
+                </div>
+                {% if ava.is_teacher == 1 %}
+                <form class="lesson_change_btns_form" method="post">
+                    {% csrf_token %}
+                    <div class="lesson_change_div" style="display: inline-block">
+                        <a id="reg" class="lesson_change_a" href="{% url 'lesson_edit' lesson_num %}">Изменить урок</a>
+                    </div>
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Открыть урок" type="submit">
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Открыть ДЗ" type="submit">
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Открыть запись" type="submit">
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Закрыть урок" type="submit">
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Закрыть ДЗ" type="submit">
+                    <input class="lesson_change_btn" name="lesson_status_change" value="Закрыть запись" type="submit">
+                </form>
+                {% endif %}
+                <h1 class="lesson_theme_title">{{ lesson.header }}</h1>
+                {% if lesson.lesson_status >= 1 and lesson.lesson_status <= 2 or ava.is_teacher == 1 %}
+                <h2 class="lesson_zoom_title">Zoom конференция:
+                    {% if ava.is_teacher == 1 %}
+                    {% if lesson.lesson_status >= 1 and lesson.lesson_status <= 2 %}
+                    (открыто)
+                    {% else %}
+                    (закрыто)
+                    {% endif %}
+                    {% endif %}
+                </h2>
+                <a href="{{ lesson.webinar_url }}" class="lesson_zoom_link">{{ lesson.webinar_url }}</a>
+                {% endif %}
+                {% if lesson.lesson_status >= 3 or ava.is_teacher == 1 %}
+                <div class="spoiler-title2 lesson_yt_wrapper">
+                    <img id="ras2" src="{% static 'images/ic20-razvernut.svg' %}" class="iconka_razvernut" alt="alt">
+                    <a class="lesson_yt_title" href="#">Лекция на Youtube
+                        {% if ava.is_teacher == 1 %}
+                        {% if lesson.lesson_status >= 3 %}
+                        (открыто)
+                        {% else %}
+                        (закрыто)
+                        {% endif %}
+                        {% endif %}
+                    </a>
+                </div>
+                {% endif %}
+                <div class="spoiler-body2 lesson_yt_iframe_wrapper" style="display: none;">
+                    <iframe class="lesson_yt_iframe" src="{{ lesson.youtube_url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="spoiler-body" style="display:none; width: 100%; height: 100px; background-color: #000000">
+
+                </div>
+                {% if lesson.lesson_status >= 2 or ava.is_teacher == 1 %}
+                    <div class="lesson_content_wrapper">
+                        <h2 class="lesson_content_title">Материалы по лекции
+                            {% if ava.is_teacher == 1 %}
+                                {% if lesson.lesson_status >= 2 %}
+                                    (открыто)
+                                {% else %}
+                                    (закрыто)
+                                {% endif %}
+                            {% endif %}
+                        </h2>
+                        <div style="display: flex; justify-content: center; margin-top: 3%;">
+                            {% if lesson.pdf_route.url != '/media/0' %}
+                                <object data="{{ lesson.pdf_route.url }}" type="application/pdf" width="90%" height="1000">
+                                    <iframe src="{{ lesson.pdf_route.url }}" width="100%" height="auto">
+                                    </iframe>
+                                </object>
+                            {% else %}
+                                <p style="font-size: 40px; margin-top: 30px; color: #333;">Кажется, для этого урока нет pdf :/</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+                {% if lesson.lesson_status >= 2 or ava.is_teacher == 1 %}
+                <div class="lesson_hw_wrapper">
+                    <h2 class="lesson_hw_title">Домашнее задание
+                        {% if ava.is_teacher == 1 %}
+                        {% if lesson.lesson_status >= 2 %}
+                        (открыто)
+                        {% else %}
+                        (закрыто)
+                        {% endif %}
+                        {% endif %}
+                    </h2>
+                    <div class="lesson_hw_text_wrapper">
+                        <span class="lesson_hw_text">
+                            {{ lesson.homework_text|safe }}
+                        </span>
+                    </div>
+                    {% if ava.is_teacher == 1 %}
+                    <div>
+                        <h2 class="lesson_pupils_sends_title">Посылки учеников</h2>
+                        <div class="lesson_pupils_sends_grid">
+                            {% for homework in homeworks %}
+                            <div class="lesson_pupils_sends_wrapper">
+                                <div>
+                                    {% if homework.homework_status >= 2 %}
+                                        <a href="{% url 'homework' homework.lesson_num homework.user_id %}" class="lesson_pupils_sends_names" style="color: #F86624;">{{ homework.user.first_name }} {{ homework.user.last_name }}</a>
+                                    {% else %}
+                                        <a href="{% url 'homework' homework.lesson_num homework.user_id %}" class="lesson_pupils_sends_names" style="color: #43BCCD;">{{ homework.user.first_name }} {{ homework.user.last_name }}</a>
+                                    {% endif %}
+                                </div>
+                                <div class="mt-2" style="display: flex;">
+                                    <div class="me-2">
+                                        <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_mini_minus" alt="alt">
+                                    </div>
+                                    <span class="mt-1 lesson_pupils_sends_status" style="color: #000">Статус задания:
+                                        {% if homework.homework_status >= 2 %}
+                                        <span class="lesson_pupils_sends_status" style="color: #43BCCD">
+                                            проверено
+                                        </span>
+                                        {% else %}
+                                        <span class="lesson_pupils_sends_status" style="color: #F86624">
+                                            не проверено
+                                        </span>
+                                        {% endif %}
+                                    </span>
+                                </div>
+                                <div class="mt-1" style="display: flex;">
+                                    <div class="me-2">
+                                        <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_mini_minus" alt="alt">
+                                    </div>
+                                    <span class="mt-1 lesson_pupils_sends_comment">Ответ: {{ homework.comment }}</span>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="spoiler-title3 lesson_homework_send_title_wrapper">
+                        <img id="ras3" src="{% static 'images/ic20-razvernut.svg' %}" class="iconka_razvernut me-4" alt="alt">
+                        <a class="lesson_homework_send_title_a" href="#"><span class="lesson_homework_send_title_span">Загрузить </span>Домашнее задание</a>
+                    </div>
+                    <div class="spoiler-body3" style="margin-top: 3%; display:none;">
+                        <form id="form1" runat="server" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <!--<input name="file" type='file' id="input__file" class="input input__file" multiple>-->
+                            {% render_field form.homework type='file' id="input__file" class="input input__file" %}
+                            <label id="lab" for="input__file" class="input__file-button">
+                                <span id="choice_file" class="files_input_background_text">Выбери файл <span style="font-weight: normal;">или перетащи его сюда</span></span>
+                                <div id="for_foto" class="for_photo_class">
+
+                                </div>
+                                <button id="send" class="files_input_send_btn" type="submit">Отправить</button>
+                            </label>
+                        </form>
+                    </div>
+
+                    <div class="spoiler-title4 lesson_my_sends_title_wrapper">
+                        <img id="ras4" src="{% static 'images/ic20-razvernut.svg' %}" class="iconka_razvernut me-4" alt="alt">
+                        <a class="lesson_my_sends_title_a" href="#">Мои загруженные работы</a>
+                        <img id="edit_btn" src="{% static 'images/ic20-black_edit.svg' %}" class="iconka_edit ms-3" alt="alt">
+                    </div>
+                    <div class="spoiler-body4" id="s_b4" style="margin-top: 3%; display: none;">
+                        <div id="materials" class="lesson_my_sends_title_grid">
+                            {% for hw_image in hw_images %}
+                            <div class="one_foto">
+                                <input type="hidden" class="hidden_ph_del" value="{{ hw_image.id }}">
+                                <div class="del_foto_in_mat">
+                                    <img src="{% static 'images/ic20-trashcan.svg' %}" class="iconka_trash" alt="alt">
+                                    <span class="text_del">Удалить</span>
+                                </div>
+                                <img src="{{ hw_image.homework.image_compressed.url }}" class="c-img pupil_images">
+                                <input id="uncompressed" type="hidden" value="{{ hw_image.homework.image.url }}">
+                                <span class="text_del" style="width: 190px; overflow-x: auto; scrollbar-width: thin; scrollbar-color: #F8662499 #eee">{{ hw_image.homework.image.name|cut:'gallery/' }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <form id="ph_edit" method="post">
+                                {% csrf_token %}
+                                <button id="save_edit" class="lesson_my_sends_title_edit_save_btn" type="submit">Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div {% if homework.homework_status == 0 %} style="display: none;"{% endif %}>
+                        <div style="margin-top: 5%; display: flex; align-items: center;">
+                            <img id="ras3" src="{% static 'images/ic20-comment.svg' %}" class="iconka_comment me-4" alt="alt">
+                            <h2 class="teacher_comment_title">Комментарий преподавателя</h2>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-top: 3%;">
+                            <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_minus me-3" alt="alt">
+                            <span class="teacher_comment_status">Статус задания:
+                                {% if homework.homework_status == 1 %}
+                                <span style="color: #F9C80E">
+                                    отправлено на проверку
+                                </span>
+                                {% elif homework.homework_status == 2 %}
+                                <img src="{% static 'images/ic20-close.svg' %}" class="iconka_minus" alt="alt">
+                                {% elif homework.homework_status == 3 %}
+                                <img src="{% static 'images/ic20-greencheck.svg' %}" class="iconka_minus" alt="alt">
+                                {% elif homework.homework_status == 4 %}
+                                <img src="{% static 'images/ic20-greencheck.svg' %}" class="iconka_minus" alt="alt">
+                                <img src="{% static 'images/ic20-greencheck.svg' %}" class="iconka_minus" alt="alt">
+                                {% endif %}
+                            </span>
+                        </div>
+                        <div style="display: flex; margin-top: 1%;">
+                            <img src="{% static 'images/ic20-minus.svg' %}" class="iconka_minus me-3" alt="alt">
+                            <span class="teacher_comment_text">Ответ: {{ homework.comment }}</span>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+
+    <script type="text/javascript">
+        $(".pupil_images").click(function() {
+            var img = $(this);
+            var src = $(this).parent().find('#uncompressed').val();
+            $("body").append("<div class='popup'>" +
+                "<div class='popup_bg'></div>" +
+                "<img src='" + src + "' class='popup_img' />" +
+                "</div>");
+            $(".popup").fadeIn(200);
+            $(".popup_bg").click(function() {
+                $(".popup").fadeOut(200);
+                setTimeout(function() {
+                    $(".popup").remove();
+                }, 200);
+            });
+        });
+        var ch1 = 0;
+        $(document).ready(function() {
+            $('.spoiler-title').click(function() {
+                $(this).parent().children('.spoiler-body').slideToggle(600);
+                ch1 += 1;
+                if (ch1 % 2 == 0) {
+                    document.getElementById(`ras1`).src = "{% static 'images/ic20-razvernut.svg' %}";
+                } else {
+                    document.getElementById(`ras1`).src = "{% static 'images/ic20-sverrnut.svg' %}";
+                }
+
+                return false;
+            });
+        });
+
+        var ch2 = 0;
+        $(document).ready(function() {
+            $('.spoiler-title2').click(function() {
+                $(this).parent().children('.spoiler-body2').slideToggle(600);
+                ch2 += 1;
+                if (ch2 % 2 == 0) {
+                    document.getElementById(`ras2`).src = "{% static 'images/ic20-razvernut.svg' %}";
+                } else {
+                    document.getElementById(`ras2`).src = "{% static 'images/ic20-sverrnut.svg' %}";
+                }
+
+                return false;
+            });
+        });
+
+        var ch3 = 0;
+        $(document).ready(function() {
+            $('.spoiler-title3').click(function() {
+                $(this).parent().children('.spoiler-body3').slideToggle(600);
+                ch3 += 1;
+                if (ch3 % 2 == 0) {
+                    document.getElementById(`ras3`).src = "{% static 'images/ic20-razvernut.svg' %}";
+                } else {
+                    document.getElementById(`ras3`).src = "{% static 'images/ic20-sverrnut.svg' %}";
+                }
+
+                return false;
+            });
+        });
+
+        var ch4 = 0;
+        $(document).ready(function() {
+            $('.spoiler-title4').click(function() {
+                $(this).parent().children('.spoiler-body4').slideToggle(600);
+                ch4 += 1;
+                if (ch4 % 2 == 0) {
+                    document.getElementById(`ras4`).src = "{% static 'images/ic20-razvernut.svg' %}";
+                    document.getElementById(`edit_btn`).src = "{% static 'images/ic20-black_edit.svg' %}";
+                    document.getElementById(`save_edit`).style.display = "none";
+                    M = document.getElementsByClassName('del_foto_in_mat');
+                    for (var i = 0; i < M.length; i++) {
+                        M[i].style.display = "none";
+                    }
+                } else {
+                    document.getElementById(`ras4`).src = "{% static 'images/ic20-sverrnut.svg' %}";
+                }
+
+                return false;
+            });
+        });
+
+        var edit_ch = 0;
+        $(document).ready(function() {
+            $('#edit_btn').click(function() {
+                if (ch4 % 2 != 0) {
+                    edit_ch += 1;
+                    if (edit_ch % 2 != 0) {
+                        document.getElementById(`edit_btn`).src = "{% static 'images/ic20-orange_edit.svg' %}";
+                        document.getElementById(`save_edit`).style.display = "block";
+                        M = document.getElementsByClassName('del_foto_in_mat');
+                        for (var i = 0; i < M.length; i++) {
+                            M[i].style.display = "block";
+                        }
+                    } else {
+                        document.getElementById(`edit_btn`).src = "{% static 'images/ic20-black_edit.svg' %}";
+                        document.getElementById(`save_edit`).style.display = "none";
+                        M = document.getElementsByClassName('del_foto_in_mat');
+                        for (var i = 0; i < M.length; i++) {
+                            M[i].style.display = "none";
+                        }
+                    }
+                    return false;
+                }
+            });
+        });
+
+        var edit_fd = new FormData;
+        $(document).ready(function() {
+            $('.del_foto_in_mat').click(function() {
+                if (ch4 % 2 != 0) {
+                    $(this).parent().css("opacity", "0.3");
+                    tmp = $(this).parent().find('.hidden_ph_del')
+                    edit_fd.append('ph_ids', tmp.val());
+                }
+            });
+        });
+
+        $(document).ready(function() {
+            $('#ph_edit').submit(function() {
+                if (ch4 % 2 != 0) {
+                    edit_fd.append('csrfmiddlewaretoken', '{{ csrf_token }}');
+                    $.ajax({
+                        data: edit_fd,
+                        type: "post",
+                        url: "{% url 'lesson' lesson.lesson_num %}",
+                        processData: false,
+                        contentType: false,
+                        success: function(response) {
+                            location.reload();
+                        },
+                        error: function(response) {
+                            console.log(response)
+                        }
+                    });
+                    return false;
+                }
+            });
+        });
+
+        $("#lab").on("dragover drop", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }).on("drop", function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $("input[type='file']")
+                .prop("files", e.originalEvent.dataTransfer.files)
+                .closest("form")
+            readURL($("#input__file")[0])
+        });
+
+        $("#input__file").change(function() {
+            readURL($("#input__file")[0])
+        })
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                document.getElementById(`lab`).style.background = "#FFFFFF";
+                for (var i = 0; i < input.files.length; i++) {
+                    var reader = new FileReader();
+
+                    let img = document.createElement("img");
+
+                    let div_one_foto = document.createElement("div");
+                    div_one_foto.classList.add("one_foto");
+                    $("#for_foto").append(div_one_foto);
+
+                    /*let div_for_del = document.createElement("div");
+                    div_for_del.classList.add("del_foto");
+                    div_one_foto.prepend(div_for_del);
+
+                    let imgsvg = document.createElement("img");
+                    imgsvg.src = "{% static 'images/ic20-trashcan.svg' %}";
+                    imgsvg.classList.add("iconka_trash");
+                    div_for_del.prepend(imgsvg);
+
+                    let text = document.createElement("span");
+                    text.innerHTML = "Удалить";
+                    text.classList.add("text_del");
+                    div_for_del.append(text);
+
+                    var input_id = document.createElement("input");
+                    input_id.type = "hidden";
+                    input_id.value = i;
+                    input_id.classList.add("input_ph_id");
+                    div_for_del.append(input_id);*/
+
+                    reader.onload = function(e) {
+
+                        img.src = e.target.result;
+                        img.classList.add("c-img")
+                        div_one_foto.prepend(img);
+
+                        document.getElementById(`choice_file`).style.display = "none";
+                        document.getElementById(`send`).style.display = "block";
+                    }
+
+                    reader.readAsDataURL(input.files[i]);
+                    let nameFoto = document.createElement("span");
+                    nameFoto.innerHTML = input.files[i].name;
+                    nameFoto.classList.add("text_del");
+                    div_one_foto.append(nameFoto);
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
